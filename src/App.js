@@ -317,7 +317,7 @@ export function Footer() {
           <div className="footer-links">
             <Link to="/imprint">Imprint</Link>
             <Link to="/privacy">Privacy</Link>
-          </div>
+          </div>{" "}
         </div>
         <div className="newsletter">{NewsletterForm()}</div>
         <div className="social-links">
