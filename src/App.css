@@ -1,3 +1,35 @@
+@media (max-width: 650px) {
+  .burger-menu {
+    display: unset;
+  }
+
+  .site-header h1 {
+    font-size: 3rem;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  footer .content {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .newsletter {
+    margin-top: 1rem;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+  }
+}
+
+.burger-menu {
+  display: none;
+}
+
 .navbar {
   padding: 1rem 0;
   position: absolute;
@@ -89,7 +121,7 @@ html {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 
 .navbar-padding {
@@ -181,22 +213,6 @@ footer {
   font-weight: 500;
 }
 
-@media (max-width: 750px) {
-  .content {
-    padding: 0 1rem;
-  }
-
-  footer .content {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  footer .newsletter {
-    margin-top: 1rem;
-  }
-}
-
 /* footer .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -272,16 +288,8 @@ input[type="text"]::placeholder {
   color: lightgray;
 }
 
-.newsletter-form {
-  border-bottom: 1px solid lightgray;
-  padding: 0 0.25rem;
-}
-
-.newsletter-form,
-.newsletter-subscribe {
-  padding-bottom: 0.5rem;
-}
-
 .newsletter-form input {
   min-width: 30ch;
+  border-bottom: 1px solid lightgray;
+  padding: 1rem;
 }

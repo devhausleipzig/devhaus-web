@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+
 import {
   Home,
+  Academy,
   Work,
   Navbar,
   Footer,
@@ -21,10 +23,14 @@ ReactDOM.render(
     <Router>
       <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
+
       <main>
         <Switch>
           <Route exact path={["/", "/home"]}>
             <Home></Home>
+          </Route>
+          <Route exact path="/academy">
+            <Academy></Academy>
           </Route>
           <Route exact path="/work">
             <Work></Work>

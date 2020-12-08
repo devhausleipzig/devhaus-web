@@ -24,7 +24,8 @@ export function Home() {
             DEV
             <br />
             HAUS
-            <br /> LEIPZIG
+            <br />
+            LEIPZIG
           </h1>
         </div>
       </header>
@@ -61,30 +62,58 @@ export function Home() {
         <div className="content">
           <h2>Browse through all projects</h2>
         </div>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </section>
     </div>
   );
 }
 
+export function Academy() {
+  return (
+    <div className="content site-header navbar-padding">
+      <h1>Academy</h1>
+    </div>
+  );
+}
+
 export function Work() {
-  return <div className="content"></div>;
+  return (
+    <div className="content site-header navbar-padding">
+      <h1>Work</h1>
+    </div>
+  );
 }
 
 export function About() {
-  return <div className="content"></div>;
+  return (
+    <div className="content site-header navbar-padding">
+      <h1>About</h1>
+    </div>
+  );
 }
 
 export function News() {
-  return <div className="content"></div>;
+  return (
+    <div className="content site-header navbar-padding">
+      <h1>News</h1>
+    </div>
+  );
 }
 
 export function Contact() {
-  return <div className="content"></div>;
+  return (
+    <div className="content site-header navbar-padding">
+      <h1>Contact</h1>
+    </div>
+  );
 }
 
 export function Imprint() {
-  return <div className="content"></div>;
+  return (
+    <div className="content site-header navbar-padding">
+      <h1>Imprint</h1>
+    </div>
+  );
 }
 
 function TextSection({ title }) {
@@ -230,6 +259,7 @@ export function Navbar() {
             <img src="/devhaus-logo.svg" alt="Devhaus Leipzig"></img>
           </Link>
         </div>
+
         <NavMenu></NavMenu>
       </div>
     </div>
