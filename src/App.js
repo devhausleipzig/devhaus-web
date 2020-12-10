@@ -107,8 +107,12 @@ export function About() {
         </div>
       </div>
       <div className="about-images">
-        <div className="bio-image"></div>
-        <div className="bio-image"></div>
+        <div className="bio-image">
+          <p>Gabriel Heinrich, Co-founder</p>
+        </div>
+        <div className="bio-image">
+          <p>Taylor Harvey, Co-founder</p>
+        </div>
         <div className="bio-image"></div>
         <div className="bio-image"></div>
       </div>
