@@ -102,8 +102,33 @@ export function News() {
 
 export function Contact() {
   return (
-    <div className="content site-header navbar-padding">
-      <h1>Contact</h1>
+    <div className="contact">
+      <div className="content navbar-padding site-header">
+        <h1>Contact Us</h1>
+        <p>contact@devhaus.de</p>
+        <p>+49 1512 1675615</p>
+        <br></br>
+        <p>Floßpl. 6</p>
+        <p>04107 Leipzig</p>
+        <br></br>
+        <p className="directions">Get directions</p>
+        <br></br>
+        <p className="location-description">
+          Devhaus is located within the Basislager Coworking space.
+        </p>
+        <br></br>
+        <p className="location-description">
+          Convienently close to the University and city centre. Easily accesible
+          by trams 10 or 11 from the Haupbanhof.{" "}
+        </p>
+      </div>
+      <div className="image-container">
+        <img
+          className="contact-image"
+          src="https://media.spacebase.com/media/cache/spaces/3691/basislager-4og-k2-1_1280.jpg"
+          alt="basislager"
+        ></img>
+      </div>
     </div>
   );
 }

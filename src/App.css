@@ -1,31 +1,3 @@
-@media (max-width: 650px) {
-  .burger-menu {
-    display: unset;
-  }
-
-  .site-header h1 {
-    font-size: 3rem;
-  }
-
-  nav a {
-    display: none;
-  }
-
-  footer .content {
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  footer .newsletter {
-    margin-top: 1rem;
-  }
-
-  .footer-links a {
-    font-size: 12px;
-  }
-}
-
 .burger-menu {
   display: none;
 }
@@ -35,6 +7,8 @@
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 100;
+  background-color: rgb(250, 250, 250);
 }
 
 .navbar .content {
@@ -98,6 +72,47 @@ main {
   font-weight: 600;
   /* color: rgb(9, 8, 31); */
   /* padding: 4rem; */
+}
+
+.contact {
+  display: flex;
+}
+
+.contact .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h1 {
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.directions {
+  text-decoration: underline;
+}
+
+.location-description {
+  width: 40%;
+  font-size: 14px;
+  color: #333;
+}
+
+.image-container {
+  margin-top: 8rem;
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image {
+  height: auto;
+  width: 100%;
 }
 
 .image-section {
@@ -230,6 +245,7 @@ footer .social-links {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  font-size: 14px;
 }
 
 footer .copyright-container {
@@ -240,6 +256,7 @@ footer .copyright-container {
 
 footer .copyright {
   display: flex;
+  font-size: 14px;
 }
 
 footer .footer-links {
@@ -250,7 +267,8 @@ footer .footer-links {
 
 footer .newsletter {
   display: flex;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
+  padding-right: 2rem;
 }
 
 p {
@@ -292,4 +310,40 @@ input[type="text"]::placeholder {
   min-width: 30ch;
   border-bottom: 1px solid lightgray;
   padding: 1rem;
+}
+
+@media (max-width: 800px) {
+  .burger-menu {
+    display: unset;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .image-container {
+    margin-top: 0rem;
+  }
+
+  .site-header h1 {
+    font-size: 3rem;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  footer .content {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .newsletter {
+    margin-top: 1rem;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+  }
 }
