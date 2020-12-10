@@ -83,6 +83,12 @@ main {
   flex-direction: column;
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .contact h1 {
   font-size: 32px;
   margin-bottom: 2rem;
@@ -103,9 +109,8 @@ main {
 }
 
 .image-container {
-  margin-top: 8rem;
+  margin-top: 10rem;
   display: flex;
-  padding: 3rem;
   justify-content: center;
   align-items: center;
 }
@@ -113,6 +118,36 @@ main {
 .contact-image {
   height: auto;
   width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+}
+
+.about {
+  width: 100%;
+}
+
+.about-text {
+  margin-top: 15rem;
+  width: 70vw;
+}
+
+.about-images {
+  display: flex;
+  justify-content: center;
+}
+
+.bio-image {
+  height: 400px;
+  width: 350px;
+  border: solid black 2px;
+  margin: 2rem;
+}
+
+.bio-image:hover {
+  background-color: gray;
 }
 
 .image-section {
@@ -317,12 +352,21 @@ input[type="text"]::placeholder {
     display: unset;
   }
 
+  .title {
+    flex-direction: column;
+  }
+
+  .about-text {
+    margin-top: 5rem;
+  }
+
   .contact {
     flex-direction: column;
   }
 
   .image-container {
-    margin-top: 0rem;
+    margin-top: 2rem;
+    padding: 0;
   }
 
   .site-header h1 {

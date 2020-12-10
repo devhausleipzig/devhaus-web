@@ -86,8 +86,32 @@ export function Work() {
 
 export function About() {
   return (
-    <div className="content site-header navbar-padding">
-      <h1>About</h1>
+    <div className="content">
+      <div class="title">
+        <h1 className="about site-header navbar-padding">About Us</h1>
+        <div className="about-text">
+          <p>
+            Mollitia vero error corporis id quis odio nulla perferendis quas ea
+            modi! Suscipit animi eius dolores libero. Tempora, sequi possimus.
+            Inventore illo voluptates sapiente dolores ipsam sed, perferendis
+            totam. Rerum obcaecati maiores qui mollitia similique, doloremque
+            nobis perspiciatis aspernatur harum, recusandae distinctio
+            reprehenderit possimus dolorem repudiandae numquam molestias. Atque
+            sed voluptates voluptatum totam nesciunt id earum! Officia
+            reprehenderit, aliquam facilis optio iure quia magni perferendis
+            molestiae ipsam veniam vitae excepturi blanditiis libero, possimus
+            odit maiores quae nisi labore ab quod ducimus consequatur nam! Nam
+            quisquam, dolor saepe veniam laudantium repellat exercitationem
+            suscipit inventore dolore deleniti quidem et tempora, iure mollitia.
+          </p>
+        </div>
+      </div>
+      <div className="about-images">
+        <div className="bio-image"></div>
+        <div className="bio-image"></div>
+        <div className="bio-image"></div>
+        <div className="bio-image"></div>
+      </div>
     </div>
   );
 }
@@ -102,9 +126,9 @@ export function News() {
 
 export function Contact() {
   return (
-    <div className="contact">
-      <div className="content navbar-padding site-header">
-        <h1>Contact Us</h1>
+    <div className="content contact">
+      <div className="contact-info">
+        <h1 className=" navbar-padding site-header">Contact Us</h1>
         <p>contact@devhaus.de</p>
         <p>+49 1512 1675615</p>
         <br></br>
@@ -118,8 +142,8 @@ export function Contact() {
         </p>
         <br></br>
         <p className="location-description">
-          Convienently close to the University and city centre. Easily accesible
-          by trams 10 or 11 from the Haupbanhof.{" "}
+          Conveniently close to the University and city centre. Easily
+          accessible by trams 10 or 11 from the Hauptbanhof.{" "}
         </p>
       </div>
       <div className="image-container">
