@@ -1,13 +1,16 @@
-.burger-menu {
-  display: none;
-}
-
 .navbar {
   padding: 1rem 0;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 100;
+  background-color: rgb(250, 250, 250);
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: rgb(250, 250, 250);
 }
 
@@ -78,11 +81,6 @@ main {
   display: flex;
 }
 
-.contact .content {
-  display: flex;
-  flex-direction: column;
-}
-
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -98,19 +96,19 @@ main {
 }
 
 .location-description {
-  width: 40%;
+  width: 50%;
   font-size: 14px;
   color: #333;
 }
 
 .image-container {
-  margin-top: 10rem;
+  margin-top: 16rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact-image {
+#contact-image {
   height: auto;
   width: 100%;
 }
@@ -130,13 +128,12 @@ main {
 }
 
 .about-images {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .bio-image {
   height: 400px;
-  width: 350px;
   border: solid black 2px;
   margin: 2rem;
 }
@@ -255,6 +252,7 @@ main .columns {
 
 footer {
   color: gray;
+  margin-top: 2rem;
   padding: 3rem 0;
   font-weight: 500;
 }
@@ -268,7 +266,6 @@ footer {
 footer .content {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: space-between;
 }
 
@@ -344,8 +341,9 @@ input[type="text"]::placeholder {
 }
 
 @media (max-width: 800px) {
-  .burger-menu {
-    display: unset;
+  .content h1 {
+    padding: 10rem 0 0;
+    margin-bottom: 2rem;
   }
 
   .title {
@@ -365,7 +363,7 @@ input[type="text"]::placeholder {
   }
 
   .image-container {
-    margin-top: 2rem;
+    margin-top: 4rem;
     padding: 0;
   }
 

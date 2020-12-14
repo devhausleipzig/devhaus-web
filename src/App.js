@@ -1,6 +1,6 @@
 import "./App.css";
 import { Link } from "react-router-dom";
-
+import React from "react";
 import { useEffect, useRef, useState } from "react";
 import { withRouter } from "react-router-dom";
 
@@ -86,7 +86,7 @@ export function Work() {
 
 export function About() {
   return (
-    <div className="content">
+    <div className="about content">
       <div class="title">
         <h1 className="about site-header navbar-padding">About Us</h1>
         <div className="about-text">
@@ -115,6 +115,14 @@ export function About() {
         </div>
         <div className="bio-image"></div>
         <div className="bio-image"></div>
+        <div className="bio-image"></div>
+        <div className="bio-image"></div>
+        <div className="bio-image"></div>
+        <div className="bio-image"></div>
+        <div className="bio-image"></div>
+        <div className="bio-image"></div>
+        <div className="bio-image"></div>
+        <div className="bio-image"></div>
       </div>
     </div>
   );
@@ -129,6 +137,13 @@ export function News() {
 }
 
 export function Contact() {
+  function changeImage(e) {
+    e.target.setAttribute(
+      "src",
+      "https://anybee.com/storage/spaces/700x500_52ecbcaa10e16ef06cf3b9056394e2b0.jpg"
+    );
+    e.target.setAttribute("alt", "basislager2");
+  }
   return (
     <div className="content contact">
       <div className="contact-info">
@@ -152,7 +167,8 @@ export function Contact() {
       </div>
       <div className="image-container">
         <img
-          className="contact-image"
+          onMouseOver={changeImage}
+          id="contact-image"
           src="https://media.spacebase.com/media/cache/spaces/3691/basislager-4og-k2-1_1280.jpg"
           alt="basislager"
         ></img>
@@ -304,18 +320,35 @@ export function NavMenu() {
 }
 
 export function Navbar() {
+  const [scrolled, setScrolled] = React.useState(false);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 200) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+  let navbarClasses = ["navbar"];
+  if (scrolled) {
+    navbarClasses.push("scrolled");
+  }
+
   return (
-    <div className="navbar">
+    <header className={navbarClasses.join(" ")}>
       <div className="content">
         <div className="logo">
           <Link to="/">
             <img src="/devhaus-logo.svg" alt="Devhaus Leipzig"></img>
           </Link>
         </div>
-
         <NavMenu></NavMenu>
       </div>
-    </div>
+    </header>
   );
 }
 
