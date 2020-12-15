@@ -19,7 +19,10 @@ export function Home() {
   return (
     <div>
       <header className="hero">
-        <div className="content">
+        <div className="hero-image">
+          <img src="/graduates1.jpg" alt="graduates1" />
+        </div>{" "}
+        <div className="hero-title">
           <h1>
             DEV
             <br />
@@ -29,6 +32,7 @@ export function Home() {
           </h1>
         </div>
       </header>
+
       <section className="page-section">
         <div className="content">
           <h2>Devhaus Manifesto</h2>

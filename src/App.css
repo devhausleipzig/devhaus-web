@@ -377,6 +377,24 @@ input[type="text"]::placeholder {
   grid-row: 3;
 }
 
+.hero {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-image {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+
+.hero-title {
+  position: absolute;
+  z-index: 2;
+}
+
 @media (max-width: 800px) {
   .content h1 {
     padding: 10rem 0 0;
@@ -406,6 +424,14 @@ input[type="text"]::placeholder {
 
   .site-header h1 {
     font-size: 3rem;
+  }
+
+  .hero-title h1 {
+    font-size: 4rem;
+  }
+
+  .hero img {
+    margin-top: 10rem;
   }
 
   nav a {
