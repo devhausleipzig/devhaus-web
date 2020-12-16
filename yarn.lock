@@ -1141,6 +1141,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@iconify/icons-openmoji@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-openmoji/-/icons-openmoji-1.1.0.tgz#c3cf2ff02ab5cd678a9905e37b741479f5c833cc"
+  integrity sha512-6u1N66jK/vz8cZfI4uLI4IkPiSfh3d5VolWPNw9tWx2ALVhc0Y5/vr/IMwzEAOu5WstQWKqnEAh0ivGRIrMosw==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -9053,11 +9058,6 @@ react-app-polyfill@^2.0.0:
     raf "^3.4.1"
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
-
-react-css-burger@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/react-css-burger/-/react-css-burger-0.2.0.tgz#6b85f6855c1c0d9af136e7043d5c21f3de565874"
-  integrity sha512-q2ifct44rVXvLmVr1NeOcMsaeKQWGFaTaUCicF0ynekM8kK5ATpizV2PurgP1hnQntbWRVizCqmKE9JwoDmZNA==
 
 react-dev-utils@^11.0.0:
   version "11.0.0"

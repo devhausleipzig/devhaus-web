@@ -360,13 +360,34 @@ export function Privacy() {
 }
 
 export function NavMenu() {
+  function myFunction() {
+    const x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
   return (
-    <nav>
-      <Link to="/academy">Academy</Link>
-      <Link to="/work">Work</Link>
-      <Link to="/about">About</Link>
-      <Link to="/news">News</Link>
-      <Link to="/contact">Contact</Link>
+    <nav className="topnav" id="myTopnav">
+      <Link className="menu-link" to="/academy">
+        Academy
+      </Link>
+      <Link className="menu-link" to="/work">
+        Work
+      </Link>
+      <Link className="menu-link" to="/about">
+        About
+      </Link>
+      <Link className="menu-link" to="/news">
+        News
+      </Link>
+      <Link className="menu-link" to="/contact">
+        Contact
+      </Link>
+      <button className="icon" onClick={myFunction}>
+        X
+      </button>
     </nav>
   );
 }
