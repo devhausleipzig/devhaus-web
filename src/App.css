@@ -168,7 +168,7 @@ main {
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   overflow: scroll;
   background-color: rgb(250, 250, 250);
   color: rgb(20, 20, 20);

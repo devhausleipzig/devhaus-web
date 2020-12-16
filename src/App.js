@@ -396,13 +396,21 @@ export function NavMenu() {
 
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
+
+  let lastOffset = window.scrollY;
+
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 200) {
-      setScrolled(true);
-    } else {
+    if (offset < 200) {
       setScrolled(false);
+    } else {
+      if (offset >= lastOffset) {
+        setScrolled(false);
+      } else {
+        setScrolled(true);
+      }
     }
+    lastOffset = offset;
   };
 
   useEffect(() => {
