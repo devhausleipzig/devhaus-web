@@ -6,7 +6,6 @@ import {
   Home,
   Academy,
   Work,
-  Navbar,
   Footer,
   Contact,
   News,
@@ -15,6 +14,7 @@ import {
   Privacy,
   ScrollToTop,
 } from "./App";
+import Navbar from "./components/Navbar";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
