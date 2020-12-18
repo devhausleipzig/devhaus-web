@@ -2,19 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-import {
-  Home,
-  Academy,
-  Work,
-  Footer,
-  Contact,
-  News,
-  About,
-  Imprint,
-  Privacy,
-  ScrollToTop,
-} from "./App";
+import { ScrollToTop } from "./App";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Academy from "./components/Academy";
+import Work from "./components/Work";
+import About from "./components/About";
+import News from "./components/News";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import Imprint from "./components/Imprint";
+import Privacy from "./components/Privacy";
+
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

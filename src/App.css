@@ -78,23 +78,30 @@ main {
 }
 
 .hero {
-  height: 100vh;
   scroll-snap-align: start;
-  display: flex;
+  display: fixed;
   justify-content: flex-start;
   align-items: flex-end;
   /* background-color: rgb(253, 179, 119); */
 }
 
 .hero h1 {
-  z-index: 1;
   font-size: 20vmin;
   text-align: left;
   line-height: 0.9;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
   font-weight: 600;
   /* color: rgb(9, 8, 31); */
   /* padding: 4rem; */
+}
+
+.hero-title {
+  z-index: 1;
+}
+
+.hero-image img {
+  width: 100vw;
+  height: 100vh;
 }
 
 .contact {
@@ -289,6 +296,7 @@ footer .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 footer .social-links {
@@ -317,7 +325,6 @@ footer .footer-links {
 
 footer .newsletter {
   display: flex;
-  margin: 0.5rem 0;
   padding-right: 2rem;
 }
 
