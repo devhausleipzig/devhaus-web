@@ -104,6 +104,35 @@ main {
   height: 100vh;
 }
 
+.academy-apply {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ccl-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ccl-logo img {
+  width: 70%;
+  height: auto;
+}
+
+.academy-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.academy-text h3 {
+  margin-top: 2rem;
+}
+
+.academy-text button {
+  margin-top: 2rem;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -149,18 +178,16 @@ main {
   padding-right: 0;
 }
 
-.title {
+.about-main {
   display: flex;
   flex-direction: row;
-}
-
-.title h1 {
-  width: 100%;
+  justify-content: center;
 }
 
 .about-text {
-  margin-top: 15rem;
-  width: 70vw;
+  margin-left: 4rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .about-grid {
@@ -358,19 +385,22 @@ input[type="text"]::placeholder {
 
 .work-grid {
   display: grid;
-  grid-template-columns: 8fr 6fr;
-  grid-gap: 30px;
+  grid-template-columns: 8fr 8fr;
+  grid-gap: 50px;
 }
 
 .work-img1 {
+  border: 1px solid black;
   grid-column: 1;
   grid-row: 1;
 }
 .work-img2 {
+  border: 1px solid black;
   grid-column: 2;
   grid-row: 2;
 }
 .work-img3 {
+  border: 1px solid black;
   grid-column: 1;
   grid-row: 3;
 }
@@ -463,13 +493,26 @@ input[type="text"]::placeholder {
     margin-bottom: 2rem;
   }
 
-  .title {
+  .academy-apply {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .academy-apply h2 {
+    margin-top: 2rem;
+    font-size: 30px;
+  }
+
+  .about-main {
     flex-direction: column;
   }
 
   .about-text {
-    margin: 0;
-    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .about-text p {
+    text-align: left;
   }
 
   .about-grid {
