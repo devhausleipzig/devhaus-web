@@ -464,8 +464,45 @@ input[type="text"]::placeholder {
   height: 100%;
   overflow-y: scroll;
   overflow-x: visible;
-  transition: all 0.5s ease-in-out;
+
   z-index: 999;
+  -webkit-animation: swing-in-right-fwd 0.7s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-right-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+}
+
+@-webkit-keyframes swing-in-right-fwd {
+  0% {
+    -webkit-transform: rotateY(-100deg);
+    transform: rotateY(-100deg);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-right-fwd {
+  0% {
+    -webkit-transform: rotateY(-100deg);
+    transform: rotateY(-100deg);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    opacity: 1;
+  }
 }
 
 .main-menu ul {
