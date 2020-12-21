@@ -181,13 +181,18 @@ main {
 .about-main {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.about-text {
-  margin-left: 4rem;
+.about-main img {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  height: 250px;
+  width: auto;
+}
+
+.about-main .content-section {
+  margin-left: 4rem;
 }
 
 .about-grid {
@@ -507,7 +512,7 @@ input[type="text"]::placeholder {
     flex-direction: column;
   }
 
-  .about-text {
+  .about-main .content-section {
     margin: 2rem 0;
   }
 
