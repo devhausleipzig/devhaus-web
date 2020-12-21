@@ -8,7 +8,7 @@ export default function Work() {
         <div className="work-img1">
           <img src="/edox.jpeg" alt="edox"></img>
         </div>
-        <div class="work-cta1">
+        <div className="work-cta1">
           <h2>e.dox</h2>
           <p>
             Introducing 212/SE, our most powerful and agile subwoofer, designed
@@ -20,7 +20,7 @@ export default function Work() {
           <img src="/filip.png" alt="filip"></img>
         </div>
 
-        <div class="work-cta2">
+        <div className="work-cta2">
           <h2>fillip</h2>
           <p>
             Introducing 212/SE, our most powerful and agile subwoofer, designed
@@ -32,7 +32,7 @@ export default function Work() {
           <img src="/lizatilmann.png" alt="lizatilmann"></img>
         </div>
 
-        <div class="work-cta3">
+        <div className="work-cta3">
           <h2>Liza Tilmann</h2>
           <p>
             Introducing 212/SE, our most powerful and agile subwoofer, designed

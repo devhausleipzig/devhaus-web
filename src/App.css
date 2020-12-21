@@ -489,7 +489,7 @@ input[type="text"]::placeholder {
   height: 100%;
   overflow-y: scroll;
   overflow-x: visible;
-  transition: left 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.5s ease-in-out;
   z-index: 999;
 }
 
@@ -506,6 +506,7 @@ input[type="text"]::placeholder {
   min-height: 100%;
   width: 100%;
   background: #1a1a1a;
+  opacity: 80%;
 }
 
 .main-menu a {
@@ -741,12 +742,6 @@ article h2 {
     margin-top: 10rem;
   }
 
-  footer .content {
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-  }
-
   footer .newsletter {
     margin: 1rem 0;
     font-size: 14px;
@@ -757,5 +752,11 @@ article h2 {
   }
   .site-header {
     font-size: 3rem;
+  }
+
+  footer .content {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
   }
 }

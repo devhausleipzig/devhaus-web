@@ -9,15 +9,15 @@ function MobileMenu() {
         href="#main-menu"
         id="main-menu-toggle"
         className="menu-toggle"
-        ariaLabel="Open main menu"
+        aria-label="Open main menu"
       >
         <span className="sr-only">Open main menu</span>
-        <div icon="fa-bars" className="fa fa-bars" ariaHidden="true">
+        <div icon="fa-bars" className="fa fa-bars" aria-hidden="true">
           <p>=</p>
         </div>
       </a>
 
-      <nav id="main-menu" className="main-menu" ariaLabel="Main menu">
+      <nav id="main-menu" className="main-menu" aria-label="Main menu">
         <ul>
           <li>
             <a href="/academy">Academy</a>
@@ -44,7 +44,7 @@ function MobileMenu() {
           href="#main-menu-toggle"
           id="main-menu-close"
           className="menu-close"
-          ariaLabel="Close main menu"
+          aria-label="Close main menu"
         >
           <span className="sr-only">Close main menu</span>
           <div icon="fa-close" className="fa fa-close">
@@ -56,7 +56,7 @@ function MobileMenu() {
         href="#main-menu-toggle"
         className="backdrop"
         tabIndex="-1"
-        ariaHidden="true"
+        aria-hidden="true"
         hidden
       >
         ?
