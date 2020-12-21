@@ -79,9 +79,11 @@ main {
 
 .hero {
   scroll-snap-align: start;
-  display: fixed;
+  display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  margin: 0;
+  padding: 0;
   /* background-color: rgb(253, 179, 119); */
 }
 
@@ -97,11 +99,13 @@ main {
 
 .hero-title {
   z-index: 1;
+  display: flex;
 }
 
 .hero-image img {
+  display: flex;
+  z-index: 2;
   width: 100vw;
-  height: 100vh;
 }
 
 .academy-apply {
@@ -447,14 +451,6 @@ input[type="text"]::placeholder {
   color: black;
 }
 
-.menu-link:active {
-  color: red;
-}
-
-.topnav .icon {
-  display: none;
-  margin-right: 2rem;
-}
 /* Screen reader only */
 .sr-only {
   position: absolute;
@@ -488,8 +484,8 @@ input[type="text"]::placeholder {
 .main-menu {
   position: absolute;
   display: none;
-  left: -200px;
   top: 0;
+  width: 100%;
   height: 100%;
   overflow-y: scroll;
   overflow-x: visible;
@@ -498,15 +494,17 @@ input[type="text"]::placeholder {
 }
 
 .main-menu ul {
+  text-align: center;
+  font-size: 40px;
   list-style: none;
-  margin: 0;
-  padding: 2.5em 0 0;
+  padding-top: 3rem;
+
   /* Hide shadow w/ -8px while 'closed' */
   -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
   box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
   min-height: 100%;
-  width: 200px;
+  width: 100%;
   background: #1a1a1a;
 }
 
@@ -516,24 +514,40 @@ input[type="text"]::placeholder {
   line-height: 1em;
   font-size: 1em;
   color: #fff;
-  text-decoration: none;
-  border-bottom: 1px solid #383838;
 }
 
-.main-menu li:first-child a {
-  border-top: 1px solid #383838;
+.main-menu img {
+  justify-content: center;
+  height: 200px;
+  width: 200px;
 }
 
 .main-menu a:hover,
 .main-menu a:focus {
   background: #333;
-  text-decoration: underline;
+}
+
+.main-menu .menu-close:hover {
+  color: red;
+  background: #1a1a1a;
+}
+
+.main-menu .mobile-logo:hover {
+  background: #1a1a1a;
 }
 
 .main-menu .menu-close {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.mobile-menu p {
+  font-size: 50px;
+}
+
+.fa-close {
+  font-size: 50px;
 }
 
 /*
@@ -567,8 +581,7 @@ article h2 {
   font-size: 28px;
 }
 
-.logo {
-  margin: 0 30px 0 10px;
+.mobile-logo {
   font-size: 1.5em;
 }
 
@@ -635,10 +648,6 @@ article h2 {
     display: block;
   }
 
-  .mobile-menu p {
-    font-size: 50px;
-  }
-
   .topnav .menu-link:not(:active) {
     display: none;
   }
@@ -692,6 +701,10 @@ article h2 {
 
   .about-main {
     flex-direction: column;
+  }
+
+  .about-main img {
+    max-width: 100%;
   }
 
   .about-main .content-section {

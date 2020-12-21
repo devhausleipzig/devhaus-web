@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 function MobileMenu() {
   return (
-    <div className="content">
+    <header className="content">
       <a
         href="#main-menu"
         id="main-menu-toggle"
@@ -18,17 +18,6 @@ function MobileMenu() {
       </a>
 
       <nav id="main-menu" className="main-menu" ariaLabel="Main menu">
-        <a
-          href="#main-menu-toggle"
-          id="main-menu-close"
-          className="menu-close"
-          ariaLabel="Close main menu"
-        >
-          <span className="sr-only">Close main menu</span>
-          <div icon="fa-close" className="fa fa-close">
-            close
-          </div>
-        </a>
         <ul>
           <li>
             <a href="/academy">Academy</a>
@@ -45,7 +34,23 @@ function MobileMenu() {
           <li>
             <a href="/contact">Contact</a>
           </li>
+          <li>
+            <a className="mobile-logo" href="/">
+              <img src="/devhaus-logo2.svg" alt="Devhaus Leipzig"></img>
+            </a>
+          </li>
         </ul>
+        <a
+          href="#main-menu-toggle"
+          id="main-menu-close"
+          className="menu-close"
+          ariaLabel="Close main menu"
+        >
+          <span className="sr-only">Close main menu</span>
+          <div icon="fa-close" className="fa fa-close">
+            =
+          </div>
+        </a>
       </nav>
       <a
         href="#main-menu-toggle"
@@ -56,7 +61,7 @@ function MobileMenu() {
       >
         ?
       </a>
-    </div>
+    </header>
   );
 }
 
