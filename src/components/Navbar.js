@@ -2,15 +2,65 @@ import { Link } from "react-router-dom";
 import React from "react";
 import { useEffect } from "react";
 
+function MobileMenu() {
+  return (
+    <div className="content">
+      <a
+        href="#main-menu"
+        id="main-menu-toggle"
+        className="menu-toggle"
+        ariaLabel="Open main menu"
+      >
+        <span className="sr-only">Open main menu</span>
+        <div icon="fa-bars" className="fa fa-bars" ariaHidden="true">
+          <p>=</p>
+        </div>
+      </a>
+
+      <nav id="main-menu" className="main-menu" ariaLabel="Main menu">
+        <a
+          href="#main-menu-toggle"
+          id="main-menu-close"
+          className="menu-close"
+          ariaLabel="Close main menu"
+        >
+          <span className="sr-only">Close main menu</span>
+          <div icon="fa-close" className="fa fa-close">
+            close
+          </div>
+        </a>
+        <ul>
+          <li>
+            <a href="/academy">Academy</a>
+          </li>
+          <li>
+            <a href="/work">Work</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/news">News</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a
+        href="#main-menu-toggle"
+        className="backdrop"
+        tabIndex="-1"
+        ariaHidden="true"
+        hidden
+      >
+        ?
+      </a>
+    </div>
+  );
+}
+
 function NavMenu() {
-  function myFunction() {
-    const x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
   return (
     <nav className="topnav" id="myTopnav">
       <Link className="menu-link" to="/academy">
@@ -28,9 +78,6 @@ function NavMenu() {
       <Link className="menu-link" to="/contact">
         Contact
       </Link>
-      <button className="icon" onClick={myFunction}>
-        x
-      </button>
     </nav>
   );
 }
@@ -71,6 +118,9 @@ export default function Navbar() {
           </Link>
         </div>
         <NavMenu></NavMenu>
+      </div>
+      <div className="mobile-menu">
+        <MobileMenu></MobileMenu>
       </div>
     </header>
   );
