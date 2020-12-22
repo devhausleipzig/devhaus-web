@@ -23,33 +23,35 @@ export default function About() {
           suscipit inventore dolore deleniti quidem et tempora, iure mollitia.
         </p>
       </div>
-      <h2>Founders</h2>
-      <div className="about-grid">
-        <div className="bio1">
-          <img src="/biogabe.jpg" alt="biogabe"></img>
-          <a href="https://www.linkedin.com/in/gabriel-heinrich-60147b187/">
-            <p>Gabriel Heinrich, Co-founder</p>
-          </a>
+      <div className="bio-section">
+        <h2>Founders</h2>
+        <div className="about-grid">
+          <div className="bio1">
+            <img src="/biogabe.jpg" alt="biogabe"></img>
+            <a href="https://www.linkedin.com/in/gabriel-heinrich-60147b187/">
+              <p>Gabriel Heinrich, Co-founder</p>
+            </a>
+          </div>
+          <div className="bio2">
+            <img src="/biotaylor.jpg" alt="biotaylor"></img>
+            <a href="https://www.linkedin.com/in/tharve/">
+              <p>Taylor Harvey, Co-founder</p>
+            </a>
+          </div>
+          <div className="bio3">
+            <img src="/biofranz.jpg" alt="biofranz"></img>
+            <p>Franz-Josef Wollang, Co-founder</p>
+          </div>
+          <div className="bio4">
+            <img src="/biodan.jpg" alt="biodan"></img>
+            <p>Dan Mcatee, Instructor</p>
+          </div>
         </div>
-        <div className="bio2">
-          <img src="/biotaylor.jpg" alt="biotaylor"></img>
-          <a href="https://www.linkedin.com/in/tharve/">
-            <p>Taylor Harvey, Co-founder</p>
-          </a>
-        </div>
-        <div className="bio3">
-          <img src="/biofranz.jpg" alt="biofranz"></img>
-          <p>Franz-Josef Wollang, Co-founder</p>
-        </div>
-        <div className="bio4">
-          <img src="/biodan.jpg" alt="biodan"></img>
-          <p>Dan Mcatee, Instructor</p>
-        </div>
+        <h2>Project Managers</h2>
+        <h2>Developers</h2>
+        <h2>Instructors</h2>
+        <h2>Instructors</h2>
       </div>
-      <h2>Project Managers</h2>
-      <h2>Developers</h2>
-      <h2>Instructors</h2>
-      <h2>Instructors</h2>
     </div>
   );
 }

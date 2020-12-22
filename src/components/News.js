@@ -2,8 +2,8 @@ import React from "react";
 
 export default function News() {
   return (
-    <div className="content site-header navbar-padding">
-      <h1>News</h1>
+    <div className="content">
+      <h1 className="site-header navbar-padding">News</h1>
     </div>
   );
 }
