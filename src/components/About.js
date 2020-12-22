@@ -50,7 +50,6 @@ export default function About() {
         <h2>Project Managers</h2>
         <h2>Developers</h2>
         <h2>Instructors</h2>
-        <h2>Instructors</h2>
       </div>
     </div>
   );
