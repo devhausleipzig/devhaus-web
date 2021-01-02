@@ -4,7 +4,6 @@
   top: 0;
   width: 100%;
   z-index: 100;
-  background-color: rgb(250, 250, 250);
 }
 
 p {
@@ -84,7 +83,14 @@ main {
   align-items: flex-end;
   margin: 0;
   padding: 0;
+  max-width: 100vw;
+  max-height: 100vh;
   /* background-color: rgb(253, 179, 119); */
+}
+
+.hero-title {
+  position: absolute;
+  z-index: 2;
 }
 
 .hero h1 {
@@ -93,19 +99,9 @@ main {
   line-height: 0.9;
   padding-bottom: 1rem;
   font-weight: 600;
+  color: white;
   /* color: rgb(9, 8, 31); */
   /* padding: 4rem; */
-}
-
-.hero-title {
-  z-index: 1;
-  display: flex;
-}
-
-.hero-image img {
-  display: flex;
-  z-index: 2;
-  width: 100vw;
 }
 
 .contact {
@@ -172,11 +168,7 @@ main {
 .about-grid {
   display: grid;
   grid-template-columns: 3fr 3fr 3fr 3fr;
-  grid-gap: 20px;
-}
-
-.about-grid img {
-  height: 350px;
+  grid-gap: 30px;
 }
 
 .about-grid p {
@@ -226,10 +218,6 @@ html {
 .content-full {
   width: 100%;
   padding-left: 4rem;
-}
-
-.navbar {
-  /* color: white; */
 }
 
 .site-header img {
@@ -341,7 +329,8 @@ footer .footer-links {
 
 footer .newsletter {
   display: flex;
-  padding-right: 2rem;
+  padding-right: 5rem;
+  text-align: center;
 }
 
 input[type="text"],
@@ -403,24 +392,6 @@ input[type="text"]::placeholder {
   grid-row: 3;
 }
 
-.hero {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-}
-
-.hero-image {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: 1;
-}
-
-.hero-title {
-  position: absolute;
-  z-index: 2;
-}
-
 .menu-link:hover {
   color: black;
 }
@@ -459,11 +430,10 @@ input[type="text"]::placeholder {
   position: absolute;
   display: none;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow-y: scroll;
   overflow-x: visible;
-
   z-index: 999;
   -webkit-animation: swing-in-right-fwd 0.7s
     cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
@@ -505,8 +475,6 @@ input[type="text"]::placeholder {
 }
 
 .main-menu ul {
-  text-align: center;
-  font-size: 40px;
   list-style: none;
   padding-top: 3rem;
 
@@ -517,7 +485,6 @@ input[type="text"]::placeholder {
   min-height: 100%;
   width: 100%;
   background: #1a1a1a;
-  opacity: 80%;
 }
 
 .main-menu a {
@@ -528,20 +495,9 @@ input[type="text"]::placeholder {
   color: #fff;
 }
 
-.main-menu img {
-  justify-content: center;
-  height: 200px;
-  width: 200px;
-}
-
 .main-menu a:hover,
 .main-menu a:focus {
   background: #333;
-}
-
-.main-menu .menu-close:hover {
-  color: red;
-  background: #1a1a1a;
 }
 
 .main-menu .mobile-logo:hover {
@@ -552,14 +508,8 @@ input[type="text"]::placeholder {
   position: absolute;
   right: 0;
   top: 0;
-}
-
-.mobile-menu p {
-  font-size: 50px;
-}
-
-.fa-close {
-  font-size: 50px;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 /*
@@ -593,42 +543,37 @@ article h2 {
   font-size: 28px;
 }
 
-.mobile-logo {
-  font-size: 1.5em;
+.mobile-menu {
+  display: none;
 }
 
-/*
- On small devices, allow it to toggle...
-*/
-/*
- :target for non-JavaScript
- [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-*/
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
   display: block;
   left: 0;
   outline: none;
-  -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
-  box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+  background: #1a1a1a;
+}
+
+.main-menu .logo {
+  margin-left: 1rem;
+  padding-top: 1rem;
 }
 
 .main-menu:target .menu-close,
 .main-menu[aria-expanded="true"] .menu-close {
+  margin-top: 2rem;
+  margin-right: 2rem;
   z-index: 1001;
 }
 
 .main-menu:target ul,
 .main-menu[aria-expanded="true"] ul {
   position: relative;
+  text-align: center;
   z-index: 1000;
 }
 
-/* 
- We could us `.main-menu:target:after`, but
- it wouldn't be clickable.
-*/
 .main-menu:target + .backdrop,
 .main-menu[aria-expanded="true"] + .backdrop {
   position: absolute;
@@ -651,42 +596,22 @@ article h2 {
   }
 }
 
-.mobile-menu {
-  display: none;
-}
-
-.academy-apply {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.apply-link {
-  display: flex;
-  justify-content: center;
-}
-
 .ccl-logo img {
-  margin-top: 2rem;
   max-width: 100%;
   max-height: 100%;
+}
+
+.ccl-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .academy-text {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
-}
-
-.academy-text h2 {
-  display: flex;
-  text-align: center;
-}
-
-.academy-text button {
-  display: flex;
-  justify-content: center;
-  font-size: 24px;
+  align-items: center;
+  width: 70%;
 }
 
 .academy-text h3 {
@@ -694,18 +619,60 @@ article h2 {
 }
 
 .academy-text button {
-  margin-top: 2rem;
+  margin-top: 4rem;
+  font-size: 22px;
 }
 
 .sliderimg {
   width: 100%;
-  height: 500px;
-  object-fit: cover;
+  height: auto;
+}
+
+.hero-image {
+  display: none;
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  font-size: 30px;
+}
+
+.browse button {
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+.learn-more {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.learn-more img {
+  height: 225px;
+  width: auto;
+}
+
+.learn a {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 }
 
 @media (max-width: 800px) {
+  .alice-carousel .alice-carousel__dots {
+    margin: 15px 3px 5px;
+  }
+
   .mobile-menu {
     display: block;
+  }
+
+  .mobile-menu a {
+    font-size: 30px;
   }
 
   .topnav .menu-link:not(:active) {
@@ -822,5 +789,14 @@ article h2 {
     font-size: 12px;
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 675px) {
+  .hero-image {
+    display: block;
+  }
+  .hero-video {
+    display: none;
   }
 }

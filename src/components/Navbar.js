@@ -13,11 +13,18 @@ function MobileMenu() {
       >
         <span className="sr-only">Open main menu</span>
         <div icon="fa-bars" className="fa fa-bars" aria-hidden="true">
-          <p>=</p>
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="80" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
         </div>
       </a>
 
       <nav id="main-menu" className="main-menu" aria-label="Main menu">
+        <a className="logo" href="/">
+          <img src="/devhaus-logo2.svg" alt="Devhaus Leipzig"></img>
+        </a>
         <ul>
           <li>
             <a href="/academy">Academy</a>
@@ -34,11 +41,6 @@ function MobileMenu() {
           <li>
             <a href="/contact">Contact</a>
           </li>
-          <li>
-            <a className="mobile-logo" href="/">
-              <img src="/devhaus-logo2.svg" alt="Devhaus Leipzig"></img>
-            </a>
-          </li>
         </ul>
         <a
           href="#main-menu-toggle"
@@ -48,7 +50,17 @@ function MobileMenu() {
         >
           <span className="sr-only">Close main menu</span>
           <div icon="fa-close" className="fa fa-close">
-            =
+            <svg
+              viewBox="0 0 100 80"
+              width="40"
+              height="40"
+              stroke="white"
+              fill="white"
+            >
+              <rect width="100" height="10"></rect>
+              <rect y="30" width="80" height="10"></rect>
+              <rect y="60" width="100" height="10"></rect>
+            </svg>
           </div>
         </a>
       </nav>
