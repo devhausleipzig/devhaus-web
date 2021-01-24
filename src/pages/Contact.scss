@@ -1,0 +1,41 @@
+.contact {
+  .space-image {
+    margin-bottom: 0.5rem;
+  }
+  .space-image-container {
+    align-self: center;
+  }
+}
+
+.contact-middle {
+  display: flex;
+}
+
+.contact-text {
+  width: 100%;
+}
+
+.contact .directions {
+  text-decoration: underline;
+}
+
+.location-description {
+  width: 50%;
+  font-size: 14px;
+  color: #333;
+}
+
+#contact-image {
+  height: auto;
+  width: 100%;
+}
+
+.contact h1 {
+  padding-right: 0;
+}
+
+@media (max-width: 800px) {
+  .contact-middle {
+    flex-direction: column;
+  }
+}

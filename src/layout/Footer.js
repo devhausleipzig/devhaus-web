@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+import "./Footer.scss";
 
 function useOutsideAlerter(ref, cb) {
   useEffect(() => {
@@ -81,14 +82,14 @@ export default function Footer() {
         <div className="copyright-container">
           <div className="copyright">© 2020 Code Camp Leipzig</div>
           <div className="footer-links">
-            <Link to="/imprint">Imprint</Link>
             <Link to="/privacy">Privacy</Link>
-          </div>{" "}
+            <Link to="/imprint">Imprint</Link>
+          </div>
         </div>
         <div className="newsletter">{NewsletterForm()}</div>
         <div className="social-links">
-          <Link to="/imprint">Facebook</Link>
           <Link to="/privacy">Meetup</Link>
+          <Link to="/imprint">Facebook</Link>
           <Link to="/privacy">Instagram</Link>
         </div>
       </div>

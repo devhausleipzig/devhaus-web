@@ -1,0 +1,44 @@
+@import "styles/variables.scss";
+.underline {
+  height: 2px;
+  display: flex;
+}
+
+.underline *:nth-child(1) {
+  background-color: $blue;
+  width: 64px;
+}
+.underline *:nth-child(2) {
+  background-color: $green;
+  width: 32px;
+}
+.underline *:nth-child(3) {
+  background-color: $yellow;
+  width: 16px;
+}
+.underline *:nth-child(4) {
+  background-color: $red;
+  width: 8px;
+}
+.underline *:nth-child(5) {
+  background-color: $violet;
+  width: 4px;
+}
+
+.line {
+  height: 2px;
+  margin-top: 0.25rem;
+}
+
+.small {
+  width: 32px;
+}
+
+.devhaus-line {
+  height: 2px;
+  display: flex;
+
+  * {
+    height: 100%;
+  }
+}

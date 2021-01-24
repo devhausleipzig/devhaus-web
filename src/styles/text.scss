@@ -1,0 +1,22 @@
+.date-subtitle {
+  color: gray;
+  font-weight: 500;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  align-items: baseline;
+}
+
+article {
+  padding: 30px;
+  width: 55em;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+article h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}

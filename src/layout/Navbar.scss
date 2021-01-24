@@ -1,0 +1,152 @@
+@import "styles/variables.scss";
+
+.navigation {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: $bg-white;
+    z-index: 200;
+    transform: translateY(-100%);
+    transition: transform 500ms;
+    padding: 2rem 2rem 1rem;
+    overflow: auto;
+
+    .bottom-border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+    // color: white;
+    .content {
+      display: flex;
+      justify-content: flex-start;
+      // padding-right: 4rem;
+      align-items: center;
+      height: 100%;
+    }
+
+    &.visible {
+      display: block;
+      opacity: 1;
+      transform: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      .menu-link {
+        font-size: var(--text-2);
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .menu-link .devhaus-line {
+    opacity: 0;
+    transition: opacity 250ms;
+  }
+
+  .menu-link.active .devhaus-line {
+    transition-delay: 250ms;
+    opacity: 1;
+  }
+
+  .menu-link {
+    text-transform: uppercase;
+    letter-spacing: 0.05ch;
+  }
+
+  .navbar {
+    padding: 1rem 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .hamburger-icon {
+        cursor: pointer;
+        width: 2rem;
+      }
+
+      nav {
+        display: flex;
+
+        &.nav-hamburger {
+          display: none;
+        }
+
+        @media (max-width: 900px) {
+          &.nav-menu {
+            display: none;
+          }
+          &.nav-hamburger {
+            display: block;
+          }
+        }
+
+        .menu-link {
+          margin-top: 0.2rem;
+        }
+      }
+
+      nav a + a {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .nav-hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .scroll-navbar {
+    transform: translateY(-100%);
+    transition: transform 250ms linear;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $bg-white;
+  }
+
+  .navbar .navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem 0rem 1rem;
+  }
+
+  .logo img {
+    width: 5rem;
+  }
+
+  .logo {
+    height: 5rem;
+  }
+}
+
+.scroll-up .scroll-navbar {
+  transform: translateY(0);
+}
+
+.scroll-top .scroll-navbar {
+  display: none;
+}
+
+.navbar-padding {
+  padding-top: $navbar-height + 2rem;
+}

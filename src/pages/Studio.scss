@@ -1,0 +1,17 @@
+@import "styles/variables.scss";
+
+.studio {
+  .project {
+    img {
+      margin-bottom: 0.5rem;
+    }
+    h3,
+    h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+    p {
+      text-align: left;
+    }
+  }
+}

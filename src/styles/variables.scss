@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap");
+
+$navbar-height: 7rem;
+
+$content-max-width: 1600px;
+$content-min-padding: 2rem;
+$content-sm-min-padding: 1rem;
+
+$sm-screen: 800px;
+
+$yellow: rgb(240, 194, 45);
+$violet: rgb(153, 24, 52);
+$red: rgb(230, 100, 77);
+$blue: rgb(65, 50, 206);
+$green: rgb(55, 187, 165);
+$text-900: rgb(10, 10, 10);
+$text-800: rgb(26, 26, 26);
+$text-700: rgb(73, 71, 71);
+$text-600: rgb(102, 101, 101);
+$text-500: rgb(132, 131, 131);
+$bg-white: rgb(250, 250, 250);
+$gray: $text-700;
+
+$font-sans: "Lato", sans-serif;
+$font-serif: "Source Serif Pro", serif;

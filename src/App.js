@@ -1,14 +1,21 @@
-import "./App.css";
-import { useEffect } from "react";
-import { withRouter } from "react-router-dom";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { ScrollToTop } from "./utilities/scrollToTop";
+import { ScrollDetector } from "./utilities/scrollDetector";
 
-export const ScrollToTop = withRouter(function ScrollToTop({ history }) {
-  useEffect(() => {
-    const unlisten = history.listen(() => {});
-    return () => {
-      unlisten();
-    };
-  });
+import Navbar from "layout/Navbar";
+import Main from "layout/Main";
 
-  return null;
-});
+export default function App() {
+  return (
+    <React.StrictMode>
+      <ScrollDetector>
+        <BrowserRouter>
+          <ScrollToTop></ScrollToTop>
+          <Navbar />
+          <Main />
+        </BrowserRouter>
+      </ScrollDetector>
+    </React.StrictMode>
+  );
+}

@@ -1,0 +1,29 @@
+.story {
+  display: flex;
+  .image {
+    margin-right: 2rem;
+    img {
+      width: 14rem;
+      height: 14rem;
+      object-fit: cover;
+    }
+  }
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+  .date {
+    margin-top: 0.25rem;
+  }
+  .category {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.stories {
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    column-gap: 2rem;
+    row-gap: 4rem;
+  }
+}

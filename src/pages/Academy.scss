@@ -1,0 +1,27 @@
+.academy-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.academy-text h3 {
+  margin-top: 2rem;
+}
+
+.academy-text button {
+  margin-top: 4rem;
+  font-size: 22px;
+}
+
+@media (max-width: 800px) {
+  .academy-apply {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .academy-apply h2 {
+    margin-top: 2rem;
+    font-size: 30px;
+  }
+}
