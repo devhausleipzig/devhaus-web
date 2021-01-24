@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.scss";
 import { FullLine, DevhausLine } from "../components/HorizontalLine";
+import logo from "images/devhaus-logo.svg";
 
 const navigationLinks = [
   { to: "/academy", title: "Academy", color: "blue" },
@@ -28,7 +29,7 @@ function Navbar({ toggleMobileMenu }) {
     <div className="content">
       <div className="logo">
         <Link to="/">
-          <img src="/devhaus-logo.svg" alt="Devhaus Leipzig"></img>
+          <img src={logo} alt="Devhaus Leipzig"></img>
         </Link>
       </div>
       <nav className="nav-menu">
