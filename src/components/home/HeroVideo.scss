@@ -16,10 +16,16 @@
     top: 50%;
     left: 50%;
     height: 102%;
-    width: 160vh;
+    width: 170vh;
     transform: translate(-50%, -50%);
   }
 
+  @media (min-aspect-ratio: 16/9) {
+    .video-background iframe {
+      height: 170vw;
+      width: 102%;
+    }
+  }
   // @media (min-aspect-ratio: 16/9) {
   //   .video-background iframe {
   //     /* height = 100 * (9 / 16) = 56.25 */
