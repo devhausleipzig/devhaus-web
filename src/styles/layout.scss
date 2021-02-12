@@ -14,6 +14,7 @@
 .content-narrow {
   @extend .content;
   margin: 0 auto;
+  padding: 0;
   max-width: 44em;
 }
 

@@ -2,7 +2,7 @@
 
 footer {
   color: $text-500;
-  padding: 5rem 0 3rem;
+  padding: 5rem 0 2rem;
 
   a,
   button {
@@ -29,7 +29,15 @@ footer .content {
     grid-template-columns: 1fr 1fr;
 
     .newsletter {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 26rem) {
+    .newsletter {
+      input {
+        font-size: var(--text-1);
+      }
     }
   }
 
@@ -40,6 +48,7 @@ footer .content {
   .newsletter {
     grid-area: newsletter;
     height: 3rem;
+    width: 100%;
   }
 
   .copyright-container {
@@ -81,6 +90,10 @@ footer .footer-links {
 
 footer .newsletter {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-self: center;
+  max-width: 30rem;
+  > * {
+    flex-grow: 1;
+  }
 }

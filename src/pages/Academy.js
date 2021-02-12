@@ -1,5 +1,6 @@
 import React from "react";
 import PageHeader from "components/PageHeader";
+import { DevhausLine } from "components/HorizontalLine";
 import "./Academy.scss";
 
 import gabrielImage from "images/profiles/gabe.png";
@@ -80,7 +81,10 @@ export default function Academy() {
       ></PageHeader>
       <section>
         <div className="intro content-narrow">
-          <h2>Code Camp Leipzig</h2>
+          <h2>
+            Code Camp Leipzig
+            <DevhausLine color="blue" numSegments={5} width={64} />
+          </h2>
           <p>
             The Code Camp Leipzig is our intensive full-time training program,
             designed to equip people from various professional backgrounds with
@@ -397,7 +401,7 @@ export default function Academy() {
           <button className="plain button-text">Schedule a call</button>
         </a>
       </section>
-      <section className="content-narrow">
+      <section className="application content-narrow">
         <h2>Application Process</h2>
         <div className="button-text text-2">Step 1</div>
         <p>

@@ -1,12 +1,10 @@
 @import "styles/variables.scss";
 
 .newsletter-form {
-  padding: 0 2rem;
   .newsletter-form-content {
     display: grid;
     grid-template-columns: 1fr auto;
-    width: 100vw;
-    max-width: 30rem;
+    width: 100%;
     align-items: center;
     gap: 1rem;
     border-bottom: 1px solid lightgray;

@@ -10,7 +10,9 @@ function Story({ title, image, category, date, color, link }) {
     <a href={link}>
       <div className="story">
         <div className="image">
-          <img src={image} alt={title}></img>
+          <div className="image-container">
+            <img src={image} alt={title}></img>
+          </div>
         </div>
         <div className="information">
           <div className="category button-text text-1">{category}</div>
