@@ -3,7 +3,7 @@ import PageHeader from "components/PageHeader";
 import "./Contact.scss";
 
 const imagesContext = require.context("images/contact", true, /\.png+$/);
-const images = [];
+let images = [];
 
 imagesContext.keys().forEach((filename) => {
   images.push({
@@ -12,6 +12,7 @@ imagesContext.keys().forEach((filename) => {
     src: imagesContext(filename).default,
   });
 });
+shuffle(images);
 
 function shuffle(array) {
   var currentIndex = array.length,
@@ -34,7 +35,6 @@ function shuffle(array) {
 }
 
 export default function Contact() {
-  shuffle(images);
   const subtitle = <p>We are always happy to meet and chat.</p>;
 
   const content = (
