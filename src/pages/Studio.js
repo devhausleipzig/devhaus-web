@@ -1,15 +1,26 @@
 import React from "react";
 import PageHeader from "components/PageHeader";
-import exampleImage1 from "images/lizatilmann.png";
 import "./Studio.scss";
+import fillipImage from "images/studio/fillip.png";
+import lizatilmannImage from "images/studio/lizatilmann.png";
+import devhausRebrandingImage from "images/studio/devhaus-rebranding.png";
+import learningPlattformImage from "images/studio/learning-platform.png";
+import pokedexImage from "images/studio/pokedex.png";
+import skitmeImage from "images/studio/skitme.png";
+import curryOnImage from "images/studio/curry-on.png";
+import communicImage from "images/studio/communic.png";
+import devhausNetworkImage from "images/studio/devhaus-network.png";
+import hackerpubImage from "images/studio/hackerpub.png";
+import weAreFamilyImage from "images/studio/we-are-family.png";
+import plantSwapImage from "images/studio/plant-swap.png";
 
 function Project({ image, title, description }) {
   return (
     <div className="project">
-      <img src={image} alt={title} />
-      <h4 className="">
-        {title} - {description}
-      </h4>
+      <div className="image-container">
+        <img src={image} alt={title} />
+      </div>
+      <h4 className="">{title}</h4>
       {/* <p className="measure-narrow">{description}</p> */}
     </div>
   );
@@ -17,52 +28,63 @@ function Project({ image, title, description }) {
 
 const ongoingProjects = [
   {
-    image: exampleImage1,
-    title: "Fillip",
-    description: "A powerful platform for online events",
+    image: fillipImage,
+    title: "Fillip - A powerful platform for online events",
   },
   {
-    image: exampleImage1,
-    title: "Devref.io",
-    description: "An open source plattform for self directed learning",
+    image: learningPlattformImage,
+    title: "The learning plattform of the Code Camp Leipzig",
   },
   {
-    image: exampleImage1,
-    title: "Devhaus Rebranding",
-    description: "Making the transition from Code Camp to Devhaus Leipzig",
+    image: devhausRebrandingImage,
+    title:
+      "Devhaus Rebranding - Making the transition from Code Camp to Devhaus Leipzig",
   },
 ];
 
 const pastProjects = [
+  // {
+  //   image: exampleImage1,
+  //   title: "Edox Hackathon",
+  //   description: "Boosting a companies vision in a single day",
+  // },
   {
-    image: exampleImage1,
-    title: "Edox Hackathon",
-    description: "Boosting a companies vision in a single day",
+    image: weAreFamilyImage,
+    title: "We are family - Global Game Jam 2021",
   },
   {
-    image: exampleImage1,
-    title: "Liza Tilmann",
-    description: "Code Camp Graduates build a website for a hair dresser",
+    image: devhausNetworkImage,
+    title: "Final Project Camp #3 - A social network for aspiring developers",
   },
   {
-    image: exampleImage1,
-    title: "Pokedex",
-    description: "An old style pokedex with face recognition build in 6 hours",
+    image: plantSwapImage,
+    title: "Plant Swap - A tinder-style plant trading app",
   },
   {
-    image: exampleImage1,
-    title: "Skitme",
-    description: "An insane game build as the end of camp project",
+    image: pokedexImage,
+    title: "An old style pokedex with face recognition build in 6 hours",
   },
   {
-    image: exampleImage1,
-    title: "Curry On",
-    description: "Experience an interactive Currywurst Challenge",
+    image: lizatilmannImage,
+    title: "Code Camp Graduates team up to build a website for a hair dresser",
   },
   {
-    image: exampleImage1,
-    title: "Communic",
-    description: "A social plattform for finding and contributing to projects",
+    image: skitmeImage,
+    title:
+      "Skitme - An insanely entertaining drawing game build at the end of camp #2",
+  },
+  {
+    image: curryOnImage,
+    title: "Curry On - Experience an interactive Currywurst Challenge",
+  },
+  {
+    image: hackerpubImage,
+    title: "Hacker Pub Quiz",
+  },
+  {
+    image: communicImage,
+    title:
+      "Communic - A social plattform for finding and contributing to projects",
   },
 ];
 
@@ -74,7 +96,7 @@ export default function Work() {
         description="Whether it’s a personal or professional project, our residents find support in bringing their goals to fruition."
         color="green"
       ></PageHeader>
-      <section className="pb-4">
+      <section className="projects">
         <h4 className="secondary-title button-text">Ongoing Projects</h4>
         <div className="grid">
           {ongoingProjects.map((project, index) => (
@@ -87,9 +109,9 @@ export default function Work() {
           ))}
         </div>
       </section>
-      <section className="pb-4">
+      <section className="projects">
         <h4 className="secondary-title button-text">Past Projects</h4>
-        <div className="grid-narrow">
+        <div className="grid">
           {pastProjects.map((project, index) => (
             <Project
               key={index}

@@ -27,7 +27,8 @@ img {
   width: 100%;
 }
 
-button {
+button,
+input[type="submit"] {
   border: none;
   outline: none;
   background: none;
@@ -40,7 +41,8 @@ button {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
   border: none;
   outline: none;
   background: none;

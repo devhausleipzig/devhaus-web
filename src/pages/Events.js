@@ -16,18 +16,17 @@ function Event({ title, date, time, location }) {
 export default function Events() {
   return (
     <div className="events navbar-padding content">
-      <PageHeader title="Events" description="" color="yellow"></PageHeader>
+      <PageHeader
+        title="Upcoming Events"
+        description=""
+        color="yellow"
+      ></PageHeader>
       <div>
+        <Event title="Kick-Off Code Camp #4" date="15.03.2021"></Event>
         <Event
-          title="Application Deadline for Code Camp #4"
-          date="15.02.2021"
-        ></Event>
-        <Event title="Game Jam" date="17.01.2021 - 19.01.2021"></Event>
-        <Event
-          title="Kick-Off Code Camp #4"
-          date="15.03.2021"
+          title="Code Camp #4 Graduation"
+          date="18.06.2021"
           time="@18:00"
-          location="Zoom"
         ></Event>
       </div>
     </div>

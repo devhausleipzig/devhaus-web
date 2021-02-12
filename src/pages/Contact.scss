@@ -1,9 +1,22 @@
 .contact {
-  .space-image {
-    margin-bottom: 0.5rem;
-  }
-  .space-image-container {
-    align-self: center;
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .image-container {
+      position: relative;
+      padding-top: 100%;
+      height: 0;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 

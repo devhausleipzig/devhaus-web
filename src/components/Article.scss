@@ -5,6 +5,14 @@
     margin-top: 4rem;
     margin-bottom: 2.5rem;
   }
+
+  ul {
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    > * {
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 .text-section {

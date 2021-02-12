@@ -10,7 +10,7 @@ const navigationLinks = [
   { to: "/events", title: "Events", color: "yellow" },
   { to: "/stories", title: "Stories", color: "red" },
   { to: "/about", title: "About", color: "devhaus" },
-  { to: "/contact", title: "Contact", color: "violet" },
+  { to: "/contact", title: "Contact", color: "devhaus" },
 ];
 
 function HamburgerIcon({ onClick }) {

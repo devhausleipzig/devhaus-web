@@ -1,23 +1,41 @@
 import React from "react";
 import PageHeader from "components/PageHeader";
-import locationImage from "images/basislager3.jpg";
 import "./Contact.scss";
 
-export default function Contact() {
-  const image = (
-    <div className="space-image-container">
-      <img className="space-image" src={locationImage} alt="Devhaus Leipzig" />
-      <h3>Devhaus Leipzig Floßplatz</h3>
-    </div>
-  );
+const imagesContext = require.context("images/contact", true, /\.png+$/);
+const images = [];
 
-  const subtitle = (
-    <p>
-      We are always happy to meet and chat.
-      <br />
-      Just send us an email.
-    </p>
-  );
+imagesContext.keys().forEach((filename) => {
+  images.push({
+    filename,
+    key: filename.slice(2, filename.indexOf(".", 2)),
+    src: imagesContext(filename).default,
+  });
+});
+
+function shuffle(array) {
+  var currentIndex = array.length,
+    temporaryValue,
+    randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+export default function Contact() {
+  shuffle(images);
+  const subtitle = <p>We are always happy to meet and chat.</p>;
 
   const content = (
     <div className="measure-narrow">
@@ -41,9 +59,17 @@ export default function Contact() {
         title="Contact"
         subtitle={subtitle}
         content={content}
-        color="violet"
+        color="devhaus"
       ></PageHeader>
-      {image}
+      <div className="image-grid">
+        {images.map((image) => {
+          return (
+            <div className="image-container" key={image.key}>
+              <img src={image.src} alt={image.key}></img>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

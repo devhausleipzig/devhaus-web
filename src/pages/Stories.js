@@ -1,20 +1,23 @@
 import React from "react";
 import PageHeader from "components/PageHeader";
-import exampleImage from "images/aboutus.JPG";
-import fillipImage from "images/filip.png";
-import "./Stories.scss";
 
-function Story({ title, image, category, date, color }) {
+import "./Stories.scss";
+import codeCampLeipzigLogo from "images/stories/classroom.png";
+import camp1 from "images/stories/camp1.png";
+
+function Story({ title, image, category, date, color, link }) {
   return (
-    <div className="story">
-      <div className="image">
-        <img src={image} alt={title}></img>
+    <a href={link}>
+      <div className="story">
+        <div className="image">
+          <img src={image} alt={title}></img>
+        </div>
+        <div className="information">
+          <div className="category button-text text-1">{category}</div>
+          <h3>{title}</h3>
+        </div>
       </div>
-      <div className="information">
-        <div className="category button-text text-1">{category}</div>
-        <h3>{title}</h3>
-      </div>
-    </div>
+    </a>
   );
 }
 
@@ -24,17 +27,19 @@ export default function Stories() {
       <PageHeader title="Stories" color="red"></PageHeader>
       <div className="card-list">
         <Story
-          title="Code Camp Leipzig becomes Devhaus Leipzig"
-          image={exampleImage}
-          category="News"
+          title="“A wild ride”: Code Camp Leipzig turns one year old"
+          image={codeCampLeipzigLogo}
+          category="Article"
           color="blue"
-          date="Jan 17. 2021"
+          date="Sep 23. 2020"
+          link="https://leipglo.com/2020/09/23/a-wild-ride-code-camp-leipzig-turns-one-year-old/"
         ></Story>
         <Story
-          category="Coding"
+          category="Story"
           color="green"
-          title="How we use a custom Vue renderer to run virtual interactions"
-          image={fillipImage}
+          title="Tales from Code Camp #1"
+          image={camp1}
+          link="https://medium.com/series/code-camp-leipzig-the-camp-5cba9f08f2f5"
         ></Story>
       </div>
     </div>

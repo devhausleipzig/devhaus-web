@@ -2,7 +2,7 @@
 
 footer {
   color: $text-500;
-  padding: 5rem 0 2rem;
+  padding: 5rem 0 3rem;
 
   a,
   button {
@@ -83,25 +83,4 @@ footer .newsletter {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.newsletter-form {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  width: 100vw;
-  max-width: 30rem;
-  padding: 0 2rem;
-}
-
-.newsletter-form input {
-  border-bottom: 1px solid lightgray;
-  padding: 0.5em;
-  margin-right: 1em;
-  width: 100%;
-  caret-color: var(--green);
-  color: $text-900;
-
-  &::selection {
-    background-color: var(--green);
-  }
 }

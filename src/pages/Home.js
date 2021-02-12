@@ -4,10 +4,10 @@ import "./Home.scss";
 import { DevhausLine } from "components/HorizontalLine";
 import { Link } from "react-router-dom";
 
-import academyImage from "images/graduates1.jpg";
-import studioImage from "images/chat.jpg";
-import eventsImage from "images/ccl-1-kickoff.png";
-import storiesImage from "images/instructors.jpg";
+import academyImage from "images/home/academy.jpg";
+import studioImage from "images/home/chat.jpg";
+import eventsImage from "images/home/ccl-1-kickoff.jpg";
+import storiesImage from "images/home/fire.jpg";
 
 export default function Home() {
   const sectionLineWidth = 48;
@@ -31,9 +31,8 @@ export default function Home() {
             <p>
               Devhaus Leipzig grew out of the need for a place where developers
               could learn and contribute to meaningful projects. Our mission is
-              to support the members of our community on both an intellectual
-              and an emotional level, enabling them to reach their creative
-              goals.
+              to support the members of our community to reach their creative
+              and professional goals.
             </p>
             <p>
               Aspiring developers can take part in our Academy to learn the
@@ -49,13 +48,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="sitemap">
-            <div className="link content">
+          <div className="sitemap content-narrow">
+            <div className="link">
               <Link to="/academy">
                 <div>
                   <h2 className="secondary-title">Academy</h2>
                   <h3>
-                    Become a Software Developer in our 12 week Code Camp
+                    Take the first steps to becoming a software developer
                     <DevhausLine
                       color="blue"
                       numSegments={5}
@@ -98,7 +97,7 @@ export default function Home() {
               <Link to="/stories">
                 <h2 className="secondary-title">Stories</h2>
                 <h3>
-                  Read up on what’s been happening at Devhaus
+                  Keep up with what’s going down at Devhaus Leipzig
                   <DevhausLine
                     color="red"
                     numSegments={5}

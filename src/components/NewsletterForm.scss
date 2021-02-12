@@ -1,0 +1,47 @@
+@import "styles/variables.scss";
+
+.newsletter-form {
+  padding: 0 2rem;
+  .newsletter-form-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100vw;
+    max-width: 30rem;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid lightgray;
+  }
+
+  input[type="submit"]:hover {
+    color: $text-900;
+  }
+
+  input[type="email"] {
+    padding: 0.5em;
+    margin-right: 1em;
+    width: 100%;
+    caret-color: var(--green);
+    color: $text-900;
+
+    &::selection {
+      background-color: var(--green);
+    }
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 250ms;
+}
