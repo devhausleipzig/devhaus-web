@@ -4,14 +4,11 @@ import { CSSTransition } from "react-transition-group";
 
 const cookieConsentGiven = localStorage.getItem("cookie-consent") != null;
 
-console.log(cookieConsentGiven);
-
 export default function CookieConsent() {
   const [haveConsent, setHaveConsent] = useState(cookieConsentGiven);
 
   const ref = useRef(null);
 
-  console.log(haveConsent);
   return (
     <CSSTransition
       in={!haveConsent}
