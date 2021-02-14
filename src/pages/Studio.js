@@ -14,26 +14,34 @@ import hackerpubImage from "images/studio/hackerpub.png";
 import weAreFamilyImage from "images/studio/we-are-family.png";
 import plantSwapImage from "images/studio/plant-swap.png";
 
-function Project({ image, title, description }) {
-  return (
+function Project({ image, title, link }) {
+  const content = (
     <div className="project">
       <div className="image-container">
         <img src={image} alt={title} />
       </div>
       <h4 className="">{title}</h4>
-      {/* <p className="measure-narrow">{description}</p> */}
     </div>
   );
+  if (link) {
+    return (
+      <a href={link} target="_blank" rel="noreferrer">
+        {content}
+      </a>
+    );
+  }
+  return content;
 }
 
 const ongoingProjects = [
   {
     image: fillipImage,
     title: "Fillip - A powerful platform for online events",
+    link: "https://fillip.ai",
   },
   {
     image: learningPlattformImage,
-    title: "The learning plattform of the Code Camp Leipzig",
+    title: "The learning platform of the Code Camp Leipzig",
   },
   {
     image: devhausRebrandingImage,
@@ -62,11 +70,12 @@ const pastProjects = [
   },
   {
     image: pokedexImage,
-    title: "An old style pokedex with face recognition build in 6 hours",
+    title: "A classic style pokedex with face recognition built in 6 hours",
   },
   {
     image: lizatilmannImage,
-    title: "Code Camp Graduates team up to build a website for a hair dresser",
+    title:
+      "Code Camp Graduates team up to build a website for a hairdresser in Munich",
   },
   {
     image: skitmeImage,
@@ -104,7 +113,7 @@ export default function Work() {
               key={index}
               title={project.title}
               image={project.image}
-              description={project.description}
+              link={project.link}
             ></Project>
           ))}
         </div>
@@ -117,7 +126,7 @@ export default function Work() {
               key={index}
               title={project.title}
               image={project.image}
-              description={project.description}
+              link={project.link}
             ></Project>
           ))}
         </div>

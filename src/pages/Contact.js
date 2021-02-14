@@ -2,37 +2,39 @@ import React from "react";
 import PageHeader from "components/PageHeader";
 import "./Contact.scss";
 
-const imagesContext = require.context("images/contact", true, /\.png+$/);
-let images = [];
+import collage from "images/contact/devhaus-collage.png";
 
-imagesContext.keys().forEach((filename) => {
-  images.push({
-    filename,
-    key: filename.slice(2, filename.indexOf(".", 2)),
-    src: imagesContext(filename).default,
-  });
-});
-shuffle(images);
+// const imagesContext = require.context("images/contact", true, /\.png+$/);
+// let images = [];
 
-function shuffle(array) {
-  var currentIndex = array.length,
-    temporaryValue,
-    randomIndex;
+// imagesContext.keys().forEach((filename) => {
+//   images.push({
+//     filename,
+//     key: filename.slice(2, filename.indexOf(".", 2)),
+//     src: imagesContext(filename).default,
+//   });
+// });
+// shuffle(images);
 
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
+// function shuffle(array) {
+//   var currentIndex = array.length,
+//     temporaryValue,
+//     randomIndex;
 
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
+//   // While there remain elements to shuffle...
+//   while (0 !== currentIndex) {
+//     // Pick a remaining element...
+//     randomIndex = Math.floor(Math.random() * currentIndex);
+//     currentIndex -= 1;
 
-  return array;
-}
+//     // And swap it with the current element.
+//     temporaryValue = array[currentIndex];
+//     array[currentIndex] = array[randomIndex];
+//     array[randomIndex] = temporaryValue;
+//   }
+
+//   return array;
+// }
 
 export default function Contact() {
   const subtitle = <p>We are always happy to meet and chat.</p>;
@@ -61,7 +63,8 @@ export default function Contact() {
         content={content}
         color="devhaus"
       ></PageHeader>
-      <div className="image-grid">
+      <img src={collage} alt="Devhaus Leipzig"></img>
+      {/* <div className="image-grid">
         {images.map((image) => {
           return (
             <div className="image-container" key={image.key}>
@@ -69,7 +72,7 @@ export default function Contact() {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 }

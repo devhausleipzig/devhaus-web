@@ -20,8 +20,8 @@ export default function About() {
     <div>
       <p>
         We believe software development is one of the most fulfilling and
-        empowering creative disciplines in today's world. At the same time
-        mastering its many facets is a demanding life-long challenge. A
+        empowering creative disciplines in today's world. At the same time,
+        mastering its many facets is a demanding, life-long challenge. A
         challenge, we believe, that's best tackled with the support of a strong
         community, where members learn from each other and join forces on their
         personal and professional journeys. What started as a code camp to teach
@@ -33,7 +33,7 @@ export default function About() {
         professional projects in the Studio, or by participating in our events;
         the members of the Devhaus Leipzig strive to create a vibrant
         environment in which everyone finds support to grow their technical and
-        creative abilities while new ideas come to life.
+        creative abilities.
       </p>
     </div>
   );

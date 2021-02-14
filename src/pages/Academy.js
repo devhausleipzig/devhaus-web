@@ -24,6 +24,8 @@ import idivLogo from "images/logos/idiv.png";
 import prismaLogo from "images/logos/prisma-logo.png";
 import sciendisLogo from "images/logos/sciendis.png";
 import spreadshirtLogo from "images/logos/spreadshirt-logo.png";
+import eexLogo from "images/logos/eex.png";
+import micoboLogo from "images/logos/micobo.png";
 
 const logos = [
   {
@@ -59,6 +61,14 @@ const logos = [
     name: "Prisma",
   },
   {
+    logo: eexLogo,
+    name: "eex",
+  },
+  {
+    logo: micoboLogo,
+    name: "micobo",
+  },
+  {
     logo: sciendisLogo,
     name: "sciendis",
   },
@@ -86,14 +96,14 @@ export default function Academy() {
             <DevhausLine color="blue" numSegments={5} width={64} />
           </h2>
           <p>
-            The Code Camp Leipzig is our intensive full-time training program,
+            Code Camp Leipzig is our intensive full-time training program,
             designed to equip people from various professional backgrounds with
             the necessary skills and understanding to join the software
             development world.
           </p>
           <p>
-            While the skillset taught in the Code Camp is in itself sufficent as
-            the qualifaction for a Frontend Web Developer role, the program is
+            While the skillset taught in the Code Camp is in itself sufficient
+            as a qualification for a Frontend Web Developer role, the program is
             tailored to build foundations that open the door to a wide array of
             different specializations within software development.
           </p>
@@ -145,20 +155,21 @@ export default function Academy() {
             <h3>Holistic Software Developers</h3>
             <p>
               Software Developers are not code monkeys. We believe the best
-              developers understand programming as a tool to solve problems and
-              develop skills and knowledge outside of coding to expand the range
-              of problems they can tackle. They understand and appreciate all
-              aspects of creating a software and are able to constantly evaluate
-              how their work best contributes to the overarching problem the
-              software they are building is trying to solve.
+              developers understand programming as a tool to solve problems,
+              develop skills, and build knowledge outside of coding to expand
+              the range of problems they can tackle. They understand and
+              appreciate all aspects of creating a software, and are able to
+              constantly evaluate how their work best contributes to the
+              overarching problem that the software they are building is trying
+              to solve.
             </p>
           </div>
           <div>
             <h3>Self-Regulated Learning System</h3>
             <p>
-              Experts are expert learners. Our primary goal is thus to teach our
-              students an effective self-regulated learning system that will
-              serve them for the rest of their lives. By using a simple
+              Experts are expert learners. Our primary goal is thus, to teach
+              our students an effective, self-regulated learning system that
+              will serve them for the rest of their lives. By using a simple
               journaling system that promotes the most effective learning
               strategies every day during the camp, we are able to build up
               powerful routines that are also designed to work for self directed
@@ -191,27 +202,27 @@ export default function Academy() {
           <div>
             <h3>Practice, Practice, Practice &amp; Repeat</h3>
             <p>
-              As with any skill that's worthwhile, software development and
-              programming more specifically take a lot of consistent practice to
-              master. Our curriculum has a pronounced focus on repetition to
-              allow students to achieve confidence within a relatively short
+              As with any skill that's worthwhile, software development and,
+              programming more specifically, take consistent practice to master.
+              Our curriculum has a pronounced focus on repetition that allows
+              students to achieve confidence within a relatively short
               timeframe. The strategy is to build muscle memory around
-              fundamental mechanics in order to focus on higher level design
-              decisions as well as freeing up headspace to learn the next skill.
+              fundamental mechanics in order to free up headspace for learning
+              advanced skills and focusing on higher level design decisions.
             </p>
           </div>
           <div>
             <h3>Challenging Creative Projects</h3>
             <p>
               Software Development is an intellectually and emotionally
-              highly-demanding discipline. The most reliable way to create
-              motivation to withstand these difficulties and continually expand
-              one's knowledge is by working on exciting personal creative
+              demanding discipline. The most reliable way to create the
+              motivation to withstand these difficulties, and continually expand
+              one's knowledge, is by working on exciting, personal creative
               projects. No level of discipline trumps the energy that's
               generated when one becomes excited about a creative idea. We
-              encourage students to take on such challenges even if they seem
-              slightly outside their current reach and help them along the way
-              to complete the creative projects they start.
+              encourage students to take on such challenges, even if they seem
+              slightly outside their current reach, and help them along the way
+              to complete the projects they start.
             </p>
           </div>
           <div>
@@ -219,11 +230,11 @@ export default function Academy() {
             <p>
               We believe the relationship to a mentor is key to sustain one's
               development past the intermediate state in any discipline. Our
-              goal is to faciliate such bonds between the students in the
-              Academy and members of our community. In our mentorship program we
-              engage students in projects in the Studio and connect them to
-              mentors that can support them. We hope to help every graudate
-              build a sustained relationship to a mentor, that can guide and
+              goal is to facilitate such bonds between the students in the
+              Academy and members of our community. In our mentorship program,
+              we engage students on projects in the Studio and connect them to
+              mentors that can support them. We hope to help every graduate
+              build a sustained relationship to a mentor, who can guide and
               support them on the next steps in their professional development.
             </p>
           </div>
@@ -279,9 +290,9 @@ export default function Academy() {
               computer hardware to an overview of the many branches of software
               applications.
               <br />
-              We'll also familiarze ourselves with the tools of the trade that
+              We'll also familiarize ourselves with tools of the trade that
               software developers use on a daily basis and practice using them
-              as well by creating a shared recipe collection.
+              by creating a shared recipe collection.
             </p>
           </div>
           <div className="path-mark">2-3</div>
@@ -291,11 +302,11 @@ export default function Academy() {
           </div>
           <p>
             Although programming is only one of many skills involved in software
-            development, it's the key to its power. Starting from Hello World
-            we'll build a collection of small programs with increasing
-            complexity and thereby learn not only the syntax and grammar of the
-            Typescript Programming Language, but also the principles and
-            techniques that are common to all programming languages.
+            development, it is the key to its power. Starting from "Hello World"
+            , we'll build a collection of small programs with increasing
+            complexity and, thereby, learn not only the syntax and grammar of
+            the Typescript Programming Language, but also the principles and
+            techniques that are common to all programming languages
           </p>
           <div className="path-mark">4-6</div>
           <h3>One Page Love</h3>
@@ -305,9 +316,9 @@ export default function Academy() {
           <p>
             Our next goal is to get familiar with the technologies that run the
             web and build basic skills in User Interface Design. We'll do so by
-            analyzing and carefully reconstruct multiple websites build for
-            different use cases. At the end of the module everyone will design
-            and build a personal website project, that may become the first item
+            analyzing and carefully re-construct multiple websites built for
+            different use cases. At the end of the module, everyone will design
+            and build a personal website project that may become the first item
             in their portfolio.
           </p>
           <div className="path-mark">7</div>
@@ -316,10 +327,10 @@ export default function Academy() {
             <div className="line"></div>
           </div>
           <p>
-            It's time to refresh and reflect on the material learned so far. In
-            this week, there are no classes and no new material. Only individual
-            check-in sessions and the opportunity to solidify your skills
-            through focused practice.
+            It's time to refresh and reflect on the material learned so far.
+            During this week, there are no classes and no new material. Only
+            individual check-in sessions and the opportunity to solidify your
+            skills through focused practice.
           </p>
           <div className="path-mark">8-9</div>
           <h3>Full Stack Web Application</h3>
@@ -327,12 +338,12 @@ export default function Academy() {
             <div className="line"></div>
           </div>
           <p>
-            In the second half of the course we are going to design and build a
+            In the second half of the course, we are going to design and build a
             more complex web application. After walking together through a
-            product design process we'll prototype and build the user interface.
-            We'll use this chance to take a close look at all components of a
-            professional software development process in full detail and
-            practice them in a controlled environment.
+            product design process, we'll prototype and build the user
+            interface. This is an opportunity to take a close look at all
+            components of a professional software development process in full
+            detail and practice them in a controlled environment.
           </p>
           <div className="path-mark">10-11</div>
           <h3>Backend Engineering</h3>
@@ -340,12 +351,12 @@ export default function Academy() {
             <div className="line"></div>
           </div>
           <p>
-            To round off the skillset we'll build and deploy the backend of our
+            To round off the skillset, we'll build and deploy the backend of our
             web application. This is the most challenging part of the course, as
             it normally requires a long time to master the complexities of a
-            production level backend including authentication, database design
-            &amp; continuous deployment. But with a lot of focus, carefully
-            designed instruction and a bit of cheating you'll become able to
+            production level backend, including authentication, database design
+            &amp; continuous deployment. However, with a lot of focus, carefully
+            designed instruction, and a bit of cheating you'll become able to
             build a full stack web application from start to finish all by
             yourself.
           </p>
@@ -355,11 +366,12 @@ export default function Academy() {
             <div className="line"></div>
           </div>
           <p>
-            After 11 Weeks of intense training you have all you need to team up
+            After 11 Weeks of intense training, you have all you need to team up
             with your fellow campers and start building your own projects.
-            You'll get extra support from mentors in our community who can also
-            help you figure out in which direction you want to specialize and
-            continue your development after the camp.
+            You'll get extra support from mentors in our community who can, in
+            addition to technical support, help you figure out in which
+            direction you want to specialize and continue your development after
+            the camp.
           </p>
           <div className="path-mark">FINISH</div>
           <h3>Graduation</h3>
@@ -384,12 +396,12 @@ export default function Academy() {
           strive to keep student costs minimal.
         </p>
         <div className="price">
-          Still the tuition for the full-time 13-Week Code Camp program is{" "}
+          Tuition for the full-time 13-Week Code Camp program is{" "}
           <strong>&euro; 4.800</strong>
         </div>
         <p>
           We provide a range of options to help you finance your education,
-          including payment plans, government programs, loan partners and
+          including payment plans, government programs, loan partners, and
           scholarships. Make sure to reach out to us, so we can evaluate the
           financing options that fit your specific situation.
         </p>
@@ -398,15 +410,15 @@ export default function Academy() {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="plain button-text">Schedule a call</button>
+          <button className="plain button-text">Schedule a call or chat</button>
         </a>
       </section>
       <section className="application content-narrow">
         <h2>Application Process</h2>
         <div className="button-text text-2">Step 1</div>
         <p>
-          Online form to get an idea of how you’ve spent your time until now and
-          your motivation for joining Devhaus.
+          Online form for us to get an idea of how you’ve spent your time until
+          now and your motivation for joining Devhaus.
         </p>
         <div className="button-text text-2">Step 2</div>
         <p>
