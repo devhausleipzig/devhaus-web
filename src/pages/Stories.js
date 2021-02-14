@@ -49,7 +49,7 @@ const stories = [
     title: "Startup Safari Panel: “Developing Skills for a Digital World”",
     image: startupSafari,
     category: "Panel Discussion",
-    link: "https://www.youtube.com/watch?v=H5qbkufaJ2I&t=1205s",
+    link: "https://www.youtube.com/watch?v=H5qbkufaJ2I",
   },
   {
     title:
