@@ -16,7 +16,7 @@
     top: 50%;
     left: 50%;
     height: 102%;
-    width: 170vh;
+    width: 190vh;
     transform: translate(-50%, -50%);
 
     iframe {
@@ -40,7 +40,7 @@
     }
   }
 
-  @media (min-aspect-ratio: 16/9) {
+  @media (min-aspect-ratio: 14/9) {
     .video-background .video-holder {
       height: 170vw;
       width: 102%;

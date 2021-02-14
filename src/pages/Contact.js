@@ -4,7 +4,7 @@ import "./Contact.scss";
 import Picture from "components/Picture";
 
 import collage from "images/contact/devhaus-collage.jpg";
-import collageX2 from "images/contact/devhaus-collage@2x.jpg";
+// import collageX2 from "images/contact/devhaus-collage@2x.jpg";
 
 // const imagesContext = require.context("images/contact", true, /\.png+$/);
 // let images = [];
@@ -67,7 +67,7 @@ export default function Contact() {
       ></PageHeader>
       <Picture
         src={collage}
-        srcX2={collageX2}
+        // srcX2={collageX2}
         alt="Devhaus Leipzig"
         width={1536}
         height={1536}
