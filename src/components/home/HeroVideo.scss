@@ -53,13 +53,14 @@
     bottom: 0;
     right: 0;
     top: 0;
-    background-color: black;
-    color: white;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     align-items: center;
-    z-index: 5;
-    transition: opacity 500ms;
+    z-index: -1;
+    img {
+      width: 20%;
+      object-fit: contain;
+    }
   }
 
   .loading-screen.hidden {

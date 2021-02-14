@@ -13,6 +13,9 @@ export default function Imprint() {
         <div>Geschäftsführer: Taylor Harvey, Gabriel Heinrich</div>
         <div>USt. Identifikationsnummer: DE325664551</div>
       </div>
+      <p style={{ marginTop: "1rem" }}>
+        Video &amp; Photographie: Hannah Mühlfeldner
+      </p>
       <h2>Haftungsausschluss</h2>
       <h4 className="button-text">Haftung für Inhalte</h4>
       <p>

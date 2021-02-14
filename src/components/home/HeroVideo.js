@@ -1,6 +1,11 @@
 import "./HeroVideo.scss";
 import fallbackImage from "images/home/teaser-cover.jpg";
 import { useRef, useEffect, useState } from "react";
+import spinnerImage from "images/spinner.svg";
+
+function Spinner() {
+  return <img src={spinnerImage} alt="loading"></img>;
+}
 
 export default function HeroVideo() {
   const fallbackImageRef = useRef(null);
@@ -8,9 +13,14 @@ export default function HeroVideo() {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
 
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setImageLoaded(true);
+  //     setVideoLoaded(true);
+  //   }, 2000000);
+  // }, []);
   useEffect(() => {
     const handleImageLoad = () => {
-      console.log("image loaded");
       setImageLoaded(true);
     };
     const el = fallbackImageRef.current;
@@ -24,7 +34,6 @@ export default function HeroVideo() {
 
   useEffect(() => {
     const handleLoad = () => {
-      console.log("video loaded");
       setVideoLoaded(true);
     };
     const el = videoIframeRef.current;
@@ -58,6 +67,11 @@ export default function HeroVideo() {
           ></iframe>
         </div>
       </div>
+      {!imageLoaded && (
+        <div className="loading-screen">
+          <Spinner></Spinner>
+        </div>
+      )}
       <div className={"hero-title" + (imageLoaded ? " loaded" : "")}>
         <h1>
           DEV

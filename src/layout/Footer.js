@@ -11,7 +11,9 @@ export default function Footer() {
     <footer>
       <div className="content">
         <div className="copyright-container">
-          <div className="copyright">© 2020 Code Camp Leipzig</div>
+          <div className="copyright">
+            © {new Date().getFullYear()} Code Camp Leipzig
+          </div>
           <div className="footer-links">
             <Link to="/privacy">Privacy</Link>
             <Link to="/imprint">Imprint</Link>
