@@ -3,6 +3,7 @@ import HeroVideo from "components/home/HeroVideo";
 import "./Home.scss";
 import { DevhausLine } from "components/HorizontalLine";
 import { Link } from "react-router-dom";
+import Picture from "components/Picture";
 
 import academyImage from "images/home/academy.jpg";
 import studioImage from "images/home/chat.jpg";
@@ -62,7 +63,12 @@ export default function Home() {
                     />
                   </h3>
                 </div>
-                <img src={academyImage} alt="Academy" />
+                <Picture
+                  src={academyImage}
+                  alt="Academy"
+                  width={1152}
+                  height={763}
+                />
               </Link>
             </div>
             <div className="link">
@@ -76,7 +82,12 @@ export default function Home() {
                     width={sectionLineWidth}
                   />
                 </h3>
-                <img src={studioImage} alt="Studio" />
+                <Picture
+                  src={studioImage}
+                  alt="Studio"
+                  width={1152}
+                  height={763}
+                />
               </Link>
             </div>
             <div className="link">
@@ -90,7 +101,12 @@ export default function Home() {
                     width={sectionLineWidth}
                   />
                 </h3>
-                <img src={eventsImage} alt="Events" />
+                <Picture
+                  src={eventsImage}
+                  alt="Events"
+                  width={1152}
+                  height={763}
+                />
               </Link>
             </div>
             <div className="link">
@@ -104,7 +120,12 @@ export default function Home() {
                     width={sectionLineWidth}
                   />
                 </h3>
-                <img src={storiesImage} alt="Stories" />
+                <Picture
+                  src={storiesImage}
+                  alt="Stories"
+                  width={1152}
+                  height={763}
+                />
               </Link>
             </div>
 

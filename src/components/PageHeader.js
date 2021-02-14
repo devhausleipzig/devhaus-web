@@ -1,4 +1,5 @@
 import { DevhausLine } from "components/HorizontalLine";
+import Picture from "components/Picture";
 import "./PageHeader.scss";
 
 export default function PageHeader({
@@ -8,6 +9,8 @@ export default function PageHeader({
   subtitle,
   image,
   alt,
+  width,
+  height,
   color,
 }) {
   if (description) {
@@ -25,7 +28,7 @@ export default function PageHeader({
         </div>
         {content}
       </div>
-      {image && <img src={image} alt={alt} />}
+      {image && <Picture src={image} alt={alt} width={width} height={height} />}
     </section>
   );
 }

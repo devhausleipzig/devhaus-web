@@ -1,6 +1,7 @@
 import React from "react";
 import PageHeader from "components/PageHeader";
 import { DevhausLine } from "components/HorizontalLine";
+import Picture from "components/Picture";
 import "./Academy.scss";
 
 import gabrielImage from "images/profiles/gabe.png";
@@ -86,6 +87,8 @@ export default function Academy() {
         description="The Devhaus Academy is more than just a classroom; it’s an ongoing
           support system, the sole purpose of which is to help you become the best programmer you can be."
         image={titleImage}
+        width={1536}
+        height={1024}
         alt="Graduates of Code Camp #1"
         color="blue"
       ></PageHeader>
@@ -245,34 +248,74 @@ export default function Academy() {
         <div className="instructor-grid">
           <div className="instructor">
             <div className="image-container">
-              <img src={gabrielImage} alt="Gabriel"></img>
+              <Picture
+                src={gabrielImage}
+                alt="Gabriel"
+                width={348}
+                height={348}
+              ></Picture>
             </div>
             <h3>Gabriel</h3>
           </div>
           <div className="instructor">
             <div className="image-container">
-              <img src={valImage} alt="Valeria"></img>
+              <Picture
+                src={valImage}
+                alt="Valeria"
+                width={348}
+                height={348}
+              ></Picture>
             </div>
             <h3>Valeria</h3>
           </div>
           <div className="instructor">
             <div className="image-container">
-              <img src={danImage} alt="Dan"></img>
+              <Picture
+                src={danImage}
+                alt="Dan"
+                width={348}
+                height={348}
+              ></Picture>
             </div>
             <h3>Dan</h3>
           </div>
           <div className="instructor">
             <div className="image-container">
-              <img src={svenImage} alt="Sven"></img>
+              <Picture
+                src={svenImage}
+                alt="Sven"
+                width={348}
+                height={348}
+              ></Picture>
             </div>
             <h3>Sven</h3>
           </div>
         </div>
         <div className="classroom-gallery">
-          <img src={pic1} alt="pic1"></img>
-          <img src={pic2} alt="pic1"></img>
-          <img src={pic3} alt="pic1"></img>
-          <img src={pic4} alt="pic1"></img>
+          <Picture
+            src={pic1}
+            alt="Classroom"
+            width={752}
+            height={500}
+          ></Picture>
+          <Picture
+            src={pic2}
+            alt="Camp 1 Classroom"
+            width={752}
+            height={500}
+          ></Picture>
+          <Picture
+            src={pic3}
+            alt="Val and Christina coding"
+            width={752}
+            height={500}
+          ></Picture>
+          <Picture
+            src={pic4}
+            alt="Code Camp Graduates"
+            width={752}
+            height={500}
+          ></Picture>
         </div>
       </section>
       <section className="learning-path content-narrow">

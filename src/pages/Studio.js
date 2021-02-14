@@ -1,6 +1,8 @@
 import React from "react";
 import PageHeader from "components/PageHeader";
 import "./Studio.scss";
+import Picture from "components/Picture";
+
 import fillipImage from "images/studio/fillip.png";
 import lizatilmannImage from "images/studio/lizatilmann.png";
 import devhausRebrandingImage from "images/studio/devhaus-rebranding.png";
@@ -14,11 +16,11 @@ import hackerpubImage from "images/studio/hackerpub.png";
 import weAreFamilyImage from "images/studio/we-are-family.png";
 import plantSwapImage from "images/studio/plant-swap.png";
 
-function Project({ image, title, link }) {
+function Project({ image, title, link, width, height }) {
   const content = (
     <div className="project">
       <div className="image-container">
-        <img src={image} alt={title} />
+        <Picture src={image} alt={title} width={width} height={height} />
       </div>
       <h4 className="">{title}</h4>
     </div>
@@ -38,62 +40,81 @@ const ongoingProjects = [
     image: fillipImage,
     title: "Fillip - A powerful platform for online events",
     link: "https://fillip.ai",
+    imageWidth: 600,
+    imageHeight: 519,
   },
   {
     image: learningPlattformImage,
     title: "The learning platform of the Code Camp Leipzig",
+    imageWidth: 600,
+    imageHeight: 623,
   },
   {
     image: devhausRebrandingImage,
     title:
       "Devhaus Rebranding - Making the transition from Code Camp to Devhaus Leipzig",
+    imageWidth: 600,
+    imageHeight: 588,
   },
 ];
 
 const pastProjects = [
-  // {
-  //   image: exampleImage1,
-  //   title: "Edox Hackathon",
-  //   description: "Boosting a companies vision in a single day",
-  // },
   {
     image: weAreFamilyImage,
     title: "We are family - Global Game Jam 2021",
+    imageWidth: 600,
+    imageHeight: 611,
   },
   {
     image: devhausNetworkImage,
     title: "Final Project Camp #3 - A social network for aspiring developers",
+    imageWidth: 600,
+    imageHeight: 529,
   },
   {
     image: plantSwapImage,
     title: "Plant Swap - A tinder-style plant trading app",
+    imageWidth: 600,
+    imageHeight: 729,
   },
   {
     image: pokedexImage,
     title: "A classic style pokedex with face recognition built in 6 hours",
+    imageWidth: 600,
+    imageHeight: 722,
   },
   {
     image: lizatilmannImage,
     title:
       "Code Camp Graduates team up to build a website for a hairdresser in Munich",
+    imageWidth: 600,
+    imageHeight: 600,
   },
   {
     image: skitmeImage,
     title:
       "Skitme - An insanely entertaining drawing game build at the end of camp #2",
+    imageWidth: 600,
+    imageHeight: 506,
   },
   {
     image: curryOnImage,
-    title: "Curry On - Experience an interactive Currywurst Challenge",
+    title: "Curry On! - Experience the ultimate Currywurst Challenge",
+    imageWidth: 600,
+    imageHeight: 598,
   },
   {
     image: hackerpubImage,
     title: "Hacker Pub Quiz",
+    imageWidth: 600,
+    imageHeight: 677,
   },
   {
     image: communicImage,
     title:
       "Communic - A social plattform for finding and contributing to projects",
+    imageWidth: 600,
+    imageHeight: 496,
   },
 ];
 
@@ -114,6 +135,8 @@ export default function Work() {
               title={project.title}
               image={project.image}
               link={project.link}
+              width={project.imageWidth}
+              height={project.imageHeight}
             ></Project>
           ))}
         </div>
@@ -127,6 +150,8 @@ export default function Work() {
               title={project.title}
               image={project.image}
               link={project.link}
+              width={project.imageWidth}
+              height={project.imageHeight}
             ></Project>
           ))}
         </div>

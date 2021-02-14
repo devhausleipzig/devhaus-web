@@ -1,8 +1,10 @@
 import React from "react";
 import PageHeader from "components/PageHeader";
 import "./Contact.scss";
+import Picture from "components/Picture";
 
-import collage from "images/contact/devhaus-collage.png";
+import collage from "images/contact/devhaus-collage.jpg";
+import collageX2 from "images/contact/devhaus-collage@2x.jpg";
 
 // const imagesContext = require.context("images/contact", true, /\.png+$/);
 // let images = [];
@@ -63,7 +65,13 @@ export default function Contact() {
         content={content}
         color="devhaus"
       ></PageHeader>
-      <img src={collage} alt="Devhaus Leipzig"></img>
+      <Picture
+        src={collage}
+        srcX2={collageX2}
+        alt="Devhaus Leipzig"
+        width={1536}
+        height={1536}
+      ></Picture>
       {/* <div className="image-grid">
         {images.map((image) => {
           return (

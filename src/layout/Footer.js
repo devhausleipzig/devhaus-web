@@ -21,11 +21,27 @@ export default function Footer() {
         </div>
         <div className="newsletter">{newsletterForm}</div>
         <div className="social-links">
-          <a href="https://www.meetup.com/Code-Camp-Leipzig-Meetup-Group/">
+          <a
+            href="https://www.meetup.com/Code-Camp-Leipzig-Meetup-Group/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Meetup
           </a>
-          <a href="https://www.facebook.com/codecampleipzig">Facebook</a>
-          <a href="https://www.instagram.com/codecampleipzig/">Instagram</a>
+          <a
+            href="https://www.facebook.com/codecampleipzig"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Facebook
+          </a>
+          <a
+            href="https://www.instagram.com/codecampleipzig/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Instagram
+          </a>
         </div>
       </div>
     </footer>

@@ -1,5 +1,6 @@
 import React from "react";
 import PageHeader from "components/PageHeader";
+import Picture from "components/Picture";
 
 import "./Stories.scss";
 import classRoom from "images/stories/classroom.png";
@@ -16,7 +17,7 @@ function Story({ title, image, category, link }) {
       <div className="story">
         <div className="image">
           <div className="image-container">
-            <img src={image} alt={title}></img>
+            <Picture src={image} alt={title} width={224} height={224}></Picture>
           </div>
         </div>
         <div className="information">

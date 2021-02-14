@@ -84,45 +84,6 @@ export default function About() {
           <Profile name="Vera Scheunert" role="Resident" image={veraImage} />
           <Profile name="Moritz Piehl" role="Resident" image={moritzImage} />
           <Profile name="Felix Wippich" role="Resident" image={felixImage} />
-
-          {/* <Profile name="Vera Scheunert" role="Resident" image={danImage} />
-          <Profile name="Moritz" role="Resident" image={danImage} />
-          <Profile name="Dan McAtee" role="Instructor" image={danImage} />
-          <Profile name="Jannik" role="Instructor UX Design" image={danImage} />
-          <Profile name="Felix" role="Resident" image={danImage} />
-          <Profile
-            name="Pauline"
-            role="Resident & Photography"
-            image={danImage}
-          />
-          <Profile name="Sven Deichfuss" role="Resident" image={danImage} />
-          <Profile name="Simon Johanning" role="Friend" image={danImage} />
-          <Profile name="Sappho" role="Friend" image={danImage} />
-          <Profile name="Josef" role="Friend" image={danImage} />
-          <Profile name="Kaab" role="Resident" image={danImage} />
-          <Profile name="Björn" role="Resident" image={danImage} />
-          <Profile name="Moritz" role="Resident" image={danImage} />
-          <Profile name="Lena" role="Resident" image={danImage} />
-          <Profile name="Marianna" role="Resident" image={danImage} />
-          <Profile name="Nick" role="Resident" image={danImage} />
-          <Profile name="Bea" role="Resident" image={danImage} />
-          <Profile name="Annahita" role="Resident" image={danImage} />
-          <Profile name="Iko" role="Resident" image={danImage} />
-          <Profile name="Simona" role="Resident" image={danImage} />
-          <Profile name="Gabriela" role="Resident" image={danImage} />
-          <Profile name="Inga" role="Resident" image={danImage} />
-          <Profile name="Tom" role="Resident" image={danImage} />
-          <Profile name="Christina" role="Resident" image={danImage} />
-          <Profile name="Lotte" role="Resident" image={danImage} />
-          <Profile name="Wolfgang" role="Resident" image={danImage} />
-          <Profile name="Michaela" role="Resident" image={danImage} />
-          <Profile name="Dorian" role="Resident" image={danImage} />
-          <Profile name="Chaz" role="Resident" image={danImage} />
-          <Profile name="Daniel" role="Resident" image={danImage} />
-          <Profile name="Franziska" role="Resident" image={danImage} />
-          <Profile name="Issah" role="Resident" image={danImage} />
-          <Profile name="Moe" role="Resident" image={danImage} />
-          <Profile name="Mathias" role="Resident" image={danImage} /> */}
         </div>
       </section>
     </div>
