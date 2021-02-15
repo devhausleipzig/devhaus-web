@@ -359,7 +359,7 @@ export default function Academy() {
           <p>
             Our next goal is to get familiar with the technologies that run the
             web and build basic skills in User Interface Design. We'll do so by
-            analyzing and carefully re-construct multiple websites built for
+            analyzing and carefully re-constructing multiple websites built for
             different use cases. At the end of the module, everyone will design
             and build a personal website project that may become the first item
             in their portfolio.

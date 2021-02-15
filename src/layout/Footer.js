@@ -29,18 +29,25 @@ export default function Footer() {
             Meetup
           </a>
           <a
-            href="https://www.facebook.com/codecampleipzig"
+            href="https://www.facebook.com/devhausleipzig"
             target="_blank"
             rel="noreferrer"
           >
             Facebook
           </a>
           <a
-            href="https://www.instagram.com/codecampleipzig/"
+            href="https://instagram.com/devhausleipzig"
             target="_blank"
             rel="noreferrer"
           >
             Instagram
+          </a>
+          <a
+            href="https://twitter.com/DevhausLeipzig"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Twitter
           </a>
         </div>
       </div>
