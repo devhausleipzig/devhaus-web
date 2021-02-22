@@ -25,7 +25,7 @@ export default function Events() {
         <Event title="Kick-Off Code Camp #4" date="15.03.2021"></Event>
         <Event
           title="Code Camp #4 Graduation"
-          date="18.06.2021"
+          date="11.06.2021"
           time="@18:00"
         ></Event>
       </div>
