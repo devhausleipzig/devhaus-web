@@ -7,7 +7,7 @@ import logo from "images/devhaus-logo.svg";
 const applyLink = 'https://devhausleipzig.typeform.com/to/nuEZxpkv';
 
 const navigationLinks = [
-  { to: applyLink, title: "Apply Now", color: "blue" },
+  { href: applyLink, title: "Apply Now", color: "blue" },
   { to: "/academy", title: "Academy", color: "green" },
   { to: "/studio", title: "Studio", color: "yellow" },
   { to: "/events", title: "Events", color: "red" },
@@ -40,7 +40,7 @@ function Navbar({ toggleMobileMenu }) {
           <NavLink
             activeClassName="active"
             className="menu-link"
-            to={link.to}
+            to={link.href ? link.href : link.to}
             key={link.to}
           >
             {link.title}
