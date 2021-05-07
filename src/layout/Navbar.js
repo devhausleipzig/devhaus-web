@@ -42,7 +42,6 @@ function Navbar({ toggleMobileMenu }) {
             to={link.to}
             key={link.to}
           >
-            <a className="menu-link" href={applyLink}>Apply Now</a>
             {link.title}
             <DevhausLine
               color={link.color || "devhaus"}
