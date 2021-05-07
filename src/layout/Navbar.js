@@ -40,9 +40,10 @@ function Navbar({ toggleMobileMenu }) {
           <NavLink
             activeClassName="active"
             className="menu-link"
-            to={link.href ? link.href : link.to}
+            to={link.to ? link.to : ''}
             key={link.to}
           >
+            {link.href && <a className="menu-link" href={link.href}>{link.title}</a>}
             {link.title}
             <DevhausLine
               color={link.color || "devhaus"}
