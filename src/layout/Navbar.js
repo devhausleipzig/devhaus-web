@@ -37,13 +37,14 @@ function Navbar({ toggleMobileMenu }) {
       </div>
       <nav className="nav-menu">
         {navigationLinks.map((link) => (
+          
           <NavLink
             activeClassName="active"
             className="menu-link"
-            to={link.to ? link.to : ''}
+            to={link.to}
             key={link.to}
           >
-            {link.href && <a className="menu-link" href={link.href}>{link.title}</a>}
+            <a className="menu-link" href={applyLink}>Apply Now</a>
             {link.title}
             <DevhausLine
               color={link.color || "devhaus"}
