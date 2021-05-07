@@ -4,11 +4,14 @@ import "./Navbar.scss";
 import { FullLine, DevhausLine } from "../components/HorizontalLine";
 import logo from "images/devhaus-logo.svg";
 
+const applyLink = 'https://devhausleipzig.typeform.com/to/nuEZxpkv';
+
 const navigationLinks = [
-  { to: "/academy", title: "Academy", color: "blue" },
-  { to: "/studio", title: "Studio", color: "green" },
-  { to: "/events", title: "Events", color: "yellow" },
-  { to: "/stories", title: "Stories", color: "red" },
+  { to: applyLink, title: "Apply Now", color: "blue" },
+  { to: "/academy", title: "Academy", color: "green" },
+  { to: "/studio", title: "Studio", color: "yellow" },
+  { to: "/events", title: "Events", color: "red" },
+  { to: "/stories", title: "Stories", color: "devhaus" },
   { to: "/about", title: "About", color: "devhaus" },
   { to: "/contact", title: "Contact", color: "devhaus" },
 ];

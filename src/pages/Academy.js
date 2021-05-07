@@ -103,7 +103,7 @@ export default function Academy() {
             <span>Taking place remotely</span>
           </div>
           <div className="text-3 next-camp">
-            The next Code Camp is starting on <strong>July 5th</strong>
+            The next Code Camp is starting on <strong>July 5th, 2021</strong>
           </div>
           <div className="corona-announcment">
             Due to the COVID-19 pandemic, the 2021 summer camp will take place
