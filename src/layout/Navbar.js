@@ -35,8 +35,6 @@ function Navbar({ toggleMobileMenu }) {
         </Link>
       </div>
       <nav className="nav-menu">
-        <a href={applyLink} className="menu-link">Apply Now</a>
-        <DevhausLine color={"blue"} numSegments={4} width={32} />
         <div>
           {navigationLinks.map((link) => (
             <NavLink
