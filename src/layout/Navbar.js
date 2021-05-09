@@ -35,21 +35,25 @@ function Navbar({ toggleMobileMenu }) {
         </Link>
       </div>
       <nav className="nav-menu">
-        {navigationLinks.map((link) => (
-          <NavLink
-            activeClassName="active"
-            className="menu-link"
-            to={link.to}
-            key={link.to}
-          >
-            {link.title}
-            <DevhausLine
-              color={link.color || "devhaus"}
-              width={32}
-              numSegments={4}
-            />
-          </NavLink>
-        ))}
+        <a href={applyLink} className="menu-link">Apply Now</a>
+        <DevhausLine color={"blue"} numSegments={4} width={32} />
+        <div>
+          {navigationLinks.map((link) => (
+            <NavLink
+              activeClassName="active"
+              className="menu-link"
+              to={link.to}
+              key={link.to}
+            >
+              {link.title}
+              <DevhausLine
+                color={link.color || "devhaus"}
+                width={32}
+                numSegments={4}
+              />
+            </NavLink>
+          ))}
+        </div>
       </nav>
       <nav className="nav-hamburger">
         <HamburgerIcon onClick={toggleMobileMenu} />
