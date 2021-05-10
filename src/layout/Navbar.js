@@ -8,7 +8,7 @@ const navigationLinks = [
   {
     to: "https://devhausleipzig.typeform.com/to/nuEZxpkv",
     title: "Apply Now",
-    color: "blue",
+    color: "devhaus",
     external: true,
     activePath: "/",
   },
