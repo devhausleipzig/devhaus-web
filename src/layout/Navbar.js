@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import "./Navbar.scss";
 import { FullLine, DevhausLine } from "../components/HorizontalLine";
 import logo from "images/devhaus-logo.svg";
@@ -10,6 +10,7 @@ const navigationLinks = [
     title: "Apply Now",
     color: "blue",
     external: true,
+    activePath: "/",
   },
   { to: "/academy", title: "Academy", color: "blue" },
   { to: "/studio", title: "Studio", color: "green" },
@@ -31,17 +32,19 @@ function HamburgerIcon({ onClick }) {
 }
 
 function AbstractNavLink(link, className) {
+  const location = useLocation();
   const line = (
     <DevhausLine color={link.color || "devhaus"} width={32} numSegments={4} />
   );
   if (link.external) {
+    const isActive = location.pathname === link.activePath;
     return (
       <a
         href={link.to}
         key={link.to}
         target="_blank"
         rel="noreferrer"
-        className={className}
+        className={className + (isActive ? " active" : "")}
       >
         {link.title}
         {line}
