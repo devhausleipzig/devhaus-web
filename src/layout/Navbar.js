@@ -5,6 +5,12 @@ import { FullLine, DevhausLine } from "../components/HorizontalLine";
 import logo from "images/devhaus-logo.svg";
 
 const navigationLinks = [
+  {
+    to: "https://devhausleipzig.typeform.com/to/nuEZxpkv",
+    title: "Apply Now",
+    color: "blue",
+    external: true,
+  },
   { to: "/academy", title: "Academy", color: "blue" },
   { to: "/studio", title: "Studio", color: "green" },
   { to: "/events", title: "Events", color: "yellow" },
@@ -24,6 +30,38 @@ function HamburgerIcon({ onClick }) {
   );
 }
 
+function AbstractNavLink(link, className) {
+  const line = (
+    <DevhausLine color={link.color || "devhaus"} width={32} numSegments={4} />
+  );
+  if (link.external) {
+    return (
+      <a
+        href={link.to}
+        key={link.to}
+        target="_blank"
+        rel="noreferrer"
+        className={className}
+      >
+        {link.title}
+        {line}
+      </a>
+    );
+  } else {
+    return (
+      <NavLink
+        activeClassName="active"
+        className={className}
+        to={link.to}
+        key={link.to}
+      >
+        {link.title}
+        {line}
+      </NavLink>
+    );
+  }
+}
+
 function Navbar({ toggleMobileMenu }) {
   return (
     <div className="content">
@@ -33,21 +71,7 @@ function Navbar({ toggleMobileMenu }) {
         </Link>
       </div>
       <nav className="nav-menu">
-          {navigationLinks.map((link) => (
-            <NavLink
-              activeClassName="active"
-              className="menu-link"
-              to={link.to}
-              key={link.to}
-            >
-              {link.title}
-              <DevhausLine
-                color={link.color || "devhaus"}
-                width={32}
-                numSegments={4}
-              />
-            </NavLink>
-          ))}
+        {navigationLinks.map((link) => AbstractNavLink(link, "menu-link"))}
       </nav>
       <nav className="nav-hamburger">
         <HamburgerIcon onClick={toggleMobileMenu} />
@@ -64,21 +88,7 @@ function MobileMenu({ toggleMobileMenu, visible }) {
     >
       <div className="content">
         <nav className="nav-menu">
-          {navigationLinks.map((link) => (
-            <NavLink
-              activeClassName="active"
-              className="menu-link"
-              to={link.to}
-              key={link.to}
-            >
-              {link.title}
-              <DevhausLine
-                color={link.color || "devhaus"}
-                width={32}
-                numSegments={4}
-              />
-            </NavLink>
-          ))}
+          {navigationLinks.map((link) => AbstractNavLink(link, "menu-link"))}
         </nav>
       </div>
       <div className="bottom-border">
