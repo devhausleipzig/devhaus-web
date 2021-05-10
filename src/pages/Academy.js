@@ -93,6 +93,23 @@ export default function Academy() {
         color="blue"
       ></PageHeader>
       <section>
+      <div className="specs">
+          <div className="short-specs button-text">
+            <span>10 Weeks</span>
+            <span>Mo - Fr</span>
+            <span>9:00 - 17:00</span>
+            <span>English</span>
+            <span>Up to 12 Students</span>
+            <span>Taking place remotely</span>
+          </div>
+          <div className="text-3 next-camp">
+            The next Code Camp is starting on <strong>July 5th, 2021</strong>
+          </div>
+          <div className="corona-announcment">
+            Due to the COVID-19 pandemic, the 2021 summer camp will take place
+            remotely
+          </div>
+        </div>
         <div className="intro content-narrow">
           <h2>
             Code Camp Leipzig
@@ -132,24 +149,24 @@ export default function Academy() {
             <h3>Team Workflows &amp; Communication</h3>
           </div>
         </div>
-        <div className="specs">
+        {/* <div className="specs">
           <div className="short-specs button-text">
-            <span>13 Weeks</span>
+            <span>10 Weeks</span>
             <span>Mo - Fr</span>
             <span>9:00 - 17:00</span>
             <span>English</span>
             <span>Up to 12 Students</span>
-            <span>In Leipzig at Floßplatz 6</span>
+            <span>Taking place remotely</span>
           </div>
           <div className="text-3 next-camp">
-            The next Code Camp is starting on <strong>March 15th</strong>
+            The next Code Camp is starting on <strong>July 5th</strong>
           </div>
           <div className="corona-announcment">
-            Due to the Corona pandemic, the spring camp 2021 will take place
+            Due to the COVID-19 pandemic, the 2021 summer camp will take place
             remotely
           </div>
-        </div>
-      </section>
+        </div> */}  
+      </section> 
 
       <section className="approach">
         <h2>Our Approach</h2>
@@ -364,7 +381,7 @@ export default function Academy() {
             and build a personal website project that may become the first item
             in their portfolio.
           </p>
-          <div className="path-mark">7</div>
+          {/* <div className="path-mark">7</div>
           <h3>Practice Week</h3>
           <div className="path-line">
             <div className="line"></div>
@@ -374,8 +391,8 @@ export default function Academy() {
             During this week, there are no classes and no new material. Only
             individual check-in sessions and the opportunity to solidify your
             skills through focused practice.
-          </p>
-          <div className="path-mark">8-9</div>
+          </p> */}
+          <div className="path-mark">7-8</div>
           <h3>Full Stack Web Application</h3>
           <div className="path-line">
             <div className="line"></div>
@@ -388,7 +405,7 @@ export default function Academy() {
             components of a professional software development process in full
             detail and practice them in a controlled environment.
           </p>
-          <div className="path-mark">10-11</div>
+          <div className="path-mark">9-10</div>
           <h3>Backend Engineering</h3>
           <div className="path-line">
             <div className="line"></div>
@@ -403,8 +420,8 @@ export default function Academy() {
             build a full stack web application from start to finish all by
             yourself.
           </p>
-          <div className="path-mark">12-13</div>
-          <h3>Final Project</h3>
+          {/* <div className="path-mark">12-13</div> */}
+          {/* <h3>Final Project</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
@@ -415,7 +432,7 @@ export default function Academy() {
             addition to technical support, help you figure out in which
             direction you want to specialize and continue your development after
             the camp.
-          </p>
+          </p> */}
           <div className="path-mark">FINISH</div>
           <h3>Graduation</h3>
         </div>
@@ -440,14 +457,14 @@ export default function Academy() {
         </p>
         <div className="price">
           Tuition for the full-time 13-Week Code Camp program is{" "}
-          <strong>&euro; 4.800</strong>
+          <strong>&euro; 2.600 (VAT included)</strong>
         </div>
-        <p>
+        {/* <p>
           We provide a range of options to help you finance your education,
           including payment plans, government programs, loan partners, and
           scholarships. Make sure to reach out to us, so we can evaluate the
           financing options that fit your specific situation.
-        </p>
+        </p> */}
         <a
           href="https://calendly.com/devhaus-leipzig/devhaus-1-on-1?month=2021-02"
           target="_blank"
@@ -474,7 +491,7 @@ export default function Academy() {
           days, regardless of when they apply.
         </p>
         <a
-          href="https://codecampleipzig.typeform.com/to/nuEZxpkv"
+          href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
           target="_blank"
           rel="noreferrer"
         >

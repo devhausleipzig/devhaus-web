@@ -33,21 +33,21 @@ function Navbar({ toggleMobileMenu }) {
         </Link>
       </div>
       <nav className="nav-menu">
-        {navigationLinks.map((link) => (
-          <NavLink
-            activeClassName="active"
-            className="menu-link"
-            to={link.to}
-            key={link.to}
-          >
-            {link.title}
-            <DevhausLine
-              color={link.color || "devhaus"}
-              width={32}
-              numSegments={4}
-            />
-          </NavLink>
-        ))}
+          {navigationLinks.map((link) => (
+            <NavLink
+              activeClassName="active"
+              className="menu-link"
+              to={link.to}
+              key={link.to}
+            >
+              {link.title}
+              <DevhausLine
+                color={link.color || "devhaus"}
+                width={32}
+                numSegments={4}
+              />
+            </NavLink>
+          ))}
       </nav>
       <nav className="nav-hamburger">
         <HamburgerIcon onClick={toggleMobileMenu} />
