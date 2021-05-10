@@ -4,8 +4,6 @@ import "./Navbar.scss";
 import { FullLine, DevhausLine } from "../components/HorizontalLine";
 import logo from "images/devhaus-logo.svg";
 
-const applyLink = 'https://devhausleipzig.typeform.com/to/nuEZxpkv';
-
 const navigationLinks = [
   { to: "/academy", title: "Academy", color: "blue" },
   { to: "/studio", title: "Studio", color: "green" },
