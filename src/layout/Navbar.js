@@ -35,7 +35,6 @@ function Navbar({ toggleMobileMenu }) {
         </Link>
       </div>
       <nav className="nav-menu">
-        <div>
           {navigationLinks.map((link) => (
             <NavLink
               activeClassName="active"
@@ -51,7 +50,6 @@ function Navbar({ toggleMobileMenu }) {
               />
             </NavLink>
           ))}
-        </div>
       </nav>
       <nav className="nav-hamburger">
         <HamburgerIcon onClick={toggleMobileMenu} />
