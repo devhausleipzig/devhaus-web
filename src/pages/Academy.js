@@ -456,7 +456,7 @@ export default function Academy() {
           strive to keep student costs minimal.
         </p>
         <div className="price">
-          Tuition for the full-time 13-Week Code Camp program is{" "}
+          Tuition for the full-time 10-Week Code Camp program is{" "}
           <strong>&euro; 2.600 (VAT included)</strong>
         </div>
         {/* <p>
