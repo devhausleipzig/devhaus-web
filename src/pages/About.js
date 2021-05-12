@@ -61,7 +61,7 @@ export default function About() {
           />
           <Profile
             name="Aleksandra Janz"
-            role="Community Manager"
+            role="Operations & Communications Manager"
             image={olaImage}
           />
           <Profile
