@@ -109,6 +109,15 @@ export default function Academy() {
             Due to the COVID-19 pandemic, the 2021 summer camp will take place
             remotely
           </div>
+          <div>
+            <a
+              href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
+            t arget="_blank"
+            rel="noreferrer"
+            >
+            <button className="plain button-text">Apply now</button>
+            </a>
+        </div>
         </div>
         <div className="intro content-narrow">
           <h2>
