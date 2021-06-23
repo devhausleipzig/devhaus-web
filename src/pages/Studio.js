@@ -15,6 +15,7 @@ import devhausNetworkImage from "images/studio/devhaus-network.png";
 import hackerpubImage from "images/studio/hackerpub.png";
 import weAreFamilyImage from "images/studio/we-are-family.png";
 import plantSwapImage from "images/studio/plant-swap.png";
+import klocatorImage from "images/studio/klocator.png";
 
 function Project({ image, title, link, width, height }) {
   const content = (
@@ -59,6 +60,12 @@ const ongoingProjects = [
 ];
 
 const pastProjects = [
+  {
+    image: klocatorImage,
+    title: "KLOcator - Final Project Camp #4",
+    imageWidth: 600,
+    imageHeight: 614,
+  },
   {
     image: weAreFamilyImage,
     title: "We are family - Global Game Jam 2021",

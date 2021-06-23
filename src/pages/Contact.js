@@ -46,7 +46,7 @@ export default function Contact() {
       <p>
         info@devhausleipzig.de
         <br />
-        Tel: 015789529664
+        Tel: +49 151 21675615
       </p>
       <p>
         Floßplatz 6<br />

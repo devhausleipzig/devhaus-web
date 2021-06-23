@@ -22,12 +22,9 @@ export default function Events() {
         color="yellow"
       ></PageHeader>
       <div>
-        <Event title="Kick-Off Code Camp #4" date="15.03.2021"></Event>
-        <Event
-          title="Code Camp #4 Graduation"
-          date="11.06.2021"
-          time="@18:00"
-        ></Event>
+        <Event title="Summer Break" date="01.07.2021 - 01.08.2021"></Event>
+
+        <Event title="Kick-Off Code Camp #5" date="30.08.2021"></Event>
       </div>
     </div>
   );
