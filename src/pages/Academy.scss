@@ -1,3 +1,6 @@
+@import "styles/variables.scss";
+@import "styles/base.scss";
+
 .academy {
   section {
     margin-bottom: 16rem;
@@ -15,6 +18,12 @@
     margin-bottom: 6rem;
   }
 
+  h3.secondary-title {
+    @extend .button-text;
+    font-size: var(--text-1);
+    margin-bottom: 0.5rem;
+  }
+
   .intro {
     margin-bottom: 4rem;
   }
@@ -27,9 +36,9 @@
     text-align: center;
 
     strong {
-      font-weight: 400;
+      font-weight: 600;
       // color: var(--blue);
-      border-bottom: 2px solid var(--blue);
+      // border-bottom: 2px solid var(--blue);
       // color: white;
     }
 

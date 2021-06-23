@@ -2,8 +2,5 @@
 
 ## TODO
 
-### Essentials
-
-- [ ] Devhaus Domain
-- [ ] Proof Reading
-- [ ] Tracker
+- [ ] Tuition & Financing Section
+- [ ] Deniz Picture

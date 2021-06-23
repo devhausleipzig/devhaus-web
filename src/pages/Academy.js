@@ -85,7 +85,7 @@ export default function Academy() {
       <PageHeader
         title="Academy"
         description="The Devhaus Academy is more than just a classroom; it’s an ongoing
-          support system, the sole purpose of which is to help you become the best programmer you can be."
+          support system, the sole purpose of which is to help you become the best programmer and designer you can be."
         image={titleImage}
         width={1536}
         height={1024}
@@ -93,48 +93,57 @@ export default function Academy() {
         color="blue"
       ></PageHeader>
       <section>
-      <div className="specs">
+        <div className="center content-narrow">
+          <h3 className="secondary-title">Devhaus Academy</h3>
+
+          <h2>
+            Code &amp; Design Camp
+            <div class="flex-center" style={{ marginTop: "0.5rem" }}>
+              <DevhausLine color="devhaus" numSegments={5} width={64} />
+            </div>
+          </h2>
+        </div>
+        <div className="specs">
           <div className="short-specs button-text">
-            <span>10 Weeks</span>
+            <span>21 Weeks</span>
             <span>Mo - Fr</span>
-            <span>9:00 - 17:00</span>
+            <span>9:00 - 17:30</span>
             <span>English</span>
             <span>Up to 12 Students</span>
-            <span>Taking place remotely</span>
+            <span>Hybrid (remote and in person)</span>
           </div>
-          <div className="text-3 next-camp">
-            The next Code Camp is starting on <strong>July 5th, 2021</strong>
+          <div className="text-2 next-camp">
+            The next camp is running from <strong>August 30th, 2021</strong>{" "}
+            until <strong>January 28th, 2022</strong>
           </div>
-          <div className="corona-announcment">
+          {/* <div className="corona-announcment">
             Due to the COVID-19 pandemic, the 2021 summer camp will take place
             remotely
-          </div>
+          </div> */}
           <div>
             <a
               href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
-            t arget="_blank"
-            rel="noreferrer"
+              t
+              arget="_blank"
+              rel="noreferrer"
             >
-            <button className="plain button-text">Apply now</button>
+              <button className="plain button-text">Apply now</button>
             </a>
-        </div>
+          </div>
         </div>
         <div className="intro content-narrow">
-          <h2>
-            Code Camp Leipzig
-            <DevhausLine color="blue" numSegments={5} width={64} />
-          </h2>
           <p>
-            Code Camp Leipzig is our intensive full-time training program,
-            designed to equip people from various professional backgrounds with
-            the necessary skills and understanding to join the software
-            development world.
+            Our Code &amp; Design Camp is an intensive full-time training
+            program, developed to equip people from various professional
+            backgrounds with the necessary skills and understanding to join the
+            world of digital product development
           </p>
           <p>
             While the skillset taught in the Code Camp is in itself sufficient
-            as a qualification for a Frontend Web Developer role, the program is
-            tailored to build foundations that open the door to a wide array of
-            different specializations within software development.
+            as a qualification for entry level technical and design roles, the
+            program is tailored to build foundations that open the door to a
+            wide array of different specializations within digital product
+            development.
           </p>
         </div>
         <div className="skills content-narrow">
@@ -147,6 +156,9 @@ export default function Academy() {
           </div>
           <div className="skill">
             <h3>Full Stack Web Development</h3>
+          </div>
+          <div className="skill">
+            <h3>User Testing &amp; Research</h3>
           </div>
           <div className="skill">
             <h3>Graphic &amp; UI Design</h3>
@@ -174,8 +186,8 @@ export default function Academy() {
             Due to the COVID-19 pandemic, the 2021 summer camp will take place
             remotely
           </div>
-        </div> */}  
-      </section> 
+        </div> */}
+      </section>
 
       <section className="approach">
         <h2>Our Approach</h2>
@@ -375,33 +387,40 @@ export default function Academy() {
             , we'll build a collection of small programs with increasing
             complexity and, thereby, learn not only the syntax and grammar of
             the Typescript Programming Language, but also the principles and
-            techniques that are common to all programming languages
+            techniques that are common to all programming languages.
           </p>
-          <div className="path-mark">4-6</div>
+          <div className="path-mark">4-7</div>
           <h3>One Page Love</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <p>
             Our next goal is to get familiar with the technologies that run the
-            web and build basic skills in User Interface Design. We'll do so by
+            web and build basic skills in User Interface Design. We’ll start off
+            with a practical introduction to the Human Centered Design process.
+            We’ll go through one iteration of the design steps, starting from
+            research all the way to prototyping and testing. We'll continue with
             analyzing and carefully re-constructing multiple websites built for
-            different use cases. At the end of the module, everyone will design
-            and build a personal website project that may become the first item
-            in their portfolio.
+            different use cases. We’ll dive into design systems, color theory,
+            and typography. At the end of the module, everyone will design and
+            build a personal website project that may become the first item in
+            their portfolio. The projects will be designed mobile-first, and
+            also be documented via building out their Information Architecture.
           </p>
-          {/* <div className="path-mark">7</div>
-          <h3>Practice Week</h3>
+          <div className="path-mark">8-9</div>
+          <h3>Intro to Frontend Frameworks</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <p>
-            It's time to refresh and reflect on the material learned so far.
-            During this week, there are no classes and no new material. Only
-            individual check-in sessions and the opportunity to solidify your
-            skills through focused practice.
-          </p> */}
-          <div className="path-mark">7-8</div>
+            Frontend Frameworks like React, Angular &amp; Vue might seem scary
+            after starting off with HTML &amp; CSS, but they can make your life
+            easier and allow you to build rich user interfaces with fewer lines
+            of code. We'll take a gentle start into this way of building web
+            sites, covering what a frontend framework actually does under the
+            hood while translating the websites we have created so far into Vue.
+          </p>
+          <div className="path-mark">10-12</div>
           <h3>Full Stack Web Application</h3>
           <div className="path-line">
             <div className="line"></div>
@@ -412,9 +431,13 @@ export default function Academy() {
             product design process, we'll prototype and build the user
             interface. This is an opportunity to take a close look at all
             components of a professional software development process in full
-            detail and practice them in a controlled environment.
+            detail and practice them in a controlled environment. The module
+            also includes a deep dive into the user interview process, allowing
+            us to get feedback for the web application idea or prototype. We’ll
+            be preparing mood boards for high fidelity designs and a few target
+            personas based off of the user interview data.
           </p>
-          <div className="path-mark">9-10</div>
+          <div className="path-mark">13-14</div>
           <h3>Backend Engineering</h3>
           <div className="path-line">
             <div className="line"></div>
@@ -427,21 +450,46 @@ export default function Academy() {
             &amp; continuous deployment. However, with a lot of focus, carefully
             designed instruction, and a bit of cheating you'll become able to
             build a full stack web application from start to finish all by
-            yourself.
+            yourself. You’ll also have the tools you need to test your fully
+            developed ideas with online and offline testing methods.
           </p>
-          {/* <div className="path-mark">12-13</div> */}
-          {/* <h3>Final Project</h3>
+          <div className="path-mark">15</div>
+          <h3>Designing and Developing as a Team</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <p>
-            After 11 Weeks of intense training, you have all you need to team up
-            with your fellow campers and start building your own projects.
-            You'll get extra support from mentors in our community who can, in
-            addition to technical support, help you figure out in which
-            direction you want to specialize and continue your development after
-            the camp.
-          </p> */}
+            This module is all about those skills that come in handy when
+            working with product teams. We’ll cover common project management
+            practices such as Agile and Scrum. You’ll also get practice handling
+            conflict resolution and ways to reach alignment. Finally, we review
+            some user experience design tools that help teams align on future
+            features and product strategy.
+          </p>
+          <div className="path-mark">16</div>
+          <h3>Review Week</h3>
+          <div className="path-line">
+            <div className="line"></div>
+          </div>
+          <p>
+            Before going into the final project, it's the perfect time to take a
+            look back at everyting you have learned. We'll review and practice
+            the material covered during the past months in a systematic manner
+            and explore future learning paths.
+          </p>
+          <div className="path-mark">17-21</div>
+          <h3>Final Project and Career Orientation</h3>
+          <div className="path-line">
+            <div className="line"></div>
+          </div>
+          <p>
+            The final month of the course will bring together your coding,
+            design, and professional skills into a final project. Students will
+            form small teams to focus on building different parts of a complex
+            web application. During this time, professionals in your future
+            field will join the course as mentors and coaches to kick start your
+            network and show you the path to your next career steps.
+          </p>
           <div className="path-mark">FINISH</div>
           <h3>Graduation</h3>
         </div>
