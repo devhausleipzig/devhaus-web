@@ -114,7 +114,7 @@ export default function Academy() {
           </div>
           <div className="text-2 next-camp">
             The next camp is running from <strong>September 13th, 2021</strong>{" "}
-            until <strong>Decempter 10th, 2021</strong>
+            until <strong>December 10th, 2021</strong>
           </div>
           {/* <div className="corona-announcment">
             Due to the COVID-19 pandemic, the 2021 summer camp will take place
