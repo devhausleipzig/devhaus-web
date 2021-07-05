@@ -105,16 +105,16 @@ export default function Academy() {
         </div>
         <div className="specs">
           <div className="short-specs button-text">
-            <span>21 Weeks</span>
+            <span>13 Weeks</span>
             <span>Mo - Fr</span>
-            <span>9:00 - 17:30</span>
+            <span>9:00 - 17:00</span>
             <span>English</span>
             <span>Up to 12 Students</span>
-            <span>Hybrid (remote and in person)</span>
+            <span>Remote</span>
           </div>
           <div className="text-2 next-camp">
-            The next camp is running from <strong>August 30th, 2021</strong>{" "}
-            until <strong>January 28th, 2022</strong>
+            The next camp is running from <strong>September 13th, 2021</strong>{" "}
+            until <strong>Decempter 10th, 2021</strong>
           </div>
           {/* <div className="corona-announcment">
             Due to the COVID-19 pandemic, the 2021 summer camp will take place
@@ -389,7 +389,7 @@ export default function Academy() {
             the Typescript Programming Language, but also the principles and
             techniques that are common to all programming languages.
           </p>
-          <div className="path-mark">4-7</div>
+          <div className="path-mark">4-6</div>
           <h3>One Page Love</h3>
           <div className="path-line">
             <div className="line"></div>
@@ -407,20 +407,18 @@ export default function Academy() {
             their portfolio. The projects will be designed mobile-first, and
             also be documented via building out their Information Architecture.
           </p>
-          <div className="path-mark">8-9</div>
-          <h3>Intro to Frontend Frameworks</h3>
+          <div className="path-mark">7</div>
+          <h3>Practice Week</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <p>
-            Frontend Frameworks like React, Angular &amp; Vue might seem scary
-            after starting off with HTML &amp; CSS, but they can make your life
-            easier and allow you to build rich user interfaces with fewer lines
-            of code. We'll take a gentle start into this way of building web
-            sites, covering what a frontend framework actually does under the
-            hood while translating the websites we have created so far into Vue.
+            It's time to refresh and reflect on the material learned so far.
+            During this week, there are no classes and no new material. Only
+            individual check-in sessions and the opportunity to solidify your
+            skills through focused practice.
           </p>
-          <div className="path-mark">10-12</div>
+          <div className="path-mark">8-9</div>
           <h3>Full Stack Web Application</h3>
           <div className="path-line">
             <div className="line"></div>
@@ -431,13 +429,9 @@ export default function Academy() {
             product design process, we'll prototype and build the user
             interface. This is an opportunity to take a close look at all
             components of a professional software development process in full
-            detail and practice them in a controlled environment. The module
-            also includes a deep dive into the user interview process, allowing
-            us to get feedback for the web application idea or prototype. We’ll
-            be preparing mood boards for high fidelity designs and a few target
-            personas based off of the user interview data.
+            detail and practice them in a controlled environment.
           </p>
-          <div className="path-mark">13-14</div>
+          <div className="path-mark">10-11</div>
           <h3>Backend Engineering</h3>
           <div className="path-line">
             <div className="line"></div>
@@ -450,45 +444,20 @@ export default function Academy() {
             &amp; continuous deployment. However, with a lot of focus, carefully
             designed instruction, and a bit of cheating you'll become able to
             build a full stack web application from start to finish all by
-            yourself. You’ll also have the tools you need to test your fully
-            developed ideas with online and offline testing methods.
+            yourself.
           </p>
-          <div className="path-mark">15</div>
-          <h3>Designing and Developing as a Team</h3>
+          <div className="path-mark">12-13</div>
+          <h3>Final Project</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <p>
-            This module is all about those skills that come in handy when
-            working with product teams. We’ll cover common project management
-            practices such as Agile and Scrum. You’ll also get practice handling
-            conflict resolution and ways to reach alignment. Finally, we review
-            some user experience design tools that help teams align on future
-            features and product strategy.
-          </p>
-          <div className="path-mark">16</div>
-          <h3>Review Week</h3>
-          <div className="path-line">
-            <div className="line"></div>
-          </div>
-          <p>
-            Before going into the final project, it's the perfect time to take a
-            look back at everyting you have learned. We'll review and practice
-            the material covered during the past months in a systematic manner
-            and explore future learning paths.
-          </p>
-          <div className="path-mark">17-21</div>
-          <h3>Final Project and Career Orientation</h3>
-          <div className="path-line">
-            <div className="line"></div>
-          </div>
-          <p>
-            The final month of the course will bring together your coding,
-            design, and professional skills into a final project. Students will
-            form small teams to focus on building different parts of a complex
-            web application. During this time, professionals in your future
-            field will join the course as mentors and coaches to kick start your
-            network and show you the path to your next career steps.
+            After 11 Weeks of intense training, you have all you need to team up
+            with your fellow campers and start building your own projects.
+            You'll get extra support from mentors in our community who can, in
+            addition to technical support, help you figure out in which
+            direction you want to specialize and continue your development after
+            the camp.
           </p>
           <div className="path-mark">FINISH</div>
           <h3>Graduation</h3>
@@ -513,8 +482,8 @@ export default function Academy() {
           strive to keep student costs minimal.
         </p>
         <div className="price">
-          Tuition for the full-time 10-Week Code Camp program is{" "}
-          <strong>&euro; 2.600 (VAT included)</strong>
+          Tuition for the full-time 13-Week Code Camp program is{" "}
+          <strong>&euro; 4.800 (VAT included)</strong>
         </div>
         {/* <p>
           We provide a range of options to help you finance your education,
