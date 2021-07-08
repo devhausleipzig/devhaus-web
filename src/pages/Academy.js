@@ -110,7 +110,7 @@ export default function Academy() {
             <span>9:00 - 17:00</span>
             <span>English</span>
             <span>Up to 12 Students</span>
-            <span>Remote</span>
+            <span>In person at Floßplatz 6</span>
           </div>
           <div className="text-2 next-camp">
             The next camp is running from <strong>September 13th, 2021</strong>{" "}
