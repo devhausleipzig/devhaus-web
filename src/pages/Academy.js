@@ -397,8 +397,9 @@ export default function Academy() {
           </div>
           <div className="path-content">
             <p>
-              <strong> Due to scheduling constraints for the Winter 2021 Camp, 
-              there will be no self-practice/break week.</strong><br/>
+              **Due to scheduling constraints for the Winter 2021 Camp, 
+              there will be no self-practice/break week**
+              <br />
               It's time to refresh and reflect on the material learned so far.
               During this week, there are no classes and no new material. Only
               individual check-in sessions and the opportunity to solidify your
