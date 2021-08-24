@@ -360,86 +360,99 @@ export default function Academy() {
           <div className="path-line">
             <div className="line"></div>
           </div>
-          <p>
-            Although programming is only one of many skills involved in software
-            development, it is the key to its power. Starting from "Hello World"
-            , we'll build a collection of small programs with increasing
-            complexity and, thereby, learn not only the syntax and grammar of
-            the Typescript Programming Language, but also the principles and
-            techniques that are common to all programming languages.
-          </p>
+          <div className="path-content">
+            <p>
+              Although programming is only one of many skills involved in software
+              development, it is the key to its power. Starting from "Hello World"
+              , we'll build a collection of small programs with increasing
+              complexity and, thereby, learn not only the syntax and grammar of
+              the Typescript Programming Language, but also the principles and
+              techniques that are common to all programming languages.
+            </p>
+          </div>
           <div className="path-mark">4-6</div>
           <h3>One Page Love</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
-          <p>
-            Our next goal is to get familiar with the technologies that run the
-            web and build basic skills in User Interface Design. We’ll start off
-            with a practical introduction to the Human Centered Design process.
-            We’ll go through one iteration of the design steps, starting from
-            research all the way to prototyping and testing. We'll continue with
-            analyzing and carefully re-constructing multiple websites built for
-            different use cases. We’ll dive into design systems, color theory,
-            and typography. At the end of the module, everyone will design and
-            build a personal website project that may become the first item in
-            their portfolio. The projects will be designed mobile-first, and
-            also be documented via building out their Information Architecture.
-          </p>
+          <div className="path-content">
+            <p>
+              Our next goal is to get familiar with the technologies that run the
+              web and build basic skills in User Interface Design. We’ll start off
+              with a practical introduction to the Human Centered Design process.
+              We’ll go through one iteration of the design steps, starting from
+              research all the way to prototyping and testing. We'll continue with
+              analyzing and carefully re-constructing multiple websites built for
+              different use cases. We’ll dive into design systems, color theory,
+              and typography. At the end of the module, everyone will design and
+              build a personal website project that may become the first item in
+              their portfolio. The projects will be designed mobile-first, and
+              also be documented via building out their Information Architecture.
+            </p>
+          </div>
           <div className="path-mark">7</div>
           <h3>Practice Week</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
-          <p>
-            <strong> Due to scheduling constraints for the Winter 2021 Camp, there will be no self-practice/break week.</strong>
-            It's time to refresh and reflect on the material learned so far.
-            During this week, there are no classes and no new material. Only
-            individual check-in sessions and the opportunity to solidify your
-            skills through focused practice.
-          </p>
+          <div className="path-content">
+            <p>
+              <strong> Due to scheduling constraints for the Winter 2021 Camp, 
+              there will be no self-practice/break week.</strong><br/>
+              It's time to refresh and reflect on the material learned so far.
+              During this week, there are no classes and no new material. Only
+              individual check-in sessions and the opportunity to solidify your
+              skills through focused practice.
+            </p>
+          </div>
           <div className="path-mark">8-9</div>
           <h3>Full Stack Web Application</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
-          <p>
-            In the second half of the course, we are going to design and build a
-            more complex web application. After walking together through a
-            product design process, we'll prototype and build the user
-            interface. This is an opportunity to take a close look at all
-            components of a professional software development process in full
-            detail and practice them in a controlled environment.
-          </p>
+          <div className="path-content">
+            <p>
+              In the second half of the course, we are going to design and build a
+              more complex web application. After walking together through a
+              product design process, we'll prototype and build the user
+              interface. This is an opportunity to take a close look at all
+              components of a professional software development process in full
+              detail and practice them in a controlled environment.
+            </p>
+          </div>
           <div className="path-mark">10-11</div>
           <h3>Backend Engineering</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
-          <p>
-            To round off the skillset, we'll build and deploy the backend of our
-            web application. This is the most challenging part of the course, as
-            it normally requires a long time to master the complexities of a
-            production level backend, including authentication, database design
-            &amp; continuous deployment. However, with a lot of focus, carefully
-            designed instruction, and a bit of cheating you'll become able to
-            build a full stack web application from start to finish all by
-            yourself.
-          </p>
+          <div className="path-content">
+            <p>
+              To round off the skillset, we'll build and deploy the backend of our
+              web application. This is the most challenging part of the course, as
+              it normally requires a long time to master the complexities of a
+              production level backend, including authentication, database design
+              &amp; continuous deployment. However, with a lot of focus, carefully
+              designed instruction, and a bit of cheating you'll become able to
+              build a full stack web application from start to finish all by
+              yourself.
+            </p>
+          </div>
           <div className="path-mark">12-13</div>
           <h3>Final Project</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
-          <p>
-            After 11 Weeks of intense training, you have all you need to team up
-            with your fellow campers and start building your own projects.
-            You'll get extra support from mentors in our community who can, in
-            addition to technical support, help you figure out in which
-            direction you want to specialize and continue your development after
-            the camp.
-          </p>
-          <div className="path-mark">FINISH</div>
+          <div className="path-content">          
+            <p>
+              After 11 Weeks of intense training, you have all you need to team up
+              with your fellow campers and start building your own projects.
+              You'll get extra support from mentors in our community who can, in
+              addition to technical support, help you figure out in which
+              direction you want to specialize and continue your development after
+              the camp.
+            </p>
+          </div>
+         <div className="path-mark">FINISH</div>
           <h3>Graduation</h3>
         </div>
       </section>
