@@ -105,7 +105,7 @@ export default function Academy() {
         </div>
         <div className="specs">
           <div className="short-specs button-text">
-            <span>13 Weeks</span>
+            <span>12 Weeks</span>
             <span>Mo - Fr</span>
             <span>9:00 - 17:00</span>
             <span>English</span>
@@ -113,13 +113,9 @@ export default function Academy() {
             <span>In person at Floßplatz 6</span>
           </div>
           <div className="text-2 next-camp">
-            The next camp is running from <strong>September 13th, 2021</strong>{" "}
-            until <strong>December 10th, 2021</strong>
+            The next camp is running from <strong>September 27th, 2021</strong>{" "}
+            until <strong>December 23rd, 2021</strong>
           </div>
-          {/* <div className="corona-announcment">
-            Due to the COVID-19 pandemic, the 2021 summer camp will take place
-            remotely
-          </div> */}
           <div>
             <a
               href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
@@ -170,23 +166,6 @@ export default function Academy() {
             <h3>Team Workflows &amp; Communication</h3>
           </div>
         </div>
-        {/* <div className="specs">
-          <div className="short-specs button-text">
-            <span>10 Weeks</span>
-            <span>Mo - Fr</span>
-            <span>9:00 - 17:00</span>
-            <span>English</span>
-            <span>Up to 12 Students</span>
-            <span>Taking place remotely</span>
-          </div>
-          <div className="text-3 next-camp">
-            The next Code Camp is starting on <strong>July 5th</strong>
-          </div>
-          <div className="corona-announcment">
-            Due to the COVID-19 pandemic, the 2021 summer camp will take place
-            remotely
-          </div>
-        </div> */}
       </section>
 
       <section className="approach">
@@ -413,6 +392,7 @@ export default function Academy() {
             <div className="line"></div>
           </div>
           <p>
+            <strong> Due to scheduling constraints for the Winter 2021 Camp, there will be no self-practice/break week. </strong><br/>
             It's time to refresh and reflect on the material learned so far.
             During this week, there are no classes and no new material. Only
             individual check-in sessions and the opportunity to solidify your
@@ -482,15 +462,16 @@ export default function Academy() {
           strive to keep student costs minimal.
         </p>
         <div className="price">
-          Tuition for the full-time 13-Week Code Camp program is{" "}
+          Tuition for the full-time 12-Week Code Camp program is{" "}
           <strong>&euro; 4.800 (VAT included)</strong>
         </div>
-        {/* <p>
+        <p>
           We provide a range of options to help you finance your education,
           including payment plans, government programs, loan partners, and
           scholarships. Make sure to reach out to us, so we can evaluate the
-          financing options that fit your specific situation.
-        </p> */}
+          financing options that fit your specific situation. <br/>
+          Contact us at <a href="mailto:info@devhausleipzig.de">info@devhausleipzig.de</a> with any questions.
+        </p>
         <a
           href="https://calendly.com/devhaus-leipzig/devhaus-1-on-1?month=2021-02"
           target="_blank"
