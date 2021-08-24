@@ -392,7 +392,9 @@ export default function Academy() {
             <div className="line"></div>
           </div>
           <p>
-            <strong> Due to scheduling constraints for the Winter 2021 Camp, there will be no self-practice/break week. </strong><br/>
+              <strong> Due to scheduling constraints for the Winter 2021 Camp, there will be no self-practice/break week. </strong>
+          </p>
+           <p>
             It's time to refresh and reflect on the material learned so far.
             During this week, there are no classes and no new material. Only
             individual check-in sessions and the opportunity to solidify your
@@ -470,7 +472,8 @@ export default function Academy() {
           including payment plans, government programs, loan partners, and
           scholarships. Make sure to reach out to us, so we can evaluate the
           financing options that fit your specific situation. <br/>
-          Contact us at <a href="mailto:info@devhausleipzig.de">info@devhausleipzig.de</a> with any questions.
+          Contact us at <strong><a href="mailto:info@devhausleipzig.de">info@devhausleipzig.de</a></strong>
+          with any questions.
         </p>
         <a
           href="https://calendly.com/devhaus-leipzig/devhaus-1-on-1?month=2021-02"
