@@ -7,13 +7,11 @@ import gabrielImage from "images/profiles/gabe.png";
 import franzImage from "images/profiles/franz.png";
 import danImage from "images/profiles/dan.png";
 import valImage from "images/profiles/val.png";
-import olaImage from "images/profiles/ola.png";
+import hannahImage from "images/profiles/hannah.png";
 import svenImage from "images/profiles/sven.png";
 import veraImage from "images/profiles/vera.png";
 import moritzImage from "images/profiles/moritz.png";
-import matImage from "images/profiles/mat.png";
 import felixImage from "images/profiles/felix.png";
-import janImage from "images/profiles/jan.png";
 
 export default function About() {
   const content = (
@@ -51,23 +49,13 @@ export default function About() {
           />
           <Profile
             name="Gabriel Heinrich"
-            role="Instructor & Co-Founder"
+            role="Co-Founder"
             image={gabrielImage}
           />
           <Profile
             name="Franz-Josef Wollang"
-            role="Co-Founder"
+            role="Instructor & Co-Founder"
             image={franzImage}
-          />
-          <Profile
-            name="Aleksandra Janz"
-            role="Operations & Communications Manager"
-            image={olaImage}
-          />
-          <Profile
-            name="Jan-Hendrik Daidrich"
-            role="HR & Finance"
-            image={janImage}
           />
           <Profile
             name="Valeria Koriatchenko"
@@ -76,11 +64,7 @@ export default function About() {
           />
           <Profile name="Dan McAtee" role="Instructor" image={danImage} />
           <Profile name="Sven Laschinski" role="Instructor" image={svenImage} />
-          <Profile
-            name="Mat O'Brien"
-            role="Marketing & Resident"
-            image={matImage}
-          />
+          <Profile name="Hannah Mühlfeldner" role="In-house Photographer/Videographer" image={hannahImage} />
           <Profile name="Vera Scheunert" role="Resident" image={veraImage} />
           <Profile name="Moritz Piehl" role="Resident" image={moritzImage} />
           <Profile name="Felix Wippich" role="Resident" image={felixImage} />
