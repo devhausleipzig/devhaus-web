@@ -123,7 +123,7 @@ export default function Academy() {
           </div>
           <div>
             <span>Applications open November 10</span>
-            /***
+            {/*
             <a
               href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
               t
@@ -132,7 +132,7 @@ export default function Academy() {
             >
               <button className="plain button-text">Apply now</button>
             </a>
-            ***/
+            */}
           </div>
         </div>
         <div className="intro content-narrow">
@@ -507,7 +507,7 @@ export default function Academy() {
           days, regardless of when they apply.
         </p>
         <span>Applications open November 10</span>
-        /***
+        {/*
         <a
           href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
           target="_blank"
@@ -515,7 +515,7 @@ export default function Academy() {
         >
           <button className="plain button-text">Apply now</button>
         </a>
-        ***/
+        */}
       </section>
     </div>
   );
