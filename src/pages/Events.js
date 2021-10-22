@@ -30,7 +30,22 @@ export default function Events() {
       <div>
         <Event title="Summer Break" date="01.07.2021 - 01.08.2021"></Event>
 
-        <Event title="Kick-Off Code Camp #5" date="13.09.2021"></Event>
+        <Event
+          title="Chat With Us - Digital Career Landscape"
+          date="28.10.2021"
+          link="https://www.meetup.com/devhaus-leipzig-meetup-group/events/281565528/"
+        ></Event>
+
+        <Event
+          title="Applications For Camp #5 Open"
+          date="10.11.2021"
+        ></Event>
+
+        <Event
+          title="Hackolaus hosted by Open Tech School Leipzig"
+          link="https://hackolaus.netlify.app/"
+          date="19.11.2021 - 21.11.2021"
+        ></Event>
 
         <Event
           title="Demo Day"
@@ -39,14 +54,8 @@ export default function Events() {
         ></Event>
 
         <Event
-          title="Hackolaus hosted by Open Tech School Leipzig"
-          link="https://hackolaus.netlify.app/"
-          date="19.11.2021 - 21.11.2021"
-        ></Event>
-        <Event
-          title="Graduation of Class #5"
-          date="10.12.2021"
-          link="https://www.meetup.com/devhaus-leipzig-meetup-group/events/279337585/"
+          title="Camp #5 Kickoff Event"
+          date="13.01.2022"
         ></Event>
       </div>
     </div>
