@@ -7,7 +7,7 @@ import gabrielImage from "images/profiles/gabe.png";
 import franzImage from "images/profiles/franz.png";
 import danImage from "images/profiles/dan.png";
 import valImage from "images/profiles/val.png";
-import hannahImage from "images/profiles/hannah.png";
+import hannahImage from "images/profiles/hannah.jpg";
 import svenImage from "images/profiles/sven.png";
 import veraImage from "images/profiles/vera.png";
 import moritzImage from "images/profiles/moritz.png";

@@ -27,7 +27,7 @@ import sciendisLogo from "images/logos/sciendis.png";
 import spreadshirtLogo from "images/logos/spreadshirt-logo.png";
 import eexLogo from "images/logos/eex.png";
 import micoboLogo from "images/logos/micobo.png";
-import infaiLogo from "images/logos/infai.png";
+import infaiLogo from "images/logos/infai.jpg";
 
 const logos = [
   {
@@ -123,14 +123,16 @@ export default function Academy() {
           </div>
           <div>
             <span>Applications open November 10</span>
-            // <a
-            //   href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
-            //   t
-            //   arget="_blank"
-            //   rel="noreferrer"
-            // >
-            //   <button className="plain button-text">Apply now</button>
-            // </a>
+            /***
+            <a
+              href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
+              t
+              arget="_blank"
+              rel="noreferrer"
+            >
+              <button className="plain button-text">Apply now</button>
+            </a>
+            ***/
           </div>
         </div>
         <div className="intro content-narrow">
@@ -505,13 +507,15 @@ export default function Academy() {
           days, regardless of when they apply.
         </p>
         <span>Applications open November 10</span>
-        // <a
-        //   href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
-        //   target="_blank"
-        //   rel="noreferrer"
-        // >
-        //   <button className="plain button-text">Apply now</button>
-        // </a>
+        /***
+        <a
+          href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="plain button-text">Apply now</button>
+        </a>
+        ***/
       </section>
     </div>
   );

@@ -5,13 +5,13 @@ import { FullLine, DevhausLine } from "../components/HorizontalLine";
 import logo from "images/devhaus-logo.svg";
 
 const navigationLinks = [
-  {
-    to: "https://devhausleipzig.typeform.com/to/nuEZxpkv",
-    title: "Apply Now",
-    color: "devhaus",
-    external: true,
-    activePath: "/",
-  },
+  // {
+  //   to: "https://devhausleipzig.typeform.com/to/nuEZxpkv",
+  //   title: "Apply Now",
+  //   color: "devhaus",
+  //   external: true,
+  //   activePath: "/",
+  // },
   { to: "/academy", title: "Academy", color: "blue" },
   { to: "/studio", title: "Studio", color: "green" },
   { to: "/events", title: "Events", color: "yellow" },
