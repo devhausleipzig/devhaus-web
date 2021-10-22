@@ -64,7 +64,7 @@ export default function About() {
           />
           <Profile name="Dan McAtee" role="Instructor" image={danImage} />
           <Profile name="Sven Laschinski" role="Instructor" image={svenImage} />
-          <Profile name="Hannah Mühlfeldner" role="In-house Photographer/Videographer" image={hannahImage} />
+          <Profile name="Hannah Mühlfeldner" role="In-house Photographer" image={hannahImage} />
           <Profile name="Vera Scheunert" role="Resident" image={veraImage} />
           <Profile name="Moritz Piehl" role="Resident" image={moritzImage} />
           <Profile name="Felix Wippich" role="Resident" image={felixImage} />
