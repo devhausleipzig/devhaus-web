@@ -506,7 +506,7 @@ export default function Academy() {
           applicants can expect to get a decision on their application within 30
           days, regardless of when they apply.
         </p>
-        <span>Applications open November 10</span>
+        <span style='justify-content:center;'><strong>Applications open November 10</strong></span>
         {/*
         <a
           href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
