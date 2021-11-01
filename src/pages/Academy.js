@@ -110,7 +110,7 @@ export default function Academy() {
         </div>
         <div className="specs">
           <div className="short-specs button-text">
-            <span>24 Weeks</span>
+            <span>23 Weeks</span>
             <span>Mo - Fr</span>
             <span>9:00 - 17:00</span>
             <span>English</span>
@@ -119,7 +119,7 @@ export default function Academy() {
           </div>
           <div className="text-2 next-camp">
             The next camp is running from <strong>January 13th, 2022</strong>{" "}
-            until <strong>July 1st, 2021</strong>
+            until <strong>June 24th, 2021</strong>
           </div>
           <div>
             <span>Applications open November 10</span>
@@ -143,7 +143,7 @@ export default function Academy() {
             For 2 years, we supported 13-week camps and found that despite over 85% of our graduates working in technical jobs after graduating, many Jr. developer jobs require a deeper skill set and many students needed months of additional self-training to feel competitive.
           </p>
           <p>
-          Our 24-week course is designed to provide all students with the curriculum, environment, and support they need to be prepared for a Jr. Frontend developer position and the foundation to grow into other technical roles.
+          Our 23-week course is designed to provide all students with the curriculum, environment, and support they need to be prepared for a Jr. Frontend developer position and the foundation to grow into other technical roles.
           </p>
         </div>
         <div className="skills content-narrow">
@@ -433,7 +433,7 @@ export default function Academy() {
               Our final weeks of formal curriculum walk students through professional development processes and provide basic starting tracks for interested students to dive deeper into specializations like Backend development & DevOps, Data Science, UI/UX Design, and Agile Management. We’ll also dive into our second hackathon to kick off the final project.
             </p>
           </div>
-          <div className="path-mark">18-24</div>
+          <div className="path-mark">18-23</div>
           <h3>Final Project + 2nd Hackathon</h3>
           <div className="path-line">
             <div className="line"></div>
@@ -466,8 +466,8 @@ export default function Academy() {
           strive to keep student costs minimal.
         </p>
         <div className="price">
-          Tuition for the full-time 24-Week Code Camp program is{" "}
-          <strong>€15.224 plus VAT</strong>
+          Tuition for the full-time 23-Week Code Camp program is{" "}
+          <strong>€15,110 plus VAT</strong>
         </div>
         <p>
           Our goal is to make the Code Camp as accessible as possible for qualified candidates.
