@@ -29,6 +29,9 @@ import eexLogo from "images/logos/eex.png";
 import micoboLogo from "images/logos/micobo.png";
 import infaiLogo from "images/logos/infai.jpg";
 
+const currentCampStart = "January 13th, 2022";
+const currentCampEnd = "June 24th, 2021";
+
 const logos = [
   {
     logo: actaportLogo,
@@ -118,21 +121,20 @@ export default function Academy() {
             <span>Hybrid (remote or in-person)</span>
           </div>
           <div className="text-2 next-camp">
-            The next camp is running from <strong>January 13th, 2022</strong>{" "}
-            until <strong>June 24th, 2021</strong>
+            The next camp is running from <strong>{currentCampStart}</strong>{" "}
+            until <strong>{currentCampEnd}</strong>
           </div>
           <div>
-            <span>Applications open November 10</span>
-            {/*
+            {/*<span class="flex-center" style={{ marginTop: "0.5rem" }}><strong>Applications open November 10</strong></span>
+            */}
             <a
-              href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
+              href="https://devhausleipzig.typeform.com/to/oKd3gzOr"
               t
               arget="_blank"
               rel="noreferrer"
             >
               <button className="plain button-text">Apply now</button>
             </a>
-            */}
           </div>
         </div>
         <div className="intro content-narrow">
@@ -506,16 +508,15 @@ export default function Academy() {
           applicants can expect to get a decision on their application within 30
           days, regardless of when they apply.
         </p>
-        <span class="flex-center" style={{ marginTop: "0.5rem" }}><strong>Applications open November 10</strong></span>
-        {/*
+        {/*<span class="flex-center" style={{ marginTop: "0.5rem" }}><strong>Applications open November 10</strong></span>
+        */}
         <a
-          href="https://devhausleipzig.typeform.com/to/nuEZxpkv"
+          href="https://devhausleipzig.typeform.com/to/oKd3gzOr"
           target="_blank"
           rel="noreferrer"
         >
           <button className="plain button-text">Apply now</button>
         </a>
-        */}
       </section>
     </div>
   );
