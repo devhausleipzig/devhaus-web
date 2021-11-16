@@ -30,7 +30,7 @@ import micoboLogo from "images/logos/micobo.png";
 import infaiLogo from "images/logos/infai.jpg";
 
 const currentCampStart = "January 13th, 2022";
-const currentCampEnd = "June 24th, 2021";
+const currentCampEnd = "June 24th, 2022";
 
 const logos = [
   {
