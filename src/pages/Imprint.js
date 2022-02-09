@@ -10,7 +10,7 @@ export default function Imprint() {
         <div>Code Camp Leipzig UG (haftungsbeschränkt)</div>
         <div>Peterssteinweg 14</div>
         <div>04107 Leipzig</div> <div>E-Mail: info@codecampleipzig.de</div>
-        <div>Geschäftsführer: Taylor Harvey, Gabriel Heinrich</div>
+        <div>Geschäftsführer: Taylor Harvey</div>
         <div>USt. Identifikationsnummer: DE325664551</div>
       </div>
       <p style={{ marginTop: "1rem" }}>
