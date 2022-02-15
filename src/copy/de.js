@@ -1,4 +1,4 @@
-export default {
+const copyDE = {
     'home': {},
     'academy': {},
     'studio': {},
@@ -10,3 +10,5 @@ export default {
     'privacy': {},
     'events': {}
 } 
+
+export default copyDE

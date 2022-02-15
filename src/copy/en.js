@@ -1,4 +1,4 @@
-export default {
+const copyEN = {
     "nav": {
         "academy": "Academy",
         "studio": "Studio",
@@ -525,4 +525,6 @@ export default {
         }
     },
     "faq": {}
-} 
+}
+
+export default copyEN

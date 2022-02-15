@@ -1,12 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import PageHeader from "components/PageHeader";
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import Colcade from "colcade";
 
 import "./FAQ.scss";
 
 function GetQuestions() { 
-    const { t } = useTranslation()
+    // const { t } = useTranslation()
 
     return ([
         {
@@ -208,7 +208,7 @@ function Question({ question, answer }) {
 
 export default function Questions() {
     useEffect( () => {
-        let colc = new Colcade( '.grid', {
+        new Colcade( '.grid', {
             columns: '.grid-col',
             items: '.grid-item'
         });
