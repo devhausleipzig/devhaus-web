@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "components/PageHeader";
 import "./Contact.scss";
 import Picture from "components/Picture";
+import { useTranslation } from 'react-i18next';
 
 import collage from "images/contact/devhaus-collage.jpg";
 // import collageX2 from "images/contact/devhaus-collage@2x.jpg";
@@ -39,20 +40,21 @@ import collage from "images/contact/devhaus-collage.jpg";
 // }
 
 export default function Contact() {
-  const subtitle = <p>We are always happy to meet and chat.</p>;
+  const { t } = useTranslation()
+
+  const subtitle = <p>{t('contact:subheader')}</p>;
 
   const content = (
     <div className="measure-narrow">
       <p>
         info@devhausleipzig.de
         <br />
-        Tel: +49 151 21675615
+        +49 151 21675615
       </p>
       <p>
-        Floßplatz 6<br />
-        04109 Leipzig
-        <br />
-        Germany
+        Floßplatz 6 <br />
+        04109 Leipzig <br />
+        {t('contact:germany')}
       </p>
     </div>
   );
@@ -60,7 +62,7 @@ export default function Contact() {
   return (
     <div className="content contact navbar-padding">
       <PageHeader
-        title="Contact"
+        title={t('contact:header')}
         subtitle={subtitle}
         content={content}
         color="devhaus"

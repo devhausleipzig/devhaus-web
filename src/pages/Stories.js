@@ -1,6 +1,7 @@
 import React from "react";
 import PageHeader from "components/PageHeader";
 import Picture from "components/Picture";
+import { useTranslation } from 'react-i18next';
 
 import "./Stories.scss";
 import classRoom from "images/stories/classroom.png";
@@ -29,63 +30,66 @@ function Story({ title, image, category, link }) {
   );
 }
 
-const stories = [
-  {
-    title: "“A wild ride”: Code Camp Leipzig turns one year old",
-    image: classRoom,
-    category: "Article",
-    link:
-      "https://leipglo.com/2020/09/23/a-wild-ride-code-camp-leipzig-turns-one-year-old/",
-  },
+function GetStories() { 
+  const { t } = useTranslation()
 
-  {
-    title:
-      "Code Camp Leipzig named recipient of RE-START award by Smart Infrastructure Hub Leipzig",
-    image: smartinfrastructurehub,
-    category: "Article",
-    link: "https://www.smartinfrastructurehub.com/vng-restart",
-  },
-  {
-    title: "Startup Safari Panel: “Developing Skills for a Digital World”",
-    image: startupSafari,
-    category: "Panel Discussion",
-    link: "https://www.youtube.com/watch?v=H5qbkufaJ2I",
-  },
-  {
-    title:
-      "Wie kann Leipzig Hypezig bleiben?: Leipzig’s transformation into an IT-hub",
-    image: hypezig,
-    category: "Article",
-    link:
-      "https://www.golem.de/sonstiges/zustimmung/auswahl.html?from=https%3A%2F%2Fwww.golem.de%2Fnews%2Fit-standorte-wie-kann-leipzig-hypezig-bleiben-1907-142461.html%3Ffbclid%3DIwAR2MdlTuNNy5iZQ9NBzm-zR3_0CQD87Uk08hWo_lFGgVLtMmaa5crwtWR3A&referer=https%3A%2F%2Fl.facebook.com%2F",
-  },
-  {
-    title: "Tales from Code Camp #1",
-    image: camp1,
-    category: "Story Series",
-    link: "https://medium.com/series/code-camp-leipzig-the-camp-5cba9f08f2f5",
-  },
-  {
-    title: "Codemotion Berlin 2019 Community Interview with Simon",
-    image: codemotion,
-    category: "Interview",
-    link: "https://www.youtube.com/watch?v=guhX4AH0IGw",
-  },
-  {
-    title:
-      "Shopping-Ideen für die Zukunft: Retail Hackathon in Leipzig’s Höfe am Brühl",
-    image: futureRetailHackathon,
-    category: "Hackathon",
-    link:
-      "https://www.lvz.de/Nachrichten/Wirtschaft/Wirtschaftszeitung/Retail-Hackathon-Leipzig-Shopping-Ideen-fuer-die-Zukunft",
-  },
-];
+  return ([
+    {
+      title: t('stories:aWildRide'),
+      image: classRoom,
+      category: t('stories:categories.article'),
+      link:
+        "https://leipglo.com/2020/09/23/a-wild-ride-code-camp-leipzig-turns-one-year-old/",
+    },
+
+    {
+      title: t('stories:smartInfrastructure'),
+      image: smartinfrastructurehub,
+      category: t('stories:categories.article'),
+      link: "https://www.smartinfrastructurehub.com/vng-restart",
+    },
+    {
+      title: t('stories:startupSafari'),
+      image: startupSafari,
+      category: t('stories:categories.panel'),
+      link: "https://www.youtube.com/watch?v=H5qbkufaJ2I",
+    },
+    {
+      title: t('stories:hypezig'),
+      image: hypezig,
+      category: t('stories:categories.article'),
+      link:
+        "https://www.golem.de/sonstiges/zustimmung/auswahl.html?from=https%3A%2F%2Fwww.golem.de%2Fnews%2Fit-standorte-wie-kann-leipzig-hypezig-bleiben-1907-142461.html%3Ffbclid%3DIwAR2MdlTuNNy5iZQ9NBzm-zR3_0CQD87Uk08hWo_lFGgVLtMmaa5crwtWR3A&referer=https%3A%2F%2Fl.facebook.com%2F",
+    },
+    {
+      title: t('stories:tales'),
+      image: camp1,
+      category: t('stories:categories.storySeries'),
+      link: "https://medium.com/series/code-camp-leipzig-the-camp-5cba9f08f2f5",
+    },
+    {
+      title: t('stories:codemotion'),
+      image: codemotion,
+      category: t('stories:categories.interview'),
+      link: "https://www.youtube.com/watch?v=guhX4AH0IGw",
+    },
+    {
+      title: t('stories:retailHackathon'),
+      image: futureRetailHackathon,
+      category: t('stories:categories.hackathon'),
+      link:
+        "https://www.lvz.de/Nachrichten/Wirtschaft/Wirtschaftszeitung/Retail-Hackathon-Leipzig-Shopping-Ideen-fuer-die-Zukunft",
+    },
+  ])
+}
 
 export default function Stories() {
   return (
     <div className="stories navbar-padding content">
       <PageHeader title="Stories" color="red"></PageHeader>
-      <div className="card-list">{stories.map((story) => Story(story))}</div>
+      <div className="card-list">
+        {GetStories().map((story) => Story(story))}
+        </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, forwardRef } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
+import { useTranslation } from "react-i18next";
 import "./NewsletterForm.scss";
 
 function useOutsideAlerter(ref, cb) {
@@ -18,6 +19,7 @@ function useOutsideAlerter(ref, cb) {
 }
 
 const MailchimpForm = forwardRef(({ shouldFocus, onFocus, onSubmit }, ref) => {
+  const {t} = useTranslation()
   const inputRef = useRef(null);
   useEffect(() => {
     if (inputRef.current && shouldFocus) {
@@ -46,7 +48,7 @@ const MailchimpForm = forwardRef(({ shouldFocus, onFocus, onSubmit }, ref) => {
               name="EMAIL"
               className="email"
               id="mce-EMAIL"
-              placeholder="Add your email address"
+              placeholder={t('newsletter:placeholder')}
               required
               ref={inputRef}
             />
@@ -66,7 +68,7 @@ const MailchimpForm = forwardRef(({ shouldFocus, onFocus, onSubmit }, ref) => {
           <div className="clear">
             <input
               type="submit"
-              value="Subscribe"
+              value={t('newsletter:submit')}
               name="subscribe"
               id="mc-embedded-subscribe"
             />
@@ -78,6 +80,7 @@ const MailchimpForm = forwardRef(({ shouldFocus, onFocus, onSubmit }, ref) => {
 });
 
 export default function NewsletterForm() {
+  const {t} = useTranslation()
   const [isSubscribing, setIsSubscribing] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -121,7 +124,7 @@ export default function NewsletterForm() {
               setIsSubscribing(true);
             }}
           >
-            Subscribe to our Newsletter
+            {t('newsletter:callToAction')}
           </button>
         )}
       </CSSTransition>

@@ -1,0 +1,34 @@
+.grid {
+    display: flex;
+}
+
+.grid-col {
+    float: left;
+    width: 50%;
+    align-items: center;
+}
+
+.grid-col--2 {
+    display: none;
+}
+
+.question {
+    margin-top: 5rem;
+    h3 {
+        margin-bottom: 2rem;
+    }
+}
+
+.questions {
+    .question-grid {
+        column-gap: 6rem;
+        row-gap: 4rem;
+        margin-bottom: 6rem;
+    }
+}
+
+@media ( min-width: 768px ) {
+    .grid-col--2 {
+        display: block;
+    }
+}

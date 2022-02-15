@@ -3,22 +3,26 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 import "./Navbar.scss";
 import { FullLine, DevhausLine } from "../components/HorizontalLine";
 import logo from "images/devhaus-logo.svg";
+import ReactLanguageSelect from 'react-languages-select';
+import 'react-languages-select/scss/react-languages-select.scss';
+import { useTranslation } from "react-i18next";
 
-const navigationLinks = [
-  // {
-  //   to: "https://devhausleipzig.typeform.com/to/nuEZxpkv",
-  //   title: "Apply Now",
-  //   color: "devhaus",
-  //   external: true,
-  //   activePath: "/",
-  // },
-  { to: "/academy", title: "Academy", color: "blue" },
-  { to: "/studio", title: "Studio", color: "green" },
-  { to: "/events", title: "Events", color: "yellow" },
-  { to: "/stories", title: "Stories", color: "red" },
-  { to: "/about", title: "About", color: "devhaus" },
-  { to: "/contact", title: "Contact", color: "devhaus" },
-];
+
+function NavLinks() {
+  const {t} = useTranslation();
+
+  return (
+    [
+      { to: "/academy", title: t('nav:academy'), color: "blue" },
+      { to: "/studio", title: t('nav:studio'), color: "green" },
+      { to: "/events", title: t('nav:events'), color: "yellow" },
+      { to: "/stories", title: t('nav:stories'), color: "red" },
+      { to: "/faq", title: "FAQ", color: "red" },
+      { to: "/about", title: t('nav:about'), color: "devhaus" },
+      { to: "/contact", title: t('nav:contact'), color: "devhaus" },
+    ]
+  );
+}
 
 function HamburgerIcon({ onClick }) {
   return (
@@ -74,13 +78,29 @@ function Navbar({ toggleMobileMenu }) {
         </Link>
       </div>
       <nav className="nav-menu">
-        {navigationLinks.map((link) => AbstractNavLink(link, "menu-link"))}
+        {NavLinks().map((link) => AbstractNavLink(link, "menu-link"))}
       </nav>
       <nav className="nav-hamburger">
         <HamburgerIcon onClick={toggleMobileMenu} />
       </nav>
     </div>
   );
+}
+
+function LanguagePicker(hide) {
+  const {i18n} = useTranslation()
+
+  const changeLanguage = (lang) => {
+    console.log(lang)
+    i18n.changeLanguage(lang)
+  }
+
+  return (
+    <div className="nav-options" style={{display: hide}}>
+      <ReactLanguageSelect languages={["en", "de"]} names="international" defaultLanguage="en"
+      onSelect={changeLanguage} customLabels={{'en': 'English', 'de': 'Deutsch'}} />
+    </div>
+  )
 }
 
 function MobileMenu({ toggleMobileMenu, visible }) {
@@ -91,9 +111,10 @@ function MobileMenu({ toggleMobileMenu, visible }) {
     >
       <div className="content">
         <nav className="nav-menu">
-          {navigationLinks.map((link) => AbstractNavLink(link, "menu-link"))}
+          {NavLinks().map((link) => AbstractNavLink(link, "menu-link"))}
         </nav>
       </div>
+      <LanguagePicker hide={!visible}></LanguagePicker>
       <div className="bottom-border">
         <FullLine color="devhaus" width={16} numSegments={6} />
       </div>
@@ -112,6 +133,7 @@ export default function Navigation() {
       <div className="navbar">
         <Navbar toggleMobileMenu={toggleMobileMenu} />
       </div>
+      <LanguagePicker hide={showMobileMenu}></LanguagePicker>
       <div className={"navbar scroll-navbar"}>
         <Navbar toggleMobileMenu={toggleMobileMenu} />
       </div>

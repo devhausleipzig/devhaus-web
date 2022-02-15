@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NewsletterForm from "components/NewsletterForm";
+import { useTranslation } from "react-i18next";
 
 import "./Footer.scss";
 
 export default function Footer() {
+  const {t} = useTranslation()
+
   const newsletterForm = NewsletterForm();
-  // const newsletterForm = "";
+
   return (
     <footer>
       <div className="content">
@@ -15,8 +18,8 @@ export default function Footer() {
             © {new Date().getFullYear()} Code Camp Leipzig
           </div>
           <div className="footer-links">
-            <Link to="/privacy">Privacy</Link>
-            <Link to="/imprint">Imprint</Link>
+            <Link to="/privacy">{t('footer:privacy')}</Link>
+            <Link to="/impressum">Impressum</Link>
           </div>
         </div>
         <div className="newsletter">{newsletterForm}</div>

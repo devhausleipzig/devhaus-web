@@ -66,9 +66,7 @@
 
       font-size: var(--text-1);
     }
-    .corona-announcment {
-      font-size: var(--text-1);
-    }
+
     margin-bottom: 8rem;
   }
 
@@ -80,9 +78,7 @@
   }
 
   .approach {
-    // h2 {
-    //   text-align: center;
-    // }
+    
     .approaches {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));

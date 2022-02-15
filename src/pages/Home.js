@@ -4,6 +4,7 @@ import "./Home.scss";
 import { DevhausLine } from "components/HorizontalLine";
 import { Link } from "react-router-dom";
 import Picture from "components/Picture";
+import { useTranslation } from 'react-i18next';
 
 import academyImage from "images/home/academy.jpg";
 import studioImage from "images/home/chat.jpg";
@@ -11,6 +12,8 @@ import eventsImage from "images/home/ccl-1-kickoff.jpg";
 import storiesImage from "images/home/fire.jpg";
 
 export default function Home() {
+  const {t} = useTranslation()
+
   const sectionLineWidth = 48;
   return (
     <div className="home">
@@ -23,23 +26,16 @@ export default function Home() {
       <div className="content">
         <section className="manifesto">
           <div className="intro content-narrow">
-            <h1 className="secondary-title">Devhaus Leipzig</h1>
+            <h1 className="secondary-title">{t('home:manifesto.header')}</h1>
             <h2>
-              A learning community for programmers
+              {t('home:manifesto.subheader')}
               <DevhausLine color="devhaus" numSegments={5} width={64} />
             </h2>
-
             <p>
-              Devhaus Leipzig grew out of the need for a place where developers
-              could learn and contribute to meaningful projects. Our mission is
-              to support the members of our community to reach their creative
-              and professional goals.
+              {t('home:manifesto.part1')}
             </p>
             <p>
-              Aspiring developers can take part in our Academy to learn the
-              fundamentals of software development. Once graduated, they join
-              our community of residents in the Studio, where their personal and
-              professional projects find the support they need to thrive.
+              {t('home:manifesto.part2')}
             </p>
 
             <div className="center">
@@ -53,9 +49,9 @@ export default function Home() {
             <div className="link">
               <Link to="/academy">
                 <div>
-                  <h2 className="secondary-title">Academy</h2>
+                  <h2 className="secondary-title">{t('home:academy.header')}</h2>
                   <h3>
-                    Take the first steps to becoming a software developer
+                    {t('home:academy.subheader')}
                     <DevhausLine
                       color="blue"
                       numSegments={5}
@@ -73,9 +69,9 @@ export default function Home() {
             </div>
             <div className="link">
               <Link to="/studio">
-                <h2 className="secondary-title">Studio</h2>
+                <h2 className="secondary-title">{t('home:studio.header')}</h2>
                 <h3>
-                  Get involved in creative software projects or launch your own
+                  {t('home:studio.subheader')}
                   <DevhausLine
                     color="green"
                     numSegments={5}
@@ -92,9 +88,9 @@ export default function Home() {
             </div>
             <div className="link">
               <Link to="/events">
-                <h2 className="secondary-title">Events</h2>
+                <h2 className="secondary-title">{t('home:events.header')}</h2>
                 <h3>
-                  Connect with the Devhaus community
+                  {t('home:events.subheader')}
                   <DevhausLine
                     color="yellow"
                     numSegments={5}
@@ -111,9 +107,9 @@ export default function Home() {
             </div>
             <div className="link">
               <Link to="/stories">
-                <h2 className="secondary-title">Stories</h2>
+                <h2 className="secondary-title">{t('home:stories.header')}</h2>
                 <h3>
-                  Keep up with what’s going down at Devhaus Leipzig
+                  {t('home:stories.subheader')}
                   <DevhausLine
                     color="red"
                     numSegments={5}
@@ -132,9 +128,9 @@ export default function Home() {
             <div>
               <div className="center about">
                 <Link to="/about">
-                  <h2 className="secondary-title">Who we are</h2>
+                  <h2 className="secondary-title">{t('home:about.header')}</h2>
                   <h3>
-                    About Devhaus Leipzig
+                    {t('home:about.subheader')}
                     <div className="flex-center">
                       <DevhausLine color="devhaus" numSegments={5} width={64} />
                     </div>

@@ -11,8 +11,9 @@ import Events from "pages/Events";
 import Stories from "pages/Stories";
 import About from "pages/About";
 import Contact from "pages/Contact";
-import Imprint from "pages/Imprint";
+import LegalNotice from "pages/LegalNotice";
 import Privacy from "pages/Privacy";
+import FAQ from "pages/FAQ";
 
 const routes = [
   { path: ["/", "/home"], name: "Home", Component: Home },
@@ -23,7 +24,8 @@ const routes = [
   { path: "/about", name: "About", Component: About },
   { path: "/contact", name: "Contact", Component: Contact },
   { path: "/privacy", name: "Privacy", Component: Privacy },
-  { path: "/imprint", name: "Imprint", Component: Imprint },
+  { path: "/impressum", name: "Impressum", Component: LegalNotice },
+  { path: "/faq", name: "FAQ", Component: FAQ },
 ];
 
 function RouteView({ path, Component }) {

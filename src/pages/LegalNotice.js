@@ -1,17 +1,25 @@
 import React from "react";
 import Article from "components/Article";
 
-export default function Imprint() {
+export default function LegalNotice() {
   const content = (
     <div>
       <p>Angaben gemäß § 5 TMG</p>
       <h2>Verantwortlich für den Inhalt nach § 55 Abs.2 RStV</h2>
       <div>
-        <div>Code Camp Leipzig UG (haftungsbeschränkt)</div>
-        <div>Peterssteinweg 14</div>
-        <div>04107 Leipzig</div> <div>E-Mail: info@codecampleipzig.de</div>
-        <div>Geschäftsführer: Taylor Harvey, Gabriel Heinrich</div>
-        <div>USt. Identifikationsnummer: DE325664551</div>
+        <p>
+          Code Camp Leipzig UG (haftungsbeschränkt) <br/>
+          Peterssteinweg 14 <br/>
+          04107 Leipzig
+        </p>
+        <p>
+          HRB 36447, Amtsgericht Leipzig <br/>
+          DE325664551
+        </p>
+        <p>
+          Geschäftsführer: Taylor Harvey <br/>
+          E-Mail Adresse: info@codecampleipzig.de
+        </p>
       </div>
       <p style={{ marginTop: "1rem" }}>
         Video &amp; Photographie: Hannah Mühlfeldner
@@ -64,5 +72,5 @@ export default function Imprint() {
       </p>
     </div>
   );
-  return <Article title="Imprint" content={content} />;
+  return <Article title="Impressum" content={content} />;
 }

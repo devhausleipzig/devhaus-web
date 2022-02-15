@@ -1,4 +1,6 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
+import ReactHtmlParser from 'react-html-parser';
 import PageHeader from "components/PageHeader";
 import { DevhausLine } from "components/HorizontalLine";
 import Picture from "components/Picture";
@@ -29,8 +31,11 @@ import eexLogo from "images/logos/eex.png";
 import micoboLogo from "images/logos/micobo.png";
 import infaiLogo from "images/logos/infai.jpg";
 
-const currentCampStart = "January 13th, 2022";
-const currentCampEnd = "June 24th, 2022";
+// these must be written in a way that is language agnostic
+const currentCampStart = "21-04-2022";
+const currentCampEnd = "19-09-2022";
+const campPrice = "€15,110 + VAT";
+const financialContact = "info@devhausleipzig.de"
 
 const logos = [
   {
@@ -44,10 +49,6 @@ const logos = [
   {
     logo: compl3teLogo,
     name: "compl3te",
-  },
-  {
-    logo: devhausLogo,
-    name: "Devhaus",
   },
   {
     logo: ecommeleonLogo,
@@ -84,28 +85,33 @@ const logos = [
   {
     logo: infaiLogo,
     name: "InfAI",
+  },
+  {
+    logo: devhausLogo,
+    name: "Devhaus",
   }
 ];
 
 export default function Academy() {
+  const {t} = useTranslation()
+
   return (
     <div className="academy navbar-padding content">
       <PageHeader
-        title="Academy"
-        description="The Devhaus Academy is more than just a classroom; it’s an ongoing
-          support system, the sole purpose of which is to help you become the best programmer and designer you can be."
+        title={t('academy:block1.title')}
+        description={t('academy:block1.description')}
         image={titleImage}
         width={1536}
         height={1024}
-        alt="Graduates of Code Camp #1"
+        alt={t('academy:block1.picAltText')}
         color="blue"
       ></PageHeader>
       <section>
         <div className="center content-narrow">
-          <h3 className="secondary-title">Devhaus Academy</h3>
+          <h3 className="secondary-title">{t('academy:block2.header3')}</h3>
 
           <h2>
-            Code &amp; Design Camp
+          {t('academy:block2.header2')}
             <div class="flex-center" style={{ marginTop: "0.5rem" }}>
               <DevhausLine color="devhaus" numSegments={5} width={64} />
             </div>
@@ -113,162 +119,123 @@ export default function Academy() {
         </div>
         <div className="specs">
           <div className="short-specs button-text">
-            <span>23 Weeks</span>
-            <span>Mo - Fr</span>
-            <span>9:00 - 17:00</span>
-            <span>English</span>
-            <span>Up to 12 Students</span>
-            <span>Hybrid (remote or in-person)</span>
+            <span>{t('academy:block2.courseLength')}</span>
+            <span>{t('academy:block2.classDays')}</span>
+            <span>{t('academy:block2.classTimes')}</span>
+            <span>{t('academy:block2.courseLanguage')}</span>
+            <span>{t('academy:block2.classHeadCount')}</span>
+            <span>{t('academy:block2.classFormat')}</span>
           </div>
           <div className="text-2 next-camp">
-            The next camp is running from <strong>{currentCampStart}</strong>{" "}
-            until <strong>{currentCampEnd}</strong>
+            {ReactHtmlParser(
+              `${t('academy:block2.courseDates')}`.replace('#', `<strong>${currentCampStart}</strong>`).replace('@', `<strong>${currentCampEnd}</strong>`)
+            )}
           </div>
           <div>
-            {/*<span class="flex-center" style={{ marginTop: "0.5rem" }}><strong>Applications open November 10</strong></span>
-            */}
+            <span class="flex-center" style={{ marginTop: "0.5rem" }}>
+              {t('academy:block2.applicationType')}
+            </span>
             <a
               href="https://devhausleipzig.typeform.com/to/oKd3gzOr"
-              t
-              arget="_blank"
+              target="_blank"
               rel="noreferrer"
             >
-              <button className="plain button-text">Apply now</button>
+              <button className="plain button-text">{t('academy:block2.applyLink')}</button>
             </a>
           </div>
         </div>
         <div className="intro content-narrow">
           <p>
-            Our Code &amp; Design Camp is an intensive full-time training program, developed to equip people from various professional backgrounds with the necessary skills and understanding to join the world of digital product development.
+            {t('academy:block2.paragraph1')}
           </p>
           <p>
-            For 2 years, we supported 13-week camps and found that despite over 85% of our graduates working in technical jobs after graduating, many Jr. developer jobs require a deeper skill set and many students needed months of additional self-training to feel competitive.
+          {t('academy:block2.paragraph2')}
           </p>
           <p>
-          Our 23-week course is designed to provide all students with the curriculum, environment, and support they need to be prepared for a Jr. Frontend developer position and the foundation to grow into other technical roles.
+          {t('academy:block2.paragraph3')}
           </p>
         </div>
         <div className="skills content-narrow">
-          <h2 className="button-text text-1">Key Features</h2>
+          <h2 className="button-text text-1">{t('academy:block2.keyFeatures')}</h2>
 
           <div className="skill">
-            <h3>2 Weeks of Agile and Professional Development Workshops</h3>
+            <h3>{t('academy:block2.keyFeature1')}</h3>
           </div>
           <div className="skill">
-            <h3>4+ Weeks of UI/UX and Product Design Curriculum</h3>
+            <h3>{t('academy:block2.keyFeature2')}</h3>
           </div>
           <div className="skill">
-            <h3>4 Weeks of Backend and DevOps Curriculum</h3>
+            <h3>{t('academy:block2.keyFeature3')}</h3>
           </div>
           <div className="skill">
-            <h3>6 Weeks of Portfolio Project Work</h3>
+            <h3>{t('academy:block2.keyFeature4')}</h3>
           </div>
           <div className="skill">
-            <h3>12 One-on-One Sessions to support technical, career, and personal development</h3>
+            <h3>{t('academy:block2.keyFeature5')}</h3>
           </div>
           <div className="skill">
-            <h3>3 Professionally Designed Hackathons featuring hiring companies</h3>
+            <h3>{t('academy:block2.keyFeature6')}</h3>
           </div>
           <div className="skill">
-            <h3>2 Days of Career Development Workshops with hiring companies</h3>
+            <h3>{t('academy:block2.keyFeature7')}</h3>
           </div>
         </div>
       </section>
 
       <section className="approach">
-        <h2>Our Approach</h2>
+        <h2>{t('academy:block3.header')}</h2>
         <div className="approaches">
           <div>
-            <h3>Holistic Software Developers</h3>
+            <h3>{t('academy:block3.sectionHeader1')}</h3>
             <p>
-              Software Developers are not code monkeys. We believe the best
-              developers understand programming as a tool to solve problems,
-              develop skills, and build knowledge outside of coding to expand
-              the range of problems they can tackle. They understand and
-              appreciate all aspects of creating a software, and are able to
-              constantly evaluate how their work best contributes to the
-              overarching problem that the software they are building is trying
-              to solve.
+              {t('academy:block3.section1')}
             </p>
           </div>
           <div>
-            <h3>Self-Regulated Learning System</h3>
+            <h3>{t('academy:block3.sectionHeader2')}</h3>
             <p>
-              Experts are expert learners. Our primary goal is thus, to teach
-              our students an effective, self-regulated learning system that
-              will serve them for the rest of their lives. By using a simple
-              journaling system that promotes the most effective learning
-              strategies every day during the camp, we are able to build up
-              powerful routines that are also designed to work for self directed
-              learning after the camp.
+              {t('academy:block3.section2')}
             </p>
           </div>
           <div>
-            <h3>Evidence Informed Teaching</h3>
+            <h3>{t('academy:block3.sectionHeader3')}</h3>
             <div>
-              We rely on findings from the learning sciences to inform our
-              teaching methodologies and combine these with our practice and
-              intuition to create powerful and adaptive learning experiences.
-              The most prevalent findings we base our methodology on are:
+              {t('academy:block3.section3')}
             </div>
             <ul>
               <li>
-                Rosenshine principles of effective teaching using worked
-                examples of authentic tasks and gradual fading towards
-                independent practice
+                {t('academy:block3.section3bullet1')}
               </li>
               <li>
-                Retrieval practice, utilizing both spacing and interleaving
+                {t('academy:block3.section3bullet2')}
               </li>
               <li>
-                Feedback-driven metacognition to develop self-regulated and
-                directed learning
+                {t('academy:block3.section3bullet3')}
               </li>
             </ul>
           </div>
           <div>
-            <h3>Practice, Practice, Practice &amp; Repeat</h3>
+            <h3>{t('academy:block3.sectionHeader4')}</h3>
             <p>
-              As with any skill that's worthwhile, software development and,
-              programming more specifically, take consistent practice to master.
-              Our curriculum has a pronounced focus on repetition that allows
-              students to achieve confidence within a relatively short
-              timeframe. The strategy is to build muscle memory around
-              fundamental mechanics in order to free up headspace for learning
-              advanced skills and focusing on higher level design decisions.
+              {t('academy:block3.section4')}
             </p>
           </div>
           <div>
-            <h3>Challenging Creative Projects</h3>
+            <h3>{t('academy:block3.sectionHeader5')}</h3>
             <p>
-              Software Development is an intellectually and emotionally
-              demanding discipline. The most reliable way to create the
-              motivation to withstand these difficulties, and continually expand
-              one's knowledge, is by working on exciting, personal creative
-              projects. No level of discipline trumps the energy that's
-              generated when one becomes excited about a creative idea. We
-              encourage students to take on such challenges, even if they seem
-              slightly outside their current reach, and help them along the way
-              to complete the projects they start.
+              {t('academy:block3.section5')}
             </p>
           </div>
           <div>
-            <h3>Mentorship Program</h3>
+            <h3>{t('academy:block3.sectionHeader6')}</h3>
             <p>
-              We believe the relationship to a mentor is key to sustain one's
-              development past the intermediate state in any discipline. Our
-              goal is to facilitate such bonds between the students in the
-              Academy and members of our community. In our mentorship program,
-              we engage students on projects in the Studio and connect them to
-              mentors that can support them. We hope to help every graduate
-              build a sustained relationship to a mentor, who can guide and
-              support them on the next steps in their professional development.
+              {t('academy:block3.section6')}
             </p>
           </div>
         </div>
       </section>
       <section className="instructors">
-        <h2>Meet the Instructors</h2>
+        <h2>{t('academy:block4.header')}</h2>
         <div className="instructor-grid">
           <div className="instructor">
             <div className="image-container">
@@ -318,139 +285,131 @@ export default function Academy() {
         <div className="classroom-gallery">
           <Picture
             src={pic1}
-            alt="Classroom"
+            alt={t('academy:block4.picAlt1')}
             width={752}
             height={500}
           ></Picture>
           <Picture
             src={pic2}
-            alt="Camp 1 Classroom"
+            alt={t('academy:block4.picAlt2')}
             width={752}
             height={500}
           ></Picture>
           <Picture
             src={pic3}
-            alt="Val and Christina coding"
+            alt={t('academy:block4.picAlt3')}
             width={752}
             height={500}
           ></Picture>
           <Picture
             src={pic4}
-            alt="Code Camp Graduates"
+            alt={t('academy:block4.picAlt4')}
             width={752}
             height={500}
           ></Picture>
         </div>
       </section>
       <section className="learning-path content-narrow">
-        <h2>Learning Path</h2>
+        <h2>{t('academy:block5.header')}</h2>
         <div className="path">
           <div className="path-mark">1-2</div>
-          <h3>Orientation &amp; Software Development Fundamentals</h3>
+          <h3>{t('academy:block5.sectionHeader1')}</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <div className="path-content">
             <p>
-              The course opens with a quick tour through the software
-              development cosmos, starting from bits &amp; bytes, through
-              computer hardware to an overview of the many branches of software
-              applications.
+              {t('academy:block5.section1Part1')}
               <br />
-              We'll also familiarize ourselves with tools of the trade that
-              software developers use on a daily basis and practice using them
-              by creating a shared recipe collection.
+              {t('academy:block5.section1Part2')}
             </p>
           </div>
           <div className="path-mark">3-4</div>
-          <h3>Programming in Typescript</h3>
+          <h3>{t('academy:block5.sectionHeader2')}</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <div className="path-content">
             <p>
-              Although programming is only one of many skills involved in software development, it is the key to its power. Starting from "Hello World", we'll build a collection of small programs with increasing complexity and, thereby, learn not only the syntax and grammar of the Typescript Programming Language, but also the principles and techniques that are common to all programming languages.
+              {t('academy:block5.section2')}
             </p>
           </div>
           <div className="path-mark">5-6</div>
-          <h3>One Page Love</h3>
+          <h3>{t('academy:block5.sectionHeader3')}</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <div className="path-content">
             <p>
-              Our next goal is to get familiar with the technologies that run the web and build basic skills in User Interface Design. We’ll start off with a practical introduction to the Human Centered Design process. We’ll go through one iteration of the design steps —starting from research all the way to prototyping and testing. We'll continue with analyzing and carefully re-constructing multiple websites built for different use-cases. We’ll dive into design systems, color theory, and typography. At the end of the module, everyone will design and build a personal website project that may become the first item in their portfolio. The projects will be documented via building out their Information Architecture.
+              {t('academy:block5.section3')}
             </p>
           </div>
           <div className="path-mark">7-8</div>
-          <h3>Design Responsively</h3>
+          <h3>{t('academy:block5.sectionHeader4')}</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <div className="path-content">
             <p>
-              “Mobile first” is a popular approach for modern products and services. In this phase of the curriculum, we’ll teach you how to design webpages that comfortably fit any device as well as some fundamental design practices, such as navigation design, mobile stacking, and responsive design. Then we’ll apply those learnings to your personal website.
+              {t('academy:block5.section4')}
             </p>
           </div>
           <div className="path-mark">9</div>
-          <h3>Review Week + 1st Hackathon</h3>
+          <h3>{t('academy:block5.sectionHeader5')}</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <div className="path-content">
             <p>
-              It's time to refresh and reflect on the material learned so far.
-              During this week, there will be no new material. Only
-              individual check-in sessions, opportunities to solidify your
-              skills through focused practice, and a hackathon to boost your confidence in your fledgling skills.
+              {t('academy:block5.section5')}
             </p>
           </div>
           <div className="path-mark">10-15</div>
-          <h3>Full-Stack Web Application</h3>
+          <h3>{t('academy:block5.sectionHeader6')}</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <div className="path-content">
             <p>
-              In the beginning of the second half of the course, we are going to design and build a more complex web application. After walking together through a product design process, we'll prototype and build the user interface. This is an opportunity to take a close look at all components of a professional software development process in full detail and practice them in a controlled environment.
+              {t('academy:block5.section6')}
             </p>
           </div>
           <div className="path-mark">16-17</div>
-          <h3>Backend Engineering</h3>
+          <h3>{t('academy:block5.sectionHeader7')}</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <div className="path-content">
             <p>
-              To round off the skillset, we'll build and deploy the backend of our web application. This is the most challenging part of the course, as it normally requires a long time to master the complexities of a production level backend, including authentication, database design &amp; continuous deployment. However, with a lot of focus, carefully designed instruction, and a bit of cheating you'll become able to build a full stack web application from start to finish all by yourself.
+              {t('academy:block5.section7')}
             </p>
           </div>
           <div className="path-mark">18-19</div>
-          <h3>Professional Frameworks + Specialization</h3>
+          <h3>{t('academy:block5.sectionHeader8')}</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <div className="path-content">
             <p>
-              Our final weeks of formal curriculum walk students through professional development processes and provide basic starting tracks for interested students to dive deeper into specializations like Backend development & DevOps, Data Science, UI/UX Design, and Agile Management. We’ll also dive into our second hackathon to kick off the final project.
+              {t('academy:block5.section8')}
             </p>
           </div>
           <div className="path-mark">18-23</div>
-          <h3>Final Project + 2nd Hackathon</h3>
+          <h3>{t('academy:block5.sectionHeader9')}</h3>
           <div className="path-line">
             <div className="line"></div>
           </div>
           <div className="path-content">
             <p>
-              After 18 weeks of intense training, you'll have all you need to team up with your fellow campers and start building your own projects. You'll get extra support from mentors in our community who can provide technical support and also help you explore options for life after the course. The final week will consist of a two day career development program and our last hackathon to wrap up final projects.
+              {t('academy:block5.section9')}
             </p>
           </div>
-         <div className="path-mark">FINISH</div>
-          <h3>Graduation</h3>
+        <div className="path-mark">{t('academy:block5.sectionHeader10')}</div>
+          <h3>{t('academy:block5.section10')}</h3>
         </div>
       </section>
       <section className="outcomes">
-        <h2>Where our graduates have been hired</h2>
+        <h2>{t('academy:block6.header')}</h2>
         <div className="company-logos">
           {logos.map(({ logo, name }) => {
             return (
@@ -462,51 +421,50 @@ export default function Academy() {
         </div>
       </section>
       <section className="financing content-narrow">
-        <h2>Tuition &amp; Financing</h2>
+        <h2>{t('academy:block7.header')}</h2>
         <p>
-          Our goal is to make the Code Camp as accessible as possible and we
-          strive to keep student costs minimal.
+          {t('academy:block7.part1')}
         </p>
         <div className="price">
-          Tuition for the full-time 23-Week Code Camp program is{" "}
-          <strong>€15,110 plus VAT</strong>
+          {ReactHtmlParser(
+            `${t('academy:block7.part2')}`.replace('#', `<strong>${campPrice}</strong>`)
+          )}
         </div>
         <p>
-          Our goal is to make the Code Camp as accessible as possible for qualified candidates.
+          {t('academy:block7.part3')}
         </p>
         <p>
-        We provide a range of options to help you finance your education, including payment plans, government programs, loan partners, and scholarships. Make sure to reach out to us so we can evaluate the financing options that fit your specific situation.
+          {t('academy:block7.part4')}
         </p>
         <p>
-          If you are eligible for educational support through the Jobcenter
-          and would like to pursue financing your seat via a Bildungsgutschein,
-          contact us at <strong><a href="mailto:info@devhausleipzig.de">info@devhausleipzig.de</a> </strong>
-          with any questions.
+          {ReactHtmlParser(
+            `${t('academy:block7.part5')}`.replace('#', `<strong><a href="mailto:${financialContact}">${financialContact}</a></strong>`)
+          )}
         </p>
+        <a href='/faq' key='/faq' target="_blank" rel="noreferrer" style={{display: 'block'}}>
+          <button className="plain button-text">Read our FAQ</button>
+        </a>
         <a
           href="https://calendly.com/devhaus-leipzig/devhaus-1-on-1?month=2021-02"
           target="_blank"
           rel="noreferrer"
+          style={{display: 'block'}}
         >
-          <button className="plain button-text">Schedule a call or chat</button>
+          <button className="plain button-text">{t('academy:block7.callLink')}</button>
         </a>
       </section>
       <section className="application content-narrow">
-        <h2>Application Process</h2>
-        <div className="button-text text-2">Step 1</div>
+        <h2>{t('academy:block8.header')}</h2>
+        <div className="button-text text-2">{t('academy:block8.sectionHeader1')}</div>
         <p>
-          Online form for us to get an idea of how you’ve spent your time until
-          now and your motivation for joining Devhaus.
+          {t('academy:block8.section1')}
         </p>
-        <div className="button-text text-2">Step 2</div>
+        <div className="button-text text-2">{t('academy:block8.sectionHeader2')}</div>
         <p>
-          Interview with two members of the Devhaus team to discuss your path
-          and how Devhaus might play a role in your journey
+          {t('academy:block8.section2Part1')}
         </p>
         <p>
-          Our team makes decisions on applications as they are received. Meaning
-          applicants can expect to get a decision on their application within 30
-          days, regardless of when they apply.
+          {t('academy:block8.section2Part2')}
         </p>
         {/*<span class="flex-center" style={{ marginTop: "0.5rem" }}><strong>Applications open November 10</strong></span>
         */}
@@ -515,7 +473,7 @@ export default function Academy() {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="plain button-text">Apply now</button>
+          <button className="plain button-text">{t('academy:block8.applyLink')}</button>
         </a>
       </section>
     </div>

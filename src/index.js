@@ -3,6 +3,7 @@ import "./styles/index.scss";
 import App from "App.js";
 
 // import reportWebVitals from "./reportWebVitals";
+import './i18n.js';
 
 ReactDOM.render(App(), document.getElementById("root"));
 

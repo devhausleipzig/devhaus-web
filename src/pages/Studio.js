@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "components/PageHeader";
 import "./Studio.scss";
 import Picture from "components/Picture";
+import { useTranslation } from 'react-i18next';
 
 import fillipImage from "images/studio/fillip.png";
 import lizatilmannImage from "images/studio/lizatilmann.png";
@@ -36,107 +37,114 @@ function Project({ image, title, link, width, height }) {
   return content;
 }
 
-const ongoingProjects = [
-  {
-    image: fillipImage,
-    title: "Fillip - A powerful platform for online events",
-    link: "https://fillip.ai",
-    imageWidth: 600,
-    imageHeight: 519,
-  },
-  {
-    image: learningPlattformImage,
-    title: "The learning platform of the Code Camp Leipzig",
-    imageWidth: 600,
-    imageHeight: 623,
-  },
-  {
-    image: devhausRebrandingImage,
-    title:
-      "Devhaus Rebranding - Making the transition from Code Camp to Devhaus Leipzig",
-    imageWidth: 600,
-    imageHeight: 588,
-  },
-];
+function OngoingProjects() {
+  const { t } = useTranslation()
+  
+  return ([  
+    {
+      image: fillipImage,
+      title: t('studio:ongoingProjects.fillip'),
+      link: "https://fillip.ai",
+      imageWidth: 600,
+      imageHeight: 519,
+    },
+    {
+      image: learningPlattformImage,
+      title: t('studio:ongoingProjects.learningPlatform'),
+      imageWidth: 600,
+      imageHeight: 623,
+    },
+    {
+      image: devhausRebrandingImage,
+      title: t('studio:ongoingProjects.devhausRebrand'),
+      imageWidth: 600,
+      imageHeight: 588,
+    },
+  ])
+}
 
-const pastProjects = [
-  {
-    image: klocatorImage,
-    title: "KLOcator - Final Project Camp #4",
-    imageWidth: 600,
-    imageHeight: 614,
-  },
-  {
-    image: weAreFamilyImage,
-    title: "We are family - Global Game Jam 2021",
-    imageWidth: 600,
-    imageHeight: 611,
-  },
-  {
-    image: devhausNetworkImage,
-    title: "Final Project Camp #3 - A social network for aspiring developers",
-    imageWidth: 600,
-    imageHeight: 529,
-  },
-  {
-    image: plantSwapImage,
-    title: "Plant Swap - A tinder-style plant trading app",
-    imageWidth: 600,
-    imageHeight: 729,
-  },
-  {
-    image: pokedexImage,
-    title: "A classic style pokedex with face recognition built in 6 hours",
-    imageWidth: 600,
-    imageHeight: 722,
-  },
-  {
-    image: lizatilmannImage,
-    title:
-      "Code Camp Graduates team up to build a website for a hairdresser in Munich",
-    imageWidth: 600,
-    imageHeight: 600,
-  },
-  {
-    image: skitmeImage,
-    title:
-      "Skitme - An insanely entertaining drawing game build at the end of camp #2",
-    imageWidth: 600,
-    imageHeight: 506,
-  },
-  {
-    image: curryOnImage,
-    title: "Curry On! - Experience the ultimate Currywurst Challenge",
-    imageWidth: 600,
-    imageHeight: 598,
-  },
-  {
-    image: hackerpubImage,
-    title: "Hacker Pub Quiz",
-    imageWidth: 600,
-    imageHeight: 677,
-  },
-  {
-    image: communicImage,
-    title:
-      "Communic - A social plattform for finding and contributing to projects",
-    imageWidth: 600,
-    imageHeight: 496,
-  },
-];
+
+function PastProjects()  {
+  const {t} = useTranslation()
+
+  return ([
+    {
+      image: klocatorImage,
+      title: t('studio:pastProjects.klocator'),
+      imageWidth: 600,
+      imageHeight: 614,
+    },
+    {
+      image: weAreFamilyImage,
+      title: t('studio:pastProjects.weAreFamily'),
+      imageWidth: 600,
+      imageHeight: 611,
+    },
+    {
+      image: devhausNetworkImage,
+      title: t('studio:pastProjects.devhausNetwork'),
+      imageWidth: 600,
+      imageHeight: 529,
+    },
+    {
+      image: plantSwapImage,
+      title: t('studio:pastProjects.plantSwap'),
+      imageWidth: 600,
+      imageHeight: 729,
+    },
+    {
+      image: pokedexImage,
+      title: t('studio:pastProjects.pokedex'),
+      imageWidth: 600,
+      imageHeight: 722,
+    },
+    {
+      image: lizatilmannImage,
+      title: t('studio:pastProjects.hairdresser'),
+      imageWidth: 600,
+      imageHeight: 600,
+    },
+    {
+      image: skitmeImage,
+      title: t('studio:pastProjects.skitme'),
+      imageWidth: 600,
+      imageHeight: 506,
+    },
+    {
+      image: curryOnImage,
+      title: t('studio:pastProjects.curryOn'),
+      imageWidth: 600,
+      imageHeight: 598,
+    },
+    {
+      image: hackerpubImage,
+      title: t('studio:pastProjects.hackerPub'),
+      imageWidth: 600,
+      imageHeight: 677,
+    },
+    {
+      image: communicImage,
+      title: t('studio:pastProjects.communic'),
+      imageWidth: 600,
+      imageHeight: 496,
+    },
+  ])
+}
 
 export default function Work() {
+  const {t} = useTranslation()
+
   return (
     <div className="studio navbar-padding content">
       <PageHeader
-        title="Studio"
-        description="Whether it’s a personal or professional project, our residents find support in bringing their goals to fruition."
+        title={t('studio:header')}
+        description={t('studio:subheader')}
         color="green"
       ></PageHeader>
       <section className="projects">
-        <h4 className="secondary-title button-text">Ongoing Projects</h4>
+        <h4 className="secondary-title button-text">{t('studio:ongoingProjects.header')}</h4>
         <div className="grid">
-          {ongoingProjects.map((project, index) => (
+          {OngoingProjects().map((project, index) => (
             <Project
               key={index}
               title={project.title}
@@ -149,9 +157,9 @@ export default function Work() {
         </div>
       </section>
       <section className="projects">
-        <h4 className="secondary-title button-text">Past Projects</h4>
+        <h4 className="secondary-title button-text">{t('studio:pastProjects.header')}</h4>
         <div className="grid">
-          {pastProjects.map((project, index) => (
+          {PastProjects().map((project, index) => (
             <Project
               key={index}
               title={project.title}

@@ -1,6 +1,19 @@
 @import "styles/variables.scss";
 
+.nav-options {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 201;
+
+  &.hide {
+    display: none;
+  }
+}
+
 .navigation {
+  position: relative;
+
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -20,11 +33,11 @@
       right: 0;
       width: 100%;
     }
-    // color: white;
+
     .content {
       display: flex;
       justify-content: flex-start;
-      // padding-right: 4rem;
+
       align-items: center;
       height: 100%;
     }
@@ -36,8 +49,10 @@
     }
 
     .nav-menu {
+
       display: flex;
       flex-direction: column;
+
       .menu-link {
         font-size: var(--text-2);
         margin-bottom: 1rem;
