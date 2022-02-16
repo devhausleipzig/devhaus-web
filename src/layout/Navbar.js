@@ -17,7 +17,7 @@ function NavLinks() {
       { to: "/studio", title: t('nav:studio'), color: "green" },
       { to: "/events", title: t('nav:events'), color: "yellow" },
       { to: "/stories", title: t('nav:stories'), color: "red" },
-      { to: "/faq", title: "FAQ", color: "red" },
+      { to: "/faq", title: "FAQ", color: "devhaus" },
       { to: "/about", title: t('nav:about'), color: "devhaus" },
       { to: "/contact", title: t('nav:contact'), color: "devhaus" },
     ]
@@ -96,7 +96,7 @@ function LanguagePicker(hide) {
   }
 
   return (
-    <div className="nav-options" style={{display: hide}}>
+    <div className="nav-options" style={{ backgroundColor: 'white', opacity: '.7', borderRadius: '15px' }}>
       <ReactLanguageSelect languages={["en", "de"]} names="international" defaultLanguage="en"
       onSelect={changeLanguage} customLabels={{'en': 'English', 'de': 'Deutsch'}} />
     </div>
