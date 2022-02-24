@@ -7,12 +7,17 @@ import ReactLanguageSelect from 'react-languages-select';
 import 'react-languages-select/scss/react-languages-select.scss';
 import { useTranslation } from "react-i18next";
 
-
 function NavLinks() {
   const {t} = useTranslation();
 
   return (
     [
+      {
+        to: "https://devhausleipzig.typeform.com/to/pZOQK1pV",
+        title: "Apply Now",
+        color: "blue",
+        external: true,
+      },
       { to: "/academy", title: t('nav:academy'), color: "blue" },
       { to: "/studio", title: t('nav:studio'), color: "green" },
       { to: "/events", title: t('nav:events'), color: "yellow" },

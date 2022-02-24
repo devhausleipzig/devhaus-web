@@ -136,7 +136,7 @@ export default function Academy() {
               {t('academy:block2.applicationType')}
             </span>
             <a
-              href="https://devhausleipzig.typeform.com/to/oKd3gzOr"
+              href="https://devhausleipzig.typeform.com/to/pZOQK1pV"
               target="_blank"
               rel="noreferrer"
             >
@@ -469,7 +469,7 @@ export default function Academy() {
         {/*<span class="flex-center" style={{ marginTop: "0.5rem" }}><strong>Applications open November 10</strong></span>
         */}
         <a
-          href="https://devhausleipzig.typeform.com/to/oKd3gzOr"
+          href="https://devhausleipzig.typeform.com/to/pZOQK1pV"
           target="_blank"
           rel="noreferrer"
         >
