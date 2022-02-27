@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
 import ReactHtmlParser from 'react-html-parser';
+import { NavLink } from "react-router-dom";
 import PageHeader from "components/PageHeader";
 import { DevhausLine } from "components/HorizontalLine";
 import Picture from "components/Picture";
@@ -463,9 +464,9 @@ export default function Academy() {
             `${t('academy:block7.part4')}`.replace('#', `<strong><a href="mailto:${financialContact}">${financialContact}</a></strong>`)
           )}
         </p>
-        <a href='/faq' key='/faq' target="_blank" rel="noreferrer" style={{display: 'block'}}>
+        <NavLink to="/faq" key="/faq" style={{display: 'block'}}>
           <button className="plain button-text">Read our FAQ</button>
-        </a>
+        </NavLink>
         <a
           href="https://calendly.com/devhaus-leipzig/devhaus-1-on-1?month=2021-02"
           target="_blank"

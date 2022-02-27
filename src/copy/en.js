@@ -501,7 +501,7 @@ const copyEN = {
         Website and Services.`,
         "header23": `Contacting us`,
         "section23": `If you would like to contact us to understand more about this Policy or
-        wish to contact us concerning any matter relating to individual rights and your Personal Information, you may send an email to #`, /* # stands for the contact email address  */
+        wish to contact us concerning any matter relating to individual rights and your Personal Information, you may send an email to #`, /* # stands for the contact email address */
         "section24": `This document was last updated on #` /* # stands for the date */
     },
     "events": {
