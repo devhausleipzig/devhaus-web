@@ -10,7 +10,7 @@ function Event({ title, date, time, location, link }) {
         <div className="date button-text">{date}</div>
       </div>
       {link ? (
-        <a href={link}>
+        <a href={link} target="_blank" rel="noreferrer">
           <h3>{title}</h3>
         </a>
       ) : (
@@ -31,25 +31,6 @@ export default function Events() {
         color="yellow"
       ></PageHeader>
       <div>
-        <Event title={t('events:summerBreak.header')} date="01.07.2021 - 01.08.2021"></Event>
-
-        <Event
-          title={t('events:careerMeetup.header')}
-          date="28.10.2021"
-          link="https://www.meetup.com/devhaus-leipzig-meetup-group/events/281565528/"
-        ></Event>
-
-        <Event
-          title={t('events:camp5Apply.header')}
-          date="10.11.2021"
-        ></Event>
-
-        <Event
-          title={t('events:hackolaus.header')}
-          link="https://hackolaus.netlify.app/"
-          date="19.11.2021 - 21.11.2021"
-        ></Event>
-
         <Event
           title={t('events:demoDay.header')}
           date="25.11.2021"
@@ -59,6 +40,18 @@ export default function Events() {
         <Event
           title={t('events:camp5Start.header')}
           date="13.01.2022"
+        ></Event>
+
+        <Event
+          title={t('events:camp5FirstHackathon.header')}
+          date="16.03.2022"
+          link="https://www.meetup.com/devhaus-leipzig-meetup-group/events/284198992/"
+        ></Event>
+
+        <Event
+          title={t('events:hackolaus.header')}
+          link="https://hackolaus.netlify.app/"
+          date="08.04.2022 - 10.04.2022"
         ></Event>
       </div>
     </div>

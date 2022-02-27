@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import PageHeader from "components/PageHeader";
+import ReactHtmlParser from 'react-html-parser';
 // import { useTranslation } from 'react-i18next';
 import Colcade from "colcade";
 
@@ -40,21 +41,13 @@ function GetQuestions() {
         {
             "question": "Do you offer part time courses?",
             "answer": [
-                "We do not currently offer part-time courses, however, our friends at Coding Bootcamps Europe do and their team is great. Check them out here: https://www.coding-bootcamps.eu/"
-            ]
-        },
-        {
-            "question": "How does Devhaus Leipzig compare to other coding bootcamps?",
-            "answer": [
-                "Our team is obsessive about quality and have put the bulk of our resources into consistently improving the learning experience with each course. Rather than have as many bootcamps as possible, we are working to build the best classroom possible.",
-                "We provide consistent and regular individual attention inside and outside of the classroom and take a collaborative approach to your learning path. One on one’s every two weeks, weekly retrospectives, and regular instructor feedback reports are a few of the ways we work with students to ensure learning success.",
-                "We build bridges between current students and alumni from day 1 with introductory activities, panels from alumni and professionals, workshops from hiring companies and more."
+                ReactHtmlParser("We do not currently offer part-time courses, however, our friends at Coding Bootcamps Europe do and their team is great. Check them out here: <a href='https://www.coding-bootcamps.eu/'>Coding Bootcamps Europe</a>")
             ]
         },
         {
             "question": "How do I apply?",
             "answer": [
-                "Click the “Apply Now” button on the Devhaus Academy page [https://devhausleipzig.typeform.com/to/oKd3gzOr] and finish the form. Once you have done so, you are officially in the application process."
+                ReactHtmlParser(`Click the "<a style='color: grey;' href='https://devhausleipzig.typeform.com/to/pZOQK1pV' target='_blank' rel='noreferrer'>Apply Now</a>” button on the Devhaus Academy page and finish the form. Once you have done so, you are officially in the application process.`)
             ]
         },
         {
@@ -94,9 +87,9 @@ function GetQuestions() {
             "question": "How can I pay for the course?",
             "answer": [
                 "For Job Center eligible participants, we will accept a Bildungsgutschein for our courses that will cover the cost of tuition as well as your living expenses.",
-                "SAB (React EU) offers up to 80% tuition reimbursement for employed individuals making approximately 3.300 euros/month. More information here: https://www.sab.sachsen.de/f%C3%B6rderprogramme/sie-planen-ihre-mitarbeiter-oder-sich-selbst-weiterzubilden/individuell-berufsbezogene-weiterbildung.jsp#tab_program_examples",
+                ReactHtmlParser("SAB (React EU) offers up to 80% tuition reimbursement for employed individuals making approximately 3.300 euros/month. More information see here: <a style='color: grey;' href='https://tiny.cc/sab-weiterbildung'>SAB Weiterbildung</a>"),
                 "Payment Plans can be created for individuals who are unable to cover the cost of the course on our standard payment schedule. These are offered on a case by case basis. ",
-                "To learn more about what options might be suitable for you, schedule a talk with one of our team members: https://calendly.com/devhaus-leipzig/devhaus-1-on-1"
+                ReactHtmlParser("To learn more about what options might be suitable for you, schedule a talk with one of our team members: <a style='color: grey;' href='https://calendly.com/devhaus-leipzig/devhaus-1-on-1'>Devhaus 1-on-1</a>")
             ]
         },
         {
@@ -126,12 +119,6 @@ function GetQuestions() {
             ]
         },
         {
-            "question": "Can I offer projects/internships/jobs to Devhaus Leipzig graduates?",
-            "answer": [
-                "Of course! Reach out to info@devhausleipzig.de and we will help you find the right match."
-            ]
-        },
-        {
             "question": "What do you teach at Devhaus Leipzig?",
             "answer": [
                 "We teach the skills and tools required to design, build and deploy web applications and web sites in a professional setting. Programming tools you will learn include. Git, HTML, CSS, Typescript/Javascript, Vue.js, React.js, PostgreSQL, Jest and Docker.",
@@ -142,11 +129,7 @@ function GetQuestions() {
             "question": "What will I learn as a student of Devhaus Leipzig?",
             "answer": [
                 "Graduates from our Academy will:",
-                "Be able to confidently build and design simple web sites and web applications.",
-                "Have familiarity with tools and workflows used by professionals",
-                "Develop technical vocabulary to have constructive discussions with team members",
-                "Know how to network in the tech community",
-                "Learn what activities they like and dislike as a programmer"
+                ReactHtmlParser("Be able to confidently build and design simple web sites and web applications.<br/> Have familiarity with tools and workflows used by professionals.<br/> Develop technical vocabulary to have constructive discussions with team members.<br/> Know how to network in the tech community.<br/> Learn what activities they like and dislike as a programmer.")
             ]
         },
         {
@@ -199,9 +182,9 @@ function GetQuestions() {
 
 function Question({ question, answer }) {
     return (
-        <div className="question grid-item">
+        <div key={question} className="question grid-item">
             <h3 style={{display: "block"}}><strong>{question}</strong></h3>
-            {answer.map(piece => <p style={{display: "block"}}>{piece}</p>)}
+            {answer.map((piece, index) => <p key={index} style={{display: "block"}}>{piece}</p>)}
         </div>
     );
 }
@@ -215,11 +198,11 @@ export default function Questions() {
     })
 
     return (
-        <div className="questions navbar-padding content">
-        <PageHeader title="FAQ" color="red"></PageHeader>
-            <div className="grid question-grid">
-                <div class="grid-col grid-col--1"></div>
-                <div class="grid-col grid-col--2"></div>
+        <div key="faq-wrapper" className="questions navbar-padding content">
+            <PageHeader key="faq-header" title="FAQ" color="red"></PageHeader>
+            <div key="faq-grid" className="grid question-grid">
+                <div key="column1" className="grid-col grid-col--1"></div>
+                <div key="column2" className="grid-col grid-col--2"></div>
                 {GetQuestions().map((question) => Question(question))}
             </div>
         </div>

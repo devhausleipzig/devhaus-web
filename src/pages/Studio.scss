@@ -10,12 +10,25 @@
   }
 
   .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     row-gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .grid .project {
-    h3,
-    h4 {
+    flex: 0 0 min-content;
+    
+    img {
+      max-width: 480px;
+      max-height: 480px;
+      width: auto;
+      height: auto;
+    }
+
+    h3,h4 {
       margin-bottom: 0.5rem;
       font-size: 1.5rem;
     }

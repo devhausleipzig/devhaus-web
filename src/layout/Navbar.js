@@ -12,12 +12,6 @@ function NavLinks() {
 
   return (
     [
-      {
-        to: "https://devhausleipzig.typeform.com/to/pZOQK1pV",
-        title: "Apply Now",
-        color: "blue",
-        external: true,
-      },
       { to: "/academy", title: t('nav:academy'), color: "blue" },
       { to: "/studio", title: t('nav:studio'), color: "green" },
       { to: "/events", title: t('nav:events'), color: "yellow" },
@@ -32,9 +26,10 @@ function NavLinks() {
 function HamburgerIcon({ onClick }) {
   return (
     <div onClick={onClick} className="hamburger-icon">
-      <svg viewBox="0 0 100 38" width="100%" height="100%">
+      <svg viewBox="0 0 100 68" width="100%" height="100%">
         <rect width="100" height="8"></rect>
         <rect y="30" width="100" height="8"></rect>
+        <rect y="60" width="100" height="8"></rect>
       </svg>
     </div>
   );
@@ -88,20 +83,20 @@ function Navbar({ toggleMobileMenu }) {
       <nav className="nav-hamburger">
         <HamburgerIcon onClick={toggleMobileMenu} />
       </nav>
+      <LanguagePicker id="langpicker"></LanguagePicker>
     </div>
   );
 }
 
-function LanguagePicker(hide) {
+function LanguagePicker() {
   const {i18n} = useTranslation()
 
   const changeLanguage = (lang) => {
-    console.log(lang)
     i18n.changeLanguage(lang)
   }
 
   return (
-    <div className="nav-options" style={{ backgroundColor: 'white', opacity: '.7', borderRadius: '15px' }}>
+    <div className="langpicker" style={{ backgroundColor: 'white', borderRadius: '15px' }}>
       <ReactLanguageSelect languages={["en", "de"]} names="international" defaultLanguage="en"
       onSelect={changeLanguage} customLabels={{'en': 'English', 'de': 'Deutsch'}} />
     </div>
@@ -119,7 +114,6 @@ function MobileMenu({ toggleMobileMenu, visible }) {
           {NavLinks().map((link) => AbstractNavLink(link, "menu-link"))}
         </nav>
       </div>
-      <LanguagePicker hide={!visible}></LanguagePicker>
       <div className="bottom-border">
         <FullLine color="devhaus" width={16} numSegments={6} />
       </div>
@@ -130,7 +124,7 @@ function MobileMenu({ toggleMobileMenu, visible }) {
 export default function Navigation() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-  const toggleMobileMenu = () => {
+  const toggleMobileMenu = (event) => {
     setShowMobileMenu(!showMobileMenu);
   };
   return (
@@ -138,7 +132,6 @@ export default function Navigation() {
       <div className="navbar">
         <Navbar toggleMobileMenu={toggleMobileMenu} />
       </div>
-      <LanguagePicker hide={showMobileMenu}></LanguagePicker>
       <div className={"navbar scroll-navbar"}>
         <Navbar toggleMobileMenu={toggleMobileMenu} />
       </div>

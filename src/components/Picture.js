@@ -8,7 +8,10 @@ export default function Picture({ src, srcX2, alt, width, height }) {
 
   return (
     <div style={!loaded ? { backgroundColor: "#f4f4f4" } : {}}>
-      <picture>
+      <picture
+        width={width}
+        height={height}
+      >
         <source srcSet={srcSet}></source>
         <img
           onLoad={() => setLoaded(true)}

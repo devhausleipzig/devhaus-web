@@ -3,8 +3,8 @@
 }
 
 .grid-col {
-    float: left;
-    width: 50%;
+    margin: auto;
+    width: 90%;
     align-items: center;
 }
 
@@ -27,8 +27,14 @@
     }
 }
 
-@media ( min-width: 768px ) {
+@media ( min-width: 1000px ) {
     .grid-col--2 {
         display: block;
+    }
+
+    .grid-col {
+        margin: 0;
+        width: 45%;
+        align-items: center;
     }
 }

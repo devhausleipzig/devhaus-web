@@ -30,8 +30,13 @@ import spreadshirtLogo from "images/logos/spreadshirt-logo.png";
 import eexLogo from "images/logos/eex.png";
 import micoboLogo from "images/logos/micobo.png";
 import infaiLogo from "images/logos/infai.jpg";
+import dotsourceLogo from "images/logos/dotsource.png";
+import fillipLogo from "images/logos/fillip.png";
+import finatixLogo from "images/logos/finatix.png";
+import thinkportLogo from "images/logos/thinkport.png";
+import wtlLogo from "images/logos/wtl.png";
 
-// these must be written in a way that is language agnostic
+// these must be written in a way that is natural language agnostic
 const currentCampStart = "21-04-2022";
 const currentCampEnd = "19-09-2022";
 const campPrice = "€15,110 + VAT";
@@ -89,6 +94,26 @@ const logos = [
   {
     logo: devhausLogo,
     name: "Devhaus",
+  },
+  {
+    logo: dotsourceLogo,
+    name: "DotSource"
+  },
+  {
+    logo: fillipLogo,
+    name: "Fillip"
+  },
+  {
+    logo: finatixLogo,
+    name: "Finatix"
+  },
+  {
+    logo: thinkportLogo,
+    name: "Thinkport"
+  },
+  {
+    logo: wtlLogo,
+    name: "WTL"
   }
 ];
 
@@ -434,11 +459,8 @@ export default function Academy() {
           {t('academy:block7.part3')}
         </p>
         <p>
-          {t('academy:block7.part4')}
-        </p>
-        <p>
           {ReactHtmlParser(
-            `${t('academy:block7.part5')}`.replace('#', `<strong><a href="mailto:${financialContact}">${financialContact}</a></strong>`)
+            `${t('academy:block7.part4')}`.replace('#', `<strong><a href="mailto:${financialContact}">${financialContact}</a></strong>`)
           )}
         </p>
         <a href='/faq' key='/faq' target="_blank" rel="noreferrer" style={{display: 'block'}}>
@@ -461,19 +483,23 @@ export default function Academy() {
         </p>
         <div className="button-text text-2">{t('academy:block8.sectionHeader2')}</div>
         <p>
-          {t('academy:block8.section2Part1')}
+          {t('academy:block8.section2')}
+        </p>
+        <div className="button-text text-2">{t('academy:block8.sectionHeader3')}</div>
+        <p>
+          {t('academy:block8.section3Part1')}
         </p>
         <p>
-          {t('academy:block8.section2Part2')}
+          {t('academy:block8.section3Part2')}
         </p>
-        {/*<span class="flex-center" style={{ marginTop: "0.5rem" }}><strong>Applications open November 10</strong></span>
-        */}
         <a
           href="https://devhausleipzig.typeform.com/to/pZOQK1pV"
           target="_blank"
           rel="noreferrer"
         >
-          <button className="plain button-text">{t('academy:block8.applyLink')}</button>
+          <div class="flex-center">
+            <button className="plain button-text">{t('academy:block8.applyLink')}</button>
+          </div>
         </a>
       </section>
     </div>

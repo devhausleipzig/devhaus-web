@@ -9,7 +9,7 @@ import gabrielImage from "images/profiles/gabe.png";
 import franzImage from "images/profiles/franz.png";
 import danImage from "images/profiles/dan.png";
 import valImage from "images/profiles/val.png";
-import hannahImage from "images/profiles/hannah.jpg";
+import natalieImage from "images/profiles/natalie.png";
 import svenImage from "images/profiles/sven.png";
 import veraImage from "images/profiles/vera.png";
 import moritzImage from "images/profiles/moritz.png";
@@ -41,7 +41,7 @@ export default function About() {
           <Profile name="Dan McAtee" role={t('about:role.dan')} image={danImage} />
           <Profile name="Valeria Koriatchenko" role={t('about:role.valeria')} image={valImage} />
           <Profile name="Sven Laschinski" role={t('about:role.sven')} image={svenImage} />
-          <Profile name="Hannah Mühlfeldner" role={t('about:role.hannah')} image={hannahImage} />
+          <Profile name="Natalie Ramp" role={t('about:role.natalie')} image={natalieImage} />
           <Profile name="Vera Scheunert" role={t('about:role.vera')} image={veraImage} />
           <Profile name="Moritz Piehl" role={t('about:role.moritz')} image={moritzImage} />
           <Profile name="Felix Wippich" role={t('about:role.felix')} image={felixImage} />

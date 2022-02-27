@@ -114,7 +114,7 @@ const copyEN = {
             "sectionHeader6": "Full-Stack Web Application",
             "section6": "In the beginning of the second half of the course, we are going to design and build a more complex web application. After walking together through a product design process, we'll prototype and build the user interface. This is an opportunity to take a close look at all components of a professional software development process in full detail and practice them in a controlled environment.",
             "sectionHeader7": "Backend Engineering",
-            "section7": "To round off the skillset, we'll build and deploy the backend of our web application. This is the most challenging part of the course, as it normally requires a long time to master the complexities of a production level backend, including authentication, database design &amp; continuous deployment. However, with a lot of focus, carefully designed instruction, and a bit of cheating you'll become able to build a full stack web application from start to finish all by yourself.",
+            "section7": "To round off the skillset, we'll build and deploy the backend of our web application. This is the most challenging part of the course, as it normally requires a long time to master the complexities of a production level backend, including authentication, database design & continuous deployment. However, with a lot of focus, carefully designed instruction, and a bit of cheating you'll become able to build a full stack web application from start to finish all by yourself.",
             "sectionHeader8": "Professional Frameworks + Specialization",
             "section8": "Our final weeks of formal curriculum walk students through professional development processes and provide basic starting tracks for interested students to dive deeper into specializations like Backend development & DevOps, Data Science, UI/UX Design, and Agile Management. We’ll also dive into our second hackathon to kick off the final project.",
             "sectionHeader9": "Final Project + 2nd Hackathon",
@@ -129,18 +129,19 @@ const copyEN = {
             "header": "Tuition & Financing",
             "part1": "Our goal is to make the Code Camp as accessible as possible and we strive to keep student costs minimal.",
             "part2": "Tuition for the full-time 23-Week Code Camp program is #" /* # is the camp price */,
-            "part3": "Our goal is to make the Code Camp as accessible as possible for qualified candidates.",
-            "part4": "We provide a range of options to help you finance your education, including payment plans, government programs, loan partners, and scholarships. Make sure to reach out to us so we can evaluate the financing options that fit your specific situation.",
-            "part5": `If you are eligible for educational support through the Jobcenter and would like to pursue financing your seat via a Bildungsgutschein, contact us at # with any questions.` /* # is the contact email address */,
+            "part3": "We provide a range of options to help you finance your education, including payment plans, government programs, loan partners, and scholarships. Make sure to reach out to us so we can evaluate the financing options that fit your specific situation.",
+            "part4": `If you are eligible for educational support through the Jobcenter and would like to pursue financing your seat via a Bildungsgutschein, contact us at # with any questions.` /* # is the contact email address */,
             "callLink": "Schedule a call or chat"
         },
         "block8": {
             "header": "Application Process",
             "sectionHeader1": "Step 1",
-            "section1": "Online form for us to get an idea of how you’ve spent your time until now and your motivation for joining Devhaus.",
+            "section1": "Complete an online form for us to get a detailed idea of who you are, how you’ve spent your time until now, and your motivation for joining Devhaus.",
             "sectionHeader2": "Step 2",
-            "section2Part1": "Interview with two members of the Devhaus team to discuss your path and how Devhaus might play a role in your journey",
-            "section2Part2": "Our team makes decisions on applications as they are received. Meaning applicants can expect to get a decision on their application within 30 days, regardless of when they apply.",
+            "section2": "Complete a follow-up online form to round off the information for our profile of you. When you complete this step, you automatically receive a copy of the profile we generate based on your answers to the online forms.",
+            "sectionHeader3": "Step 3",
+            "section3Part1": "Interview with two members of the Devhaus team to discuss your career path and how Devhaus might play a role in your journey.",
+            "section3Part2": "Our team makes decisions on applications as they are received. Meaning applicants can expect to get a decision on their application within 30 days, regardless of when they apply.",
             "applyLink": "Apply now"
         }
     },
@@ -164,7 +165,7 @@ const copyEN = {
             "skitme": "Skitme - An insanely entertaining drawing game build at the end of camp #2",
             "curryOn": "Curry On! - Experience the ultimate Currywurst Challenge",
             "hackerPub": "Hacker Pub Quiz",
-            "communic": "Communic - A social plattform for finding and contributing to projects"
+            "communic": "Communic - A social platform for finding and contributing to projects"
         }
     },
     "stories": {
@@ -201,7 +202,7 @@ const copyEN = {
             "dan": "Instructor",
             "valeria": "Instructor",
             "sven": "Instructor",
-            "hannah": "In-house Photographer",
+            "natalie": "Compliance Officer",
             "vera": "Studio Resident",
             "moritz": "Studio Resident",
             "felix": "Studio Resident"
@@ -505,23 +506,17 @@ const copyEN = {
     },
     "events": {
         "header": "Upcoming Events",
-        "summerBreak": {
-            "header": "Summer Break"
-        },
-        "careerMeetup": {
-            "header": "Chat With Us - Digital Career Landscape",
-        },
-        "camp5Apply": {
-            "header": "Applications For Camp #5 Open"
-        },
-        "hackolaus": {
-            "header": "Hackolaus hosted by Open Tech School Leipzig"
-        },
         "demoDay": {
             "header": "Demo Day"
         },
         "camp5Start": {
             "header": "Camp #5 Kickoff Event"
+        },
+        "camp5FirstHackathon": {
+            "header": "Camp #5 First Hackathon"
+        },
+        "hackolaus": {
+            "header": "Hackolaus hosted by Open Tech School Leipzig"
         }
     },
     "faq": {}

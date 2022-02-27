@@ -1,14 +1,10 @@
 @import "styles/variables.scss";
 
-.nav-options {
-  position: fixed;
+.langpicker {
+  position: absolute;
   top: 0;
-  right: 0;
+  right: 1vw;
   z-index: 201;
-
-  &.hide {
-    display: none;
-  }
 }
 
 .navigation {
@@ -76,7 +72,7 @@
   }
 
   .navbar {
-    padding: 1rem 0;
+    padding: 2rem 0;
     position: absolute;
     top: 0;
     width: 100%;
