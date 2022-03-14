@@ -1,6 +1,5 @@
 import React from "react";
 import PageHeader from "../components/PageHeader";
-// import "./Studio.scss";
 import Picture from "../components/Picture";
 import { useTranslation } from "react-i18next";
 import Page from "../layout/page";

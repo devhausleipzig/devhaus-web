@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-// import "./Navbar.scss";
-import { FullLine, DevhausLine } from "../components/HorizontalLine";
+import { DevhausLine } from "../components/HorizontalLine";
 import ReactLanguageSelect from "react-languages-select";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";

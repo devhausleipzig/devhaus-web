@@ -1,6 +1,5 @@
 import { DevhausLine } from "./HorizontalLine";
 import Picture from "./Picture";
-// import "./PageHeader.scss";
 
 interface Props {
   title: string;

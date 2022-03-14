@@ -1,5 +1,3 @@
-// import styles from "./HorizontalLine.module.scss";
-
 import clsx from "clsx";
 
 export default function HorizontalLine() {

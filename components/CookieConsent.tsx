@@ -1,4 +1,3 @@
-// import styles from "./CookieConsent.module.css";
 import { Transition } from "@headlessui/react";
 import { useState, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
@@ -15,13 +14,6 @@ export default function CookieConsent() {
 
   const ref = useRef(null);
 
-  // <CSSTransition
-  //   in={!haveConsent}
-  //   timeout={5000}
-  //   nodeRef={ref}
-  //   classNames="shiftDown"
-  //   unmountOnExit
-  // >
   return (
     <Transition show={!haveConsent}>
       <div

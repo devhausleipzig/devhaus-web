@@ -1,9 +1,7 @@
 // @ts-nocheck
 import { useEffect, useRef, useState, forwardRef } from "react";
-import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { useTranslation } from "react-i18next";
 import { Transition } from "@headlessui/react";
-// import "./NewsletterForm.scss";
 
 function useOutsideAlerter(ref, cb) {
   useEffect(() => {
@@ -98,7 +96,8 @@ export default function NewsletterForm() {
   const [shouldFocus, setShouldFocus] = useState(false);
 
   return (
-    // TODO: Fix janky transition
+    // TODO: Build popup to have more engagement for subscribing
+    // TODO: Build modal for subscribing
     <>
       <Transition
         show={isSubscribing}
@@ -145,42 +144,5 @@ export default function NewsletterForm() {
         </button>
       </Transition>
     </>
-    // <SwitchTransition>
-    //   <CSSTransition
-    //     key={isSubscribing ? "form" : "button"}
-    //     addEndListener={(node, done) =>
-    //       node.addEventListener("transitionend", done, false)
-    //     }
-    //     classNames="fade"
-    //   >
-    //     {isSubscribing ? (
-    //       <div key="form" style={isVisible ? {} : { opacity: 0 }}>
-    //         <MailchimpForm
-    //           ref={formRef}
-    //           shouldFocus={shouldFocus}
-    //           onFocus={() => setShouldFocus(false)}
-    //           onSubmit={() => {
-    //             setIsVisible(false);
-    //             setTimeout(() => {
-    //               setIsSubscribing(false);
-    //               setIsVisible(true);
-    //             }, 0);
-    //           }}
-    //         />
-    //       </div>
-    //     ) : (
-    //       <button
-    //         key="button"
-    //         className="newsletter-subscribe hover:text-gray-900"
-    //         onClick={() => {
-    //           setShouldFocus(true);
-    //           setIsSubscribing(true);
-    //         }}
-    //       >
-    //         {t("newsletter:callToAction")}
-    //       </button>
-    //     )}
-    //   </CSSTransition>
-    // </SwitchTransition>
   );
 }

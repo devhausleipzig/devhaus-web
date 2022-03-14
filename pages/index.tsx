@@ -1,7 +1,6 @@
 import React from "react";
 import HeroVideo from "../components/HeroVideo";
 import Link from "next/link";
-// import "./Home.scss";
 import { DevhausLine } from "../components/HorizontalLine";
 import Picture from "../components/Picture";
 import { useTranslation } from "react-i18next";

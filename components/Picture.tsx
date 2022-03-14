@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import "./Picture.scss";
 
 interface Props {
   src: string;

@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import Page from "../layout/page";
 import Head from "next/head";
 
-// import "./Stories.scss";
 const classRoom = "/images/stories/classroom.png";
 const camp1 = "/images/stories/camp1.png";
 const codemotion = "/images/stories/codemotion.png";
