@@ -6,6 +6,7 @@ import Page from "../layout/page";
 import Head from "next/head";
 
 const collage = "/images/contact/devhaus-collage.jpg";
+
 export default function Contact() {
   const { t } = useTranslation();
 

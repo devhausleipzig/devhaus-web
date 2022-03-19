@@ -35,7 +35,7 @@ const wtlLogo = "../images/logos/wtl.png";
 // these must be written in a way that is natural language agnostic
 const currentCampStart = "21-04-2022";
 const currentCampEnd = "19-09-2022";
-const campPrice = "€15,110 + VAT";
+const campPrice = "€15110 + VAT";
 const financialContact = "info@devhausleipzig.de";
 
 const pic1 = "../images/academy/dan-classroom.jpg";
@@ -383,7 +383,7 @@ export default function Academy() {
               onClick={() => router.push("/faq")}
               className="mt-6 border-b-2 border-blue pb-1 uppercase"
             >
-              Read our FAQ
+              {t("academy:block7.faqLink")}
             </button>
             <a
               href="https://calendly.com/devhaus-leipzig/devhaus-1-on-1?month=2021-02"

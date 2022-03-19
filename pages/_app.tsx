@@ -8,6 +8,7 @@ import Main from "../layout/main";
 import "../i18n.js";
 import "../styles/global.css";
 import "react-languages-select/scss/react-languages-select.scss";
+import i18next from "i18next";
 
 function MyApp({ Component, pageProps }) {
   return (

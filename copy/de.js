@@ -128,11 +128,11 @@ const copyDE = {
         },
         "block7": {
             "header": "Studiengebühren & Finanzierung",
-            "part1": "Unser Ziel ist es, das Code Camp so zugänglich wie möglich zu machen, und wir bemühen uns, die Kosten für die Teilnehmer so gering wie möglich zu halten.",
+            "part1": "Unser Ziel ist es, das Code Camp so zugänglich wie möglich für qualifizierte Kandidaten zu machen.",
             "part2": "Die Teilnahmegebühr für das 23-wöchige Vollzeitprogramm Code Camp beträgt #." /* # is the camp price */,
-            "part3": "Unser Ziel ist es, das Code Camp so zugänglich wie möglich für qualifizierte Kandidaten zu machen.",
-            "part4": "Wir bieten Ihnen eine Reihe von Optionen zur Finanzierung Ihres Studiums, darunter Zahlungspläne, staatliche Programme, Darlehenspartner und Stipendien. Setz dich mit uns in Verbindung, damit wir die für dich passenden Finanzierungsmöglichkeiten prüfen können.",
-            "part5": `Wenn Sie Anspruch auf Ausbildungsförderung durch das Jobcenter haben und Ihren Studienplatz über einen Bildungsgutschein finanzieren möchten, wenden Sie sich bei Fragen an #.` /* # is the contact email address */,
+            "part3": "Wir bieten Ihnen eine Reihe von Optionen zur Finanzierung Ihres Studiums, darunter Zahlungspläne, staatliche Programme, Darlehenspartner und Stipendien. Setz dich mit uns in Verbindung, damit wir die für dich passenden Finanzierungsmöglichkeiten prüfen können.",
+            "part4": `Wenn Sie Anspruch auf Ausbildungsförderung durch das Jobcenter haben und Ihren Studienplatz über einen Bildungsgutschein finanzieren möchten, wenden Sie sich bei Fragen an #.` /* # is the contact email address */,
+            "faqLink": "Lies unsere FAQ",
             "callLink": "Anruf oder Chat vereinbaren"
         },
         "block8": {
@@ -140,8 +140,9 @@ const copyDE = {
             "sectionHeader1": "Step 1",
             "section1": "Online-Formular, damit wir uns ein Bild davon machen können, wie Sie Ihre Zeit bisher verbracht haben und was Ihre Motivation ist, bei Devhaus mitzumachen.",
             "sectionHeader2": "Step 2",
-            "section2Part1": "Interview mit zwei Mitgliedern des Devhaus-Teams, um deinen Weg zu besprechen und wie Devhaus eine sich auf deine Lebensweise auswirkt",
-            "section2Part2": "Unser Team entscheidet über die Bewerbungen, sobald sie eingegangen sind. Das bedeutet, dass die Bewerberenden  innerhalb von 30 Tagen mit einer Entscheidung rechnen können, unabhängig davon, wann sie sich bewerben.",
+            "section2": "Füllen Sie ein weiteres Online-Formular aus, um die Informationen für unser Profil von Ihnen zu vervollständigen. Wenn Sie diesen Schritt abschließen, erhalten Sie automatisch eine Kopie des Profils, das wir auf der Grundlage Ihrer Antworten auf die Online-Formulare erstellen.",
+            "section3Part1": "Interview mit zwei Mitgliedern des Devhaus-Teams, um deinen Weg zu besprechen und wie Devhaus eine sich auf deine Lebensweise auswirkt",
+            "section3Part2": "Unser Team entscheidet über die Bewerbungen, sobald sie eingegangen sind. Das bedeutet, dass die Bewerberenden  innerhalb von 30 Tagen mit einer Entscheidung rechnen können, unabhängig davon, wann sie sich bewerben.",
             "applyLink": "Jetzt bewerben"
         }
     },
@@ -187,7 +188,7 @@ const copyDE = {
 
     },
     "contact": {
-        "header": "Konatkt",
+        "header": "Kontakt",
         "subheader": "Wir freuen uns über ein Treffen und ein Gespräch.",
         "germany": "Deutschland"
     },
@@ -477,7 +478,177 @@ const copyDE = {
             "header": "Hackolaus, veranstaltet von der Open Tech School Leipzig"
         },
     },
-    "faq": {}
+    "faq": {
+        content: [
+            {
+                "question": "Was ist ein Code Camp?",
+                "answer": [
+                    "Ein Codecamp ist üblicherweise ein intensives Schulungsprogramm, bei dem die Teilnehmer über einen kurzen Zeitraum Programmierkenntnisse erlernen, um sich auf einen technischen Beruf vorzubereiten. Das Devhaus Leipzig bietet einen 6-monatigen Vollzeitkurs an, in dem die Teilnehmer in Full-Stack-Webentwicklung geschult werden."
+                ]
+            },
+            {
+                "question": "Was ist das Devhaus Leipzig?",
+                "answer": [
+                    "Devhaus Leipzig soll Menschen dabei helfen, technische Fähigkeiten zu erwerben, die es ihnen ermöglichen, erfolgreich Junior-Level-Entwicklungsjobs zu übernehmen, technisch versiert für hybride Geschäfts- und Managementrollen zu werden und das Programmieren selbstbestimmt zu erlernen. Dies erreichen wir durch unser Curriculum, unsere Beziehungen zu Unternehmen und unseren gemeinschaftlichen Ansatz für den Unterricht."
+                ]
+            },
+            {
+                "question": "Wie unterscheidet sich das DevHaus Leipzig von anderen Möglichkeiten programmieren zu lernen?",
+                "answer": [
+                    `Devhaus Leipzig bietet eine andere Lernerfahrung als andere Plattformen für Programmierausbildung an. Da wir ein kurzfristiges, unternehmens gesteuertes und von der Gemeinschaft getragenes, modernes, persönliches Lernerlebnis sind.`,
+                    `Hochschulen, Berufs Ausbildungsprogramme und Arbeits Studiengänge bieten eine größere Gemeinschaft und einen gewissen Zugang zu Expertenwissen sowie einen zertifizierten Abschluss, der oft auch gesellschaftlich anerkannt ist an. Der Nachteil ist, dass diese Programme in der Regel hinter den neuesten Standards zurückbleiben, sowohl in pädagogischer Hinsicht als auch in Bezug auf den Lehrplan. Die Studierenden erlernen - oft mit großem persönlichem Aufwand - Fähigkeiten, die den Anforderungen vieler Arbeitgeber bestenfalls teilweise entsprechen.`,
+                    `Außerdem dauern diese Studiengänge in der Regel Jahre und können für diejenigen, die schneller in eine produktive technische Karriere einsteigen wollen, oder für diejenigen, die älter sind und bereits Anforderungen an ihren Lebensstil, Erfahrungen in anderen Bereichen und höhere Anforderungen an ihr Arbeitsumfeld haben, unzugänglich sein.`
+                ]
+            },
+            {
+                "question": "Wie schneidet das Devhaus Leipzig im Vergleich zu anderen Coding Bootcamps ab?",
+                "answer": [
+                    `Unser Team hat hohen Anspruch in der Qualität und hat einen Großteil seiner Ressourcen in die ständige Verbesserung der Lernerfahrung mit jedem Kurs gesteckt. Anstatt so viele Bootcamps wie möglich anzubieten, arbeiten wir daran, das bestmögliche Klassenzimmer zu schaffen,
+                    Wir bieten konsequente und regelmäßige individuelle Betreuung innerhalb und außerhalb des Klassenzimmers und verfolgen einen kooperativen Ansatz für Ihren Lernweg. Einzelgespräche alle zwei Wochen, wöchentliche Retrospektiven und regelmäßige Feedback-Berichte der Ausbilder sind nur einige der Möglichkeiten, wie wir mit den Studierenden  zusammenarbeiten, um den Lernerfolg sicherzustellen,
+                    Wir bauen vom ersten Tag an Brücken zwischen aktuellen Studenten:Innen und Alumni. Das machen wir durch Einführungsaktivitäten, Diskussionsrunden von Alumni und Fachleuten, Workshops von einstellenden Unternehmen und mehr.`
+                ]
+            },
+            {
+                "question": "Bietet ihr auch einen Teilzeit Kurs an?",
+                "answer": [
+                    "Wir bieten derzeit keine Teilzeitkurse an, aber unsere Freunde von Coding Bootcamps Europe tun dies und ihr Team ist großartig. Check them out here: <a href='https://www.coding-bootcamps.eu/'>Coding Bootcamps Europe</a>"
+                ]
+            },
+            { 
+                "question": "Wie bewerbe ich mich?",
+                "answer": [
+                    `Klicken Sie auf den Link "<a style='color: grey;' href='https://devhausleipzig.typeform.com/to/pZOQK1pV' target='_blank' rel='noreferrer'>Apply Now</a>" und füllen Sie das Formular aus. Sobald Sie dies getan haben, befinden Sie sich offiziell im Bewerbungsprozess.`
+                ]
+            },
+            {
+                "question": "Wann startet das nächste Camp??",
+                "answer": [
+                    "Das Sommer/Herbst camp beginnt am 21. April 20221. "
+                ]
+            },
+            {
+                "question": "Wann werden die Bewerbungen geöffnet und wie läuft das Verfahren ab?",
+                "answer": [
+                    "Devhaus Leipzig nimmt laufend Bewerbungen entgegen. Wir legen dann Stichtage fest, nach denen die Bewerbungen für das nächste Camp berücksichtigt werden.",
+                    "Die Deadline für das Winter-/Frühjahrscamp 2022 ist der 7. Januar."
+                ]
+            },
+            {
+                "question": "Welche Art von Erfahrung oder Wissen brauche ich, um bei Devhaus Leipzig mitzumachen?",
+                "answer": [
+                    "Wir nehmen Menschen aus allen Gesellschaftsschichten und mit jeder Art von Erfahrung auf! Es gibt keine strengen technischen oder mathematischen Anforderungen für die Aufnahme in ein Programm von Devhaus Leipzig.",
+                    "Im Allgemeinen wird jedoch erwartet, dass du die Mathematik der Oberstufe gut beherrschst. Wenn du in ein Programm aufgenommen wirst und dich mathematisch etwas eingerostet fühlst, mach dir keine Sorgen; Du wirst in den Wochen vor Beginn des Programms Hilfsmittel erhalten, um deine grundlegenden mathematischen Fähigkeiten zu überprüfen. Wir erwarten auch, dass die Studierenden mit Computern vertraut sind, gut tippen können und sich problemlos auf modernen digitalen Plattformen bewegen können."
+                ]
+            },
+            {
+                "question": "Wonach suchen wir?",
+                "answer": [
+                    "Wir suchen Menschen, die Spaß daran haben, Probleme zu lösen, die offen für andere Lebensweisen und Persönlichkeitstypen sind, die Lust auf Neues und neue Ideen haben, die sich für etwas interessieren, das über ihr unmittelbares Umfeld hinausgeht, und die sich darüber im Klaren sind, wer sie als Person sind und warum sie tun, was sie tun",
+                    "Diese Werte sind es, die unserer Meinung nach eine großartige Lernumgebung für und Lehrkräfte ausmachen. Da wir Klassenzimmer als Teams sehen, die sich während des gesamten Camps gegenseitig unterstützen, ist die Auswahl nach diesen Werten ein Kernelement unseres Prozesses."
+                ]
+            },
+            {
+                "question": "Muss ich in Deutschland sein, um teilnehmen zu können?",
+                "answer": [
+                    "Ein Wohnsitz in Deutschland ist keine Voraussetzung für die Teilnahme an dem Kurs. Unser Klassenzimmer und unser Team sind vollständig aus der Ferne erreichbar."
+                ]
+            },
+            {
+                "question": "Wie bezahle ich den Kurs?",
+                "answer": [
+                    "Für TeilnehmerInnen, die vom Jobcenter gefördert werden, akzeptieren wir einen Bildungsgutschein für unsere Kurse, welcher die Kosten für den Unterricht und den Lebensunterhalt abdeckt.",
+                    "SAB (React EU) bietet bis zu 80 % Erstattung der Studiengebühren für Berufstätige, die etwa 3.300 Euro/Monat verdienen. Mehr Informationen finden Sie hier: <a style='color: grey;' href='https://tiny.cc/sab-weiterbildung'>SAB Weiterbildung</a>",
+                    "Für Personen, die nicht in der Lage sind, die Kosten für einen Kurs nach unserem Standardzahlungsplan zu tragen, können Zahlungspläne erstellt werden. Diese werden auf einer Fall-zu-Fall-Basis angeboten. ",
+                    "Um mehr darüber zu erfahren, welche Optionen für dich in Frage kommen, vereinbare einen Gesprächstermin mit einem unserer Teammitglieder: <a style='color: grey;' href='https://calendly.com/devhaus-leipzig/devhaus-1-on-1'>Devhaus 1-on-1</a>"
+                ]
+            },
+            {
+                "question": "Wie wahrscheinlich ist es, dass ich über Devhaus Leipzig einen Job vermittelt bekomme?",
+                "answer": [
+                    "Technische Berufe sind weltweit sehr gefragt; dies gilt insbesondere für Leipzig.",
+                    "Über 90 % unserer arbeitssuchenden AbsolventInnen haben durch das Netzwerk, das wir im Devhaus Leipzig aufgebaut haben, oder durch ihre eigene Stellensuche eine Beschäftigung in technischen Positionen gefunden."
+                ]
+            },
+            {
+                "question": "Welche Art von Jobs kann ich durch die Teilnahme an Devhaus Leipzig bekommen? ",
+                "answer": [
+                    "Unsere Akademie ist darauf ausgerichtet, Absolvierende auf eine Position als Junior Front-End Developer vorzubereiten. Absolvierende sind jedoch in der Lage, vorhandene Fähigkeiten oder Interessen mit Programmierkenntnissen zu kombinieren, um sie zu befähigen, andere Positionen einzunehmen, z. B. als Teamleiter, Scrum Master, Backend-Entwickler, technischer Vertrieb oder Qualitätssicherung.."
+                ]
+            },
+            {
+                "question": "Welche Art von Jobs kann ich durch die Teilnahme an Devhaus Leipzig bekommen?",
+                "answer": [
+                    "Unsere Akademie ist darauf ausgerichtet, Absolvierende auf eine Position als Junior Front-End Developer vorzubereiten. Absolvierende sind jedoch in der Lage, vorhandene Fähigkeiten oder Interessen mit Programmierkenntnissen zu kombinieren, um sie zu befähigen, andere Positionen einzunehmen, z. B. als Teamleiter, Scrum Master, Backend-Entwickler, technischer Vertrieb oder Qualitätssicherung."
+                ]
+            },
+            {
+                "question": "Werde ich während des Devhaus Leipzig mit Unternehmen in Kontakt treten können?",
+                "answer": [
+                    "Ja, und zwar jede Menge. Wir möchten den Studierenden die Möglichkeit geben, während des Camps Beziehungen zu Leuten aus der Tech-Community aufzubauen.",
+                    "Unser Lehrplan lebt von der Interaktion mit Teammitgliedern aus anderen Unternehmen. Wir laden regelmäßig Gastdozenten für spezielle Themen ein und veranstalten Podiumsdiskussionen mit Fachleuten aus verschiedenen Bereichen. Außerdem laden wir Unternehmensvertreter zu Career Development Days und Hackathons als Mentoren für Aktivitäten einr."
+                ]
+            },
+            {
+                "question": "Was wird im Devhaus Leipzig unterrichtet?",
+                "answer": [
+                    "Wir vermitteln die Fähigkeiten und Werkzeuge, die für den Entwurf, die Erstellung und den Einsatz von Webanwendungen und Websites in einem professionellen Umfeld erforderlich sind. Zu den Programmierwerkzeugen, die Sie lernen werden, gehören. Git, HTML, CSS, Typescript/Javascript, React.js mit Next.js, PostgreSQL, und Docker.",
+                    "Zu den unterrichteten Design-Tools gehören Design Thinking, Benutzerforschung und -tests sowie Figma. Teamfähigkeiten umfassen Rollen und Rituale innerhalb des Agile- und Scrum-Frameworks, wie Daily Stand-ups und Retrospektiven."
+                ]
+            },
+            {
+                "question": "Was werde ich als Studi des Devhaus Leipzig lernen?",
+                "answer": [
+                    "Absolvierende unserer Akademie werden:",
+                    `Fähig sein, selbstbewusst und einfach Websites und Webanwednungen zu erstellen. ".<br/>Vertrautheit mit den von Fachleuten verwendeten Tools und Arbeitsabläufen gewinnen.<br/>Fachvokabular entwickeln, um konstruktive Diskussionen mit Teammitgliedern zu führen.<br/>Wissen, wie man sich in der Tech-Community vernetzt.<br/>Erfahren Sie, welche Tätigkeiten sie als Programmierer mögen und welche nicht.`
+                ]
+            },
+            {
+                "question": "Wie ist der Unterrichtsstil von Devhaus Leipzig?",
+                "answer": [
+                    "Unsere Lernmethodik basiert auf den Lernwissenschaften, insbesondere auf den Rosenshine-Prinzipien für einen effektiven Unterricht unter Verwendung von Arbeitsbeispielen mit authentischen Aufgaben und einer allmählichen Hinführung zum selbstständigen Üben. Wir schulen unsere Studierende darin, sich der Probleme bewusst zu sein, die sie lösen. Dieser Ansatz befähigt die Absolvierenden, ihre Werkzeuge an das jeweilige Problem anzupassen, was es in einer sich ständig verändernden technischen Landschaft unerlässlich ist.",
+                    "Die Studierenden werden auch dabei unterstützt, zu lernen, wie man lernt. Indem wir den Schülern beibringen, selbständig zu lernen, fördern wir die Autonomie, die in einem beruflichen Umfeld erwartet wird, in dem die aktive Problemlösung die Norm ist.",
+                    "Einer der Hauptgründe, warum wir über 23 Wochen unterrichten, ist, dass wir den Studierenden helfen, das Programmieren zur Gewohnheit werden zu lassen. Unser Lehrplan ist sehr praxisorientiert. Die Hälfte unserer gemeinsamen Zeit verbringen wir mit Projekten."
+                ]
+            },
+            {
+                "question": "Wie kann ich Dozent:In oder Gastdozent:In am Devhaus Leipzig werden?",
+                "answer": [
+                    "Wenden Sie sich an franz@devhausleipzig.de, um uns mitzuteilen, welche Fähigkeiten Sie gerne weitergeben würden und wie Sie sich einbringen möchten."
+                ]
+            },
+            {
+                "question": "Kann ich nach meinem Abschluss noch Teil von Devhaus Leipzig sein?",
+                "answer": [
+                    "Absolvierende werden sofort zu Alumni von Devhaus, was bedeutet, dass sie zu besonderen Veranstaltungen und Treffen mit anderen Alumni, Mitgliedern des Devhaus-Teams und Partnerunternehmen eingeladen werden. Darüber hinaus werden die Alumni eingeladen, als Mentor:Innen, Lehrerkräfte  oder Redner:Innen mit zukünftigen Klassen zu interagieren."
+                ]
+            },
+            {
+                "question": "Wie kann ich Zeit mit Studierenden oder Lehrkräften von Devhaus Leipzig verbringen, um ein Gefühl dafür zu bekommen, wie es ist?",
+                "answer": [
+                    "Trag dich in unsere Mailingliste ein oder besuch unsere Seite Veranstaltungen (Link), um zu erfahren, wann wir Aktivitäten wie Infotage, Tage der offenen Tür oder Podiumsdiskussionen anbieten. Bei diesen Veranstaltungen sind fast immer Ausbilder oder ehemalige Studierende oder Zuhörende anwesend."
+                ]
+            },
+            {
+                "question": "Wie kann meine Organisation mit Devhaus Leipzig zusammenarbeiten?",
+                "answer": [
+                    "Wir laden regelmäßig Gäste ein, die in unserer Akademie unterrichten, als Mentoren fungieren oder Erfahrungen austauschen. Aktivitäten, wie z. B. Hackathons, Karrieretage und gesellschaftliche Veranstaltungen, werden oft gemeinsam mit Partnern konzipiert. Wenden dich mit deinen Ideen oder Anfragen zur Zusammenarbeit an info@devhausleipzig.de."
+                ]
+            },
+            {
+                "question": "Kann ich Absolvierenden von Devhaus Leipzig Projekte/Praktika/Jobs anbieten?",
+                "answer": [
+                    "Ja, natürlich! Wenden Sie sich an taylor@devhausleipzig.de, um zu besprechen, wie Sie mit einzelnen Schülern zusammengebracht werden können.",
+                    "Wenn Sie ein Softwareprojekt haben, das Sie gerne entwickeln lassen möchten, dann könnte unser Studio Ihnen helfen, es zum Leben zu erwecken. Kontakt studio@devhausleipzig.de"
+                ]
+            },
+            {
+                "question": "Ich möchte einen Artikel über das Devhaus Leipzig schreiben, wie kann ich das machen?",
+                "answer": [
+                    "Wende dich an taylor@devhausleipzig.de, um Zugang zu unserer Pressemappe zu erhalten oder um dein Projekt zu besprechen."
+                ]
+            }
+        ]
+    }
 }
 
 export default copyDE
