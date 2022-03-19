@@ -49,12 +49,28 @@ export default function Events() {
           link="https://www.meetup.com/devhaus-leipzig-meetup-group/events/279316224/"
         ></Event>
 
-        <Event title={t("events:camp5Start.header")} date="13.01.2022"></Event>
-
         <Event
           title={t("events:camp5FirstHackathon.header")}
           date="16.03.2022"
           link="https://www.meetup.com/devhaus-leipzig-meetup-group/events/284198992/"
+        ></Event>
+
+        <Event
+          title={t("events:communityLunch.header")}
+          date="21.03.2022"
+          link="https://www.meetup.com/devhaus-leipzig-meetup-group/events/284461837/"
+        ></Event>
+
+        <Event
+          title={t("events:communityUpdate.header")}
+          date="25.03.2022"
+          link="https://www.meetup.com/devhaus-leipzig-meetup-group/events/284461992/"
+        ></Event>
+
+        <Event
+          title={t("events:gameNightMarch.header")}
+          date="31.03.2022"
+          link="https://www.meetup.com/devhaus-leipzig-meetup-group/events/284461845/"
         ></Event>
 
         <Event

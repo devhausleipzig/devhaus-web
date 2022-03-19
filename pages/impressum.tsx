@@ -1,7 +1,7 @@
 import React from "react";
 import Article from "../components/Article";
 
-export default function LegalNotice() {
+export default function Impressum() {
   const content = (
     <div>
       <p>Angaben gemäß § 5 TMG</p>

@@ -510,15 +510,21 @@ const copyEN = {
         "demoDay": {
             "header": "Demo Day"
         },
-        "camp5Start": {
-            "header": "Camp #5 Kickoff Event"
-        },
         "camp5FirstHackathon": {
             "header": "Camp #5 First Hackathon"
         },
+        "gameNightMarch": {
+            "header": "Join us for a night of games!"
+        },
         "hackolaus": {
             "header": "Hackolaus hosted by Open Tech School Leipzig"
-        }
+        },
+        "communityLunch": {
+            "header": "Join us for Nepalese food from Chulo"
+        },
+        "communityUpdate": {
+            "header": "Update on the status and future of Devhaus"
+        },
     },
     "faq": {
         content: [

@@ -471,12 +471,18 @@ const copyDE = {
         "demoDay": {
             "header": "Demo Tag"
         },
-        "camp5Start": {
-            "header": "Camp #5 Eröffnungsveranstaltung"
+        "communityLunch": {
+            "header": "Genießen Sie mit uns nepalesisches Essen von Chulo"
+        },
+        "communityUpdate": {
+            "header": "Update zum Status und zur Zukunft von Devhaus"
+        },
+        "gameNightMarch": {
+            "header": "Verbringen Sie mit uns einen Spieleabend!"
         },
         "hackolaus": {
             "header": "Hackolaus, veranstaltet von der Open Tech School Leipzig"
-        },
+        }
     },
     "faq": {
         content: [
