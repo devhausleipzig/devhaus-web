@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -6,6 +7,10 @@ module.exports = {
     "./utilities/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    scale: {
+      '200': '2',
+      '300': '3'
+    },
     colors: {
       yellow: "#f0c22d",
       violet: "#991834",

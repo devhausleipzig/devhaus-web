@@ -499,7 +499,7 @@ const copyDE = {
                 ]
             },
             {
-                "question": "Wie unterscheidet sich das DevHaus Leipzig von anderen Möglichkeiten programmieren zu lernen?",
+                "question": "Wie unterscheidet sich das Devhaus Leipzig von anderen Möglichkeiten programmieren zu lernen?",
                 "answer": [
                     `Devhaus Leipzig bietet eine andere Lernerfahrung als andere Plattformen für Programmierausbildung an. Da wir ein kurzfristiges, unternehmens gesteuertes und von der Gemeinschaft getragenes, modernes, persönliches Lernerlebnis sind.`,
                     `Hochschulen, Berufs Ausbildungsprogramme und Arbeits Studiengänge bieten eine größere Gemeinschaft und einen gewissen Zugang zu Expertenwissen sowie einen zertifizierten Abschluss, der oft auch gesellschaftlich anerkannt ist an. Der Nachteil ist, dass diese Programme in der Regel hinter den neuesten Standards zurückbleiben, sowohl in pädagogischer Hinsicht als auch in Bezug auf den Lehrplan. Die Studierenden erlernen - oft mit großem persönlichem Aufwand - Fähigkeiten, die den Anforderungen vieler Arbeitgeber bestenfalls teilweise entsprechen.`,

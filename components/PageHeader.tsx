@@ -25,7 +25,7 @@ export default function PageHeader({
   color,
 }: Props) {
   if (description) {
-    content = <p>{description}</p>;
+    content = <>{description}</>;
   }
   return (
     <section className="">
@@ -37,7 +37,7 @@ export default function PageHeader({
           </h1>
           {subtitle && <p className="text-lg">{subtitle}</p>}
         </div>
-        <p className="text-justify text-xl leading-relaxed">{content}</p>
+        <div className="text-justify text-xl leading-relaxed">{content}</div>
       </div>
       {image && <Picture src={image} alt={alt} width={width} height={height} />}
     </section>
