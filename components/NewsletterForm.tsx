@@ -4,21 +4,6 @@ import { useTranslation } from "react-i18next";
 import { Transition } from "@headlessui/react";
 import { Dialog } from '@headlessui/react'
 
-function useOutsideAlerter(ref, cb) {
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (ref.current && !ref.current.contains(event.target)) {
-        cb();
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [ref, cb]);
-}
-
 function InputField({type, id, name, label, placeholder, color}) {
   const [value, setValue] = useState("")
 
@@ -56,7 +41,7 @@ function Checkbox({id, name, label, color}){
             
             before:absolute before:h-full before:rounded-md before:border-2 before:border-${color} before:opacity-0 before:hidden before:transition before:ease-linear before:duration-500 before:transform before:scale-x-110 before:scale-y-125 before:group-focus:opacity-100 before:group-focus:block before:group-focus:scale-x-100 before:group-focus:scale-y-100`
           }
-          htmlFor={id} // "gdpr_29201"
+          htmlFor={id}
         >
           <input 
             className={
@@ -70,7 +55,7 @@ function Checkbox({id, name, label, color}){
           />
           <span 
             className={
-              `inset-0 border-2 border-gray-500 block absolute w-full h-full bg-white text-gray-600 ring-red/0 peer-focus:border-gray-500/0 peer-focus:ring-red ring-opacity-0 ring-offset-10 peer-focus:ring-offset-0 peer-focus:ring-opacity-100 transition duration-500 ring-2 rounded-md
+              `inset-0 border-2 border-gray-500 block absolute w-full h-full bg-white text-gray-600 ring-transparent peer-focus:border-gray-500/0 peer-focus:ring-red ring-opacity-0 ring-offset-10 peer-focus:ring-offset-0 peer-focus:ring-opacity-100 transition duration-500 ring-2 rounded-md
 
               after:absolute after:bg-transparent after:transition-all after:ease-linear after:duration-200 after:top-2.5 after:left-2.5 after:h-0 after:w-0 after:border-r-4 after:border-b-4 after:transform after:rotate-0 after:opacity-0
 
@@ -98,28 +83,18 @@ function SubmitButton({id, name, value, color}){
   )
 }
 
-const MailchimpForm = forwardRef(({ shouldFocus, onFocus, onSubmit }, ref) => {
+function MailchimpForm() {
   const { t } = useTranslation();
-  const inputRef = useRef(null);
-
-  useEffect(() => {
-    if (inputRef.current && shouldFocus) {
-      onFocus();
-      inputRef.current.focus();
-    }
-  }, [inputRef, shouldFocus, onFocus]);
 
   return (
     <div id="mc_embed_signup" className="max-w-screen-sm flex flex-col justify-between text-sm bg-offWhite m-6">
       <form
-        ref={ref}
         action="https://codecampleipzig.us20.list-manage.com/subscribe/post?u=61cee2c8c87e614439e8d0d6d&amp;id=40833812ed"
         method="post"
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
         target="_blank"
         noValidate
-        onSubmit={onSubmit}
         className="space-y-4"
       >
 
@@ -171,80 +146,38 @@ const MailchimpForm = forwardRef(({ shouldFocus, onFocus, onSubmit }, ref) => {
     </form>
   </div>
   )
-});
+}
 
 export default function NewsletterForm() {
   const { t } = useTranslation();
-  const [isSubscribing, setIsSubscribing] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
-
-  const formRef = useRef(null);
-  useOutsideAlerter(formRef, () => {
-    setIsSubscribing(false);
-  });
-
-  const [shouldFocus, setShouldFocus] = useState(false);
-  let [isOpen, setIsOpen] = useState(true)
+  let [isOpen, setIsOpen] = useState(false)
 
   return (
     // TODO: Build popup to have more engagement for subscribing
     // TODO: Build modal for subscribing
     <>
-      <Transition
-        show={isSubscribing}
-        enter="transition-opacity duration-300"
-        enterFrom="opacity-0"
-        enterTo="opacity-1"
-        leave="transition-opacity duration-300"
-        leaveFrom="opacity-1"
-        leaveTo="opacity-0"
+      <Dialog
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+        className="fixed z-10 inset-0 overflow-y-auto"
       >
-        <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
-          <Dialog.Overlay />
+        <div className="flex items-center justify-center h-full w-full bg-gray-700/80">
+          <Dialog.Overlay className="fixed inset-0"/>
 
-          <Dialog.Title>Deactivate account</Dialog.Title>
-          <Dialog.Description>
-            This will permanently deactivate your account
+          <div className="w-3/5 bg-offWhite flex flex-col items-center justify-center m-18">
+          <Dialog.Title className="text-lg">Newsletter</Dialog.Title>
+          <Dialog.Description className="text-md">
+            Stay in touch!
           </Dialog.Description>
+            
+            <MailchimpForm/>
 
-          <div key="form">
-            <MailchimpForm
-              ref={formRef}
-              shouldFocus={shouldFocus}
-              onFocus={() => setShouldFocus(false)}
-              onSubmit={() => {
-                setIsVisible(false);
-                setTimeout(() => {
-                  setIsSubscribing(false);
-                  setIsVisible(true);
-                }, 0);
-              }}
-            />
+            <button onClick={() => setIsOpen(false)}>Cancel</button>
           </div>
+        </div>
+      </Dialog>
 
-          <button onClick={() => setIsOpen(false)}>Cancel</button>
-        </Dialog>
-      </Transition>
-      <Transition
-        show={!isSubscribing}
-        enter="transition-opacity duration-300"
-        enterFrom="opacity-0"
-        enterTo="opacity-1"
-        leave="transition-opacity duration-300"
-        leaveFrom="opacity-1"
-        leaveTo="opacity-0"
-      >
-        <button
-          key="button"
-          className="newsletter-subscribe text-lg hover:text-gray-900"
-          onClick={() => {
-            setShouldFocus(true);
-            setIsSubscribing(true);
-          }}
-        >
-          {t("newsletter:callToAction")}
-        </button>
-      </Transition>
+      <button onClick={() => setIsOpen(true)}>Subscribe!</button>
     </>
   );
 }

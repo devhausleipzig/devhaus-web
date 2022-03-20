@@ -12,6 +12,7 @@ module.exports = {
       '300': '3'
     },
     colors: {
+      transparent: "transparent",
       yellow: "#f0c22d",
       violet: "#991834",
       red: "#e6644d",
