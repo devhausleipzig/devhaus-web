@@ -11,8 +11,21 @@ const copyEN = {
         "privacy": "Privacy"
     },
     "newsletter": {
+        "signup": {
+            "email": {
+                "label": "Email Address",
+                "placeholder": "Your Email"
+            },
+            "fname": {
+                "label": "First Name",
+                "placeholder": "First Name"
+            },
+            "lname": {
+                "label": "Last Name",
+                "placeholder": "Last Name"
+            }
+        },
         "callToAction": "Subscribe to our Newsletter",
-        "placeholder": "Add your email address",
         "submit": "Subscribe"
     },
     "home": {

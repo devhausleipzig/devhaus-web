@@ -23,6 +23,7 @@ dependencies:
   swiper: 8.0.7
   web-vitals: 2.1.4
 devDependencies:
+  '@tailwindcss/forms': 0.5.0_tailwindcss@3.0.23
   '@types/node': 17.0.21
   '@types/react': 17.0.41
   autoprefixer: 10.4.2_postcss@8.4.8
@@ -431,6 +432,15 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-1SUf/Cg2GzGDyaf15aR9St9TWlb+XvbZXWpDx8YKs7MLzMH/BCeopv+y9vzrzgkfykCGuWOlSu3mZhj2+FQcrg==
+  /@tailwindcss/forms/0.5.0_tailwindcss@3.0.23:
+    dependencies:
+      mini-svg-data-uri: 1.4.4
+      tailwindcss: 3.0.23_autoprefixer@10.4.2
+    dev: true
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
+    resolution:
+      integrity: sha512-KzWugryEBFkmoaYcBE18rs6gthWCFHHO7cAZm2/hv3hwD67AzwP7udSCa22E7R1+CEJL/FfhYsJWrc0b1aeSzw==
   /@testing-library/dom/8.11.3:
     dependencies:
       '@babel/code-frame': 7.16.7
@@ -1921,6 +1931,11 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==
+  /mini-svg-data-uri/1.4.4:
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==
   /minimatch/3.0.8:
     dependencies:
       brace-expansion: 1.1.11
@@ -3255,6 +3270,7 @@ specifiers:
   '@fortawesome/react-fontawesome': ^0.1.17
   '@headlessui/react': ^1.5.0
   '@iconify/icons-openmoji': ^1.2.3
+  '@tailwindcss/forms': ^0.5.0
   '@testing-library/jest-dom': ^5.16.2
   '@testing-library/react': ^12.1.4
   '@testing-library/user-event': ^13.5.0

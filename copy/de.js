@@ -12,8 +12,21 @@ const copyDE = {
         "legalNotice": "Impressum"
     },
     "newsletter": {
+        "signup": {
+            "email": {
+                "label": "Email-Addresse",
+                "placeholder": "Email-Addresse"
+            },
+            "fname": {
+                "label": "Name",
+                "placeholder": "Name"
+            },
+            "lname": {
+                "label": "Familien Name",
+                "placeholder": "Familien Name"
+            }
+        },
         "callToAction": "Abonnier unseren Newsletter",
-        "placeholder": "Füge deine Email Adresse hinzu",
         "submit": "Abonnieren"
     },
     "home": {
