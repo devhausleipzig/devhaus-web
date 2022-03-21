@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { useEffect, useRef, useState, forwardRef } from "react";
+import { useEffect, useRef, useState, forwardRef, Fragment } from "react";
 import { useTranslation } from "react-i18next";
 import { Transition } from "@headlessui/react";
 import { Dialog } from '@headlessui/react'
@@ -74,7 +74,7 @@ function Checkbox({id, name, label, color}){
 function SubmitButton({id, name, value, color}){
   return (
     <input
-      className="h-12 w-full justify-center text-lg bg-gray-500 text-white rounded-md"
+      className="h-12 w-full justify-center text-lg bg-gray-500 text-white rounded-md hover:bg-gray-700 transition ease-linear duration-300"
       id={id}
       type="submit"
       value={value}
@@ -135,13 +135,10 @@ function MailchimpForm() {
         <SubmitButton id="mc-embedded-subscribe" name="subscribe" value="Subscribe"></SubmitButton>
 
         <p className="text-xs">
-          We use Mailchimp as our marketing platform. By clicking above to
-          subscribe, you acknowledge that your information will be transferred
-          to Mailchimp for processing. <a className="text-gray-800"target="_blank" rel="noopener noreferrer" href="https://mailchimp.com/legal/">Learn more about Mailchimp's privacy practices here.</a>
+          We use Mailchimp as our marketing platform. By clicking above to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a className="text-gray-800"target="_blank" rel="noopener noreferrer" href="https://mailchimp.com/legal/">Learn more about Mailchimp's privacy practices here.</a>
         </p>
         <p className="text-xs">
-          You can unsubscribe at any time by clicking the link in the footer
-          of our emails.
+          You can unsubscribe at any time by clicking the link in the footer of our emails.
         </p>
     </form>
   </div>
@@ -152,17 +149,86 @@ export default function NewsletterForm() {
   const { t } = useTranslation();
   let [isOpen, setIsOpen] = useState(false)
 
+  function closeModal(){
+    setIsOpen(false)
+  }
+
   return (
     // TODO: Build popup to have more engagement for subscribing
     // TODO: Build modal for subscribing
     <>
-      <Dialog
+      <Transition appear show={isOpen} as={Fragment}>
+        <Dialog
+          as="div"
+          className="fixed inset-0 z-10 overflow-y-auto"
+          onClose={closeModal}
+        >
+          <div className="min-h-screen px-4 text-center">
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <Dialog.Overlay className="fixed inset-0 h-full w-full bg-gray-700/80"/>
+            </Transition.Child>
+
+            {/* This element is to trick the browser into centering the modal contents. */}
+            <span
+              className="inline-block h-screen align-middle"
+              aria-hidden="true"
+            >
+              &#8203;
+            </span>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                <Dialog.Title
+                  as="h3"
+                  className="text-lg font-medium leading-6 text-gray-900"
+                >
+                  Stay in touch!
+                </Dialog.Title>
+                <div className="mt-2">
+                  <MailchimpForm/>
+                </div>
+
+                <div className="mt-4">
+                  <button
+                    type="button"
+                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    onClick={closeModal}
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </Transition.Child>
+          </div>
+        </Dialog>
+      </Transition>
+
+
+
+
+
+      {/* <Dialog
         open={isOpen}
         onClose={() => setIsOpen(false)}
         className="fixed z-10 inset-0 overflow-y-auto"
       >
+        <Dialog.Overlay className="fixed inset-0"/>
         <div className="flex items-center justify-center h-full w-full bg-gray-700/80">
-          <Dialog.Overlay className="fixed inset-0"/>
 
           <div className="w-3/5 bg-offWhite flex flex-col items-center justify-center m-18">
           <Dialog.Title className="text-lg">Newsletter</Dialog.Title>
@@ -175,9 +241,9 @@ export default function NewsletterForm() {
             <button onClick={() => setIsOpen(false)}>Cancel</button>
           </div>
         </div>
-      </Dialog>
+      </Dialog> */}
 
-      <button onClick={() => setIsOpen(true)}>Subscribe!</button>
+      <button onClick={() => setIsOpen(true)}>{'>> Subscribe to our Newsletter! <<'}</button>
     </>
   );
 }
