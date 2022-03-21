@@ -202,7 +202,7 @@ export default function Academy() {
             <h2 className="text-lg uppercase tracking-widest">
               {t("academy:block2.keyFeatures")}
             </h2>
-            {skills.map((skill) => (
+            {skills.map((skill, index) => (
               <h3 className="font-serif text-2xl font-light">{skill}</h3>
             ))}
           </div>

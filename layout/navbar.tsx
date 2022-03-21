@@ -103,29 +103,28 @@ function LanguagePicker(...props) {
   );
 }
 
-// function MobileMenu({ toggleMobileMenu, visible }) {
-//   return (
-//     <div
-//       className={
-//         "fixed inset-x-0 top-0 bg-white z-40 -translate-y-full transition-transform duration-500 px-8 pt-8 pb-4 overflow-auto " +
-//         (visible ? "block  opacity-100 transform-none" : "")
-//       }
-//       onClick={toggleMobileMenu}
-//     >
-//       <div className="flex justify-between items-center w-full">
-//         <nav className="hidden lg:flex">
-//           {NavLinks().map((link) =>
-//             NavLink(link, "uppercase tracking-[0.05ch]")
-//           )}
-//         </nav>
-//       </div>
-//       <div className="absolute inset-x-0 bottom-0 w-full">
-//         {/* width = 16 */}
-//         <FullLine color="devhaus" numSegments={6} />
-//       </div>
-//     </div>
-//   );
-// }
+function MobileMenu({ toggleMobileMenu, visible }) {
+  return (
+    <div
+      className={
+        "fixed inset-x-0 top-0 bg-white z-40 -translate-y-full transition-transform duration-500 px-8 pt-8 pb-4 overflow-auto " +
+        (visible ? "block opacity-100 transform-none" : "")
+      }
+      onClick={toggleMobileMenu}
+    >
+      <div className="flex justify-between items-center w-full">
+        <nav className="lg:flex">
+          {NavLinks().map((link) =>
+            NavLink(link)
+          )}
+        </nav>
+      </div>
+      <div className="absolute inset-x-0 bottom-0 w-full">
+        <DevhausLine active color="devhaus" width={64} />
+      </div>
+    </div>
+  );
+}
 
 export default function Navigation() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -134,18 +133,12 @@ export default function Navigation() {
     setShowMobileMenu(!showMobileMenu);
   };
   return (
-    <Navbar toggleMobileMenu={toggleMobileMenu} />
-    // <div className="relative">
-    //   <div className="p-8 absolute lg:hidden top-0 w-full z-30">
-    //     <Navbar toggleMobileMenu={toggleMobileMenu} />
-    //   </div>
-    //   <div className="p-8 top-0 w-full z-30 -translate-y-full transition-transform duration-200 ease-linear fixed left-0 bg-white">
-    //     <Navbar toggleMobileMenu={toggleMobileMenu} />
-    //   </div>
-    //   <MobileMenu
-    //     toggleMobileMenu={toggleMobileMenu}
-    //     visible={showMobileMenu}
-    //   ></MobileMenu>
-    // </div>
+    <>
+      <Navbar toggleMobileMenu={toggleMobileMenu} />
+      <MobileMenu
+        toggleMobileMenu={toggleMobileMenu}
+        visible={showMobileMenu}
+      ></MobileMenu>
+    </>
   );
 }
