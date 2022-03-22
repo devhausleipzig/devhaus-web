@@ -19,7 +19,14 @@ export default function Home() {
   return (
     <Page>
       <Head>
-        <title>Devhaus Leipzig</title>
+        <title>Devhaus Leipzig </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
+        <meta name="author" content="Devhaus Leizpig — A learning community for programmers"/>
+        <meta name="description"
+          content="Devhaus Leipzig grew out of the need for a place where developers could learn and contribute to meaningful projects. Our mission is to support the members of our community to reach their creative and professional goals. Aspiring developers can take part in our Academy to learn the fundamentals of software development. Once graduated, they join our community of residents in the Studio, where their personal and professional projects find the support they need to thrive."
+        />
+        <meta name="keywords" content=""/>
       </Head>
       <header className="">
         <div className="flex h-full w-full items-center justify-center">

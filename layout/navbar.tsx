@@ -4,7 +4,6 @@ import { DevhausLine } from "../components/HorizontalLine";
 import ReactLanguageSelect from "react-languages-select";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
-import clsx from "clsx";
 
 const logo = "/images/devhaus-logo.svg";
 
