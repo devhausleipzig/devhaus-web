@@ -75,12 +75,7 @@ export default function Events() {
           date="31.03.2022"
           link="https://www.meetup.com/devhaus-leipzig-meetup-group/events/284461845/"
         ></Event>
-
-        <Event
-          title={t("events:hackolaus.header")}
-          link="https://hackolaus.netlify.app/"
-          date="08.04.2022 - 10.04.2022"
-        ></Event>
+        
       </div>
     </Page>
   );
