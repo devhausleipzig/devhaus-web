@@ -35,7 +35,7 @@ const wtlLogo = "../images/logos/wtl.png";
 // these must be written in a way that is natural language agnostic
 const currentCampStart = "21-04-2022";
 const currentCampEnd = "19-09-2022";
-const campPrice = "€15110 + VAT";
+const campPrice = "€15.110 + VAT";
 const financialContact = "info@devhausleipzig.de";
 
 const pic1 = "../images/academy/dan-classroom.jpg";
@@ -145,7 +145,14 @@ export default function Academy() {
   return (
     <Page>
       <Head>
-        <title>Academy - Devhaus Leipzig</title>
+        <title>Academy — Devhaus Leipzig</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
+        <meta name="author" content="Devhaus Leizpig — A learning community for tech professionals"/>
+        <meta name="description"
+          content="The Devhaus Academy is more than just a classroom; it’s an ongoing support system, the sole purpose of which is to help you become the best programmer and designer you can be."
+        />
+        <meta name="keywords" content="leipzig learning community camp bootcamp learn class classroom code coding programming development software skills digital"/>
       </Head>
       <div>
         <PageHeader
@@ -349,7 +356,7 @@ export default function Academy() {
           {logos.map(({ logo, name }) => {
             return (
               <div key={name} className="max-w-[24vmin] p-[5vmin]">
-                <img src={logo} alt={name}></img>
+                <img className="max-h-[10vmin] object-contain" src={logo} alt={name}></img>
               </div>
             );
           })}

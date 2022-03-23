@@ -161,7 +161,7 @@ const copyEN = {
     },
     "studio": {
         "header": "Studio",
-        "subheader": "Whether it’s a personal or professional project, our residents find support in bringing their goals to fruition.",
+        "subheader": "<p style='margin-bottom: 1.5rem;'>Whether it’s a personal or professional project, our residents find support in bringing their goals to fruition. Residents are recruited from alumni of the Academy and members of the local tech community, and are given space and resources to to work on interesting projects.</p><p>Whether it's helping to bootstrap a start-up, hooking up a local business with a website and booking app, or working on other projects that are meaningful to you, our residents are available and excited to join your team. The studio takes on time-limited projects with well-defined scopes, a mythical stage of planning we regularly help our project partners achieve.</p>",
         "ongoingProjects": {
             "header": "Ongoing Projects",
             "fillip": "Fillip - A powerful platform for online events",

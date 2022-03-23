@@ -21,7 +21,7 @@ export default function About() {
 
   const content = (
     <div>
-      <p>{t("about:sectionPart1")}</p>
+      <p className="mb-6">{t("about:sectionPart1")}</p>
       <p>{t("about:sectionPart2")}</p>
     </div>
   );
@@ -29,7 +29,10 @@ export default function About() {
   return (
     <Page>
       <Head>
-        <title>About - Devhaus Leipzig</title>
+        <title>About — Devhaus Leipzig</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
+        <meta name="author" content="Devhaus Leizpig — A learning community for tech professionals"/>
       </Head>
       <PageHeader title={t("about:header")} content={content}></PageHeader>
       <section>

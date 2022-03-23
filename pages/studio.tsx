@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "../components/PageHeader";
 import Picture from "../components/Picture";
 import { useTranslation } from "react-i18next";
+import ReactHtmlParser from "react-html-parser";
 import Page from "../layout/page";
 import Head from "next/head";
 
@@ -145,11 +146,18 @@ export default function Work() {
   return (
     <Page>
       <Head>
-        <title>Studio - Devhaus Leipzig</title>
+        <title>Studio — Devhaus Leipzig</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
+        <meta name="author" content="Devhaus Leizpig — A learning community for tech professionals"/>
+        <meta name="description"
+          content="Whether it’s a personal or professional project, our residents find support in bringing their goals to fruition. Residents are recruited from alumni of the Academy and members of the local tech community, and are given space and resources to work on interesting projects."
+        />
+        <meta name="keywords" content="leipzig community studio projects ongoing support alumni app develop apps development nearshore outsource outsourcing local freelance"/>
       </Head>
       <PageHeader
         title={t("studio:header")}
-        description={t("studio:subheader")}
+        description={ReactHtmlParser(t("studio:subheader"))}
         color="green"
       ></PageHeader>
       <section className="projects">
