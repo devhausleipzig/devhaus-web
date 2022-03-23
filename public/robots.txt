@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://devhausleipzig.de
+
+# Sitemaps
+Sitemap: https://devhausleipzig.de/sitemap.xml
