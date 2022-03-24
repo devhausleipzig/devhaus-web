@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://devhausleipzig.de</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T00:17:53.193Z</lastmod></url>
-<url><loc>https://devhausleipzig.de/about</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T00:17:53.193Z</lastmod></url>
-<url><loc>https://devhausleipzig.de/academy</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T00:17:53.193Z</lastmod></url>
-<url><loc>https://devhausleipzig.de/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T00:17:53.193Z</lastmod></url>
-<url><loc>https://devhausleipzig.de/events</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T00:17:53.193Z</lastmod></url>
-<url><loc>https://devhausleipzig.de/faq</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T00:17:53.193Z</lastmod></url>
-<url><loc>https://devhausleipzig.de/impressum</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T00:17:53.193Z</lastmod></url>
-<url><loc>https://devhausleipzig.de/privacy</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T00:17:53.193Z</lastmod></url>
-<url><loc>https://devhausleipzig.de/stories</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T00:17:53.193Z</lastmod></url>
-<url><loc>https://devhausleipzig.de/studio</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T00:17:53.193Z</lastmod></url>
+<url><loc>https://devhausleipzig.de/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T20:49:48.067Z</lastmod></url>
+<url><loc>https://devhausleipzig.de/about/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T20:49:48.067Z</lastmod></url>
+<url><loc>https://devhausleipzig.de/academy/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T20:49:48.067Z</lastmod></url>
+<url><loc>https://devhausleipzig.de/contact/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T20:49:48.067Z</lastmod></url>
+<url><loc>https://devhausleipzig.de/events/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T20:49:48.067Z</lastmod></url>
+<url><loc>https://devhausleipzig.de/faq/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T20:49:48.067Z</lastmod></url>
+<url><loc>https://devhausleipzig.de/impressum/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T20:49:48.067Z</lastmod></url>
+<url><loc>https://devhausleipzig.de/privacy/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T20:49:48.067Z</lastmod></url>
+<url><loc>https://devhausleipzig.de/stories/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T20:49:48.067Z</lastmod></url>
+<url><loc>https://devhausleipzig.de/studio/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-23T20:49:48.067Z</lastmod></url>
 </urlset>

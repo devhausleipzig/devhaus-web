@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, RefObject } from "react";
 import Link from "next/link";
 import { DevhausLine } from "../components/HorizontalLine";
 import ReactLanguageSelect from "react-languages-select";
@@ -79,19 +79,31 @@ function Navbar({ toggleMobileMenu }) {
   );
 }
 
-function LanguagePicker(...props) {
+function LanguagePicker({id}) {
+  const router = useRouter()
+  const { pathname, asPath, query } = router
   const { i18n } = useTranslation();
+
+  const selector: RefObject<ReactLanguageSelect> = useRef(null)
+
+  i18n.on('loaded', () => {
+    i18n.on('languageChanged',  (lang) => {
+      console.log('selector', selector)
+      selector.current.updateSelected(lang)
+    })
+  })
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
+    router.push({ pathname, query }, asPath, { locale: lang })
   };
 
   return (
-    <div
-      {...props}
+    <div id={id}
       className="absolute top-0 right-[1vw] z-50 rounded-2xl bg-white"
     >
       <ReactLanguageSelect
+        ref={selector}
         languages={["en", "de"]}
         names="international"
         defaultLanguage="en"
