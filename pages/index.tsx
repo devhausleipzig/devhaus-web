@@ -13,6 +13,7 @@ const studioImage = "../images/home/chat.jpg";
 const eventsImage = "../images/home/ccl-1-kickoff.jpg";
 const storiesImage = "../images/home/fire.jpg";
 
+
 export default function Home() {
   const { t } = useTranslation();
 
