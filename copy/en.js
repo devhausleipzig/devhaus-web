@@ -114,7 +114,7 @@ const copyEN = {
         "block5": {
             "header": "Learning Path",
             "sectionHeader1": "Orientation & Software Development Fundamentals",
-            "section1Part1": "The course opens with a quick tour through the software development cosmos, starting from bits &amp; bytes, through computer hardware to an overview of the many branches of software applications.",
+            "section1Part1": "The course opens with a quick tour through the software development cosmos, starting from bits & bytes, through computer hardware to an overview of the many branches of software applications.",
             "section1Part2": "We'll also familiarize ourselves with tools of the trade that software developers use on a daily basis and practice using them by creating a shared recipe collection.",
             "sectionHeader2": "Programming in Typescript",
             "section2": `Although programming is only one of many skills involved in software development, it is the key to its power. Starting from "Hello World", we'll build a collection of small programs with increasing complexity and, thereby, learn not only the syntax and grammar of the Typescript Programming Language, but also the principles and techniques that are common to all programming languages.`,
