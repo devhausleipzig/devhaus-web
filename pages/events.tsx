@@ -75,6 +75,12 @@ export default function Events() {
           date="31.03.2022"
           link="https://www.meetup.com/devhaus-leipzig-meetup-group/events/284461845/"
         ></Event>
+
+        <Event
+          title={t("events:nextCampDeadline.header")}
+          date="28.04.2022"
+          link="https://devhausleipzig.typeform.com/to/pZOQK1pV"
+        ></Event>
         
       </div>
     </Page>

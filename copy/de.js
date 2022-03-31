@@ -493,8 +493,8 @@ const copyDE = {
         "gameNightMarch": {
             "header": "Verbringen Sie mit uns einen Spieleabend!"
         },
-        "hackolaus": {
-            "header": "Hackolaus, veranstaltet von der Open Tech School Leipzig"
+        "nextCampDeadline": {
+            "header": "Anmeldeschluss für das nächste Frontend & Design Camp!"
         }
     },
     "faq": {
@@ -542,14 +542,14 @@ const copyDE = {
             {
                 "question": "Wann startet das nächste Camp??",
                 "answer": [
-                    "Das Sommer/Herbst camp beginnt am 21. April 20221. "
+                    "Das Sommer/Herbst camp beginnt am 5. Mai, 2022. "
                 ]
             },
             {
                 "question": "Wann werden die Bewerbungen geöffnet und wie läuft das Verfahren ab?",
                 "answer": [
                     "Devhaus Leipzig nimmt laufend Bewerbungen entgegen. Wir legen dann Stichtage fest, nach denen die Bewerbungen für das nächste Camp berücksichtigt werden.",
-                    "Die Deadline für das Winter-/Frühjahrscamp 2022 ist der 7. Januar."
+                    "Die Deadline für das Sommer-/Herbstcamp 2022 ist der 28. April."
                 ]
             },
             {
@@ -576,7 +576,7 @@ const copyDE = {
                 "question": "Wie bezahle ich den Kurs?",
                 "answer": [
                     "Für TeilnehmerInnen, die vom Jobcenter gefördert werden, akzeptieren wir einen Bildungsgutschein für unsere Kurse, welcher die Kosten für den Unterricht und den Lebensunterhalt abdeckt.",
-                    "SAB (React EU) bietet bis zu 80 % Erstattung der Studiengebühren für Berufstätige, die etwa 3.300 Euro/Monat verdienen. Mehr Informationen finden Sie hier: <a style='color: grey;' href='https://tiny.cc/sab-weiterbildung'>SAB Weiterbildung</a>",
+                    // "SAB (React EU) bietet bis zu 80 % Erstattung der Studiengebühren für Berufstätige, die etwa 3.300 Euro/Monat verdienen. Mehr Informationen finden Sie hier: <a style='color: grey;' href='https://tiny.cc/sab-weiterbildung'>SAB Weiterbildung</a>",
                     "Für Personen, die nicht in der Lage sind, die Kosten für einen Kurs nach unserem Standardzahlungsplan zu tragen, können Zahlungspläne erstellt werden. Diese werden auf einer Fall-zu-Fall-Basis angeboten. ",
                     "Um mehr darüber zu erfahren, welche Optionen für dich in Frage kommen, vereinbare einen Gesprächstermin mit einem unserer Teammitglieder: <a style='color: grey;' href='https://calendly.com/devhaus-leipzig/devhaus-1-on-1'>Devhaus 1-on-1</a>"
                 ]

@@ -529,15 +529,15 @@ const copyEN = {
         "gameNightMarch": {
             "header": "Join us for a night of games!"
         },
-        "hackolaus": {
-            "header": "Hackolaus hosted by Open Tech School Leipzig"
-        },
         "communityLunch": {
             "header": "Join us for Nepalese food from Chulo"
         },
         "communityUpdate": {
             "header": "Update on the status and future of Devhaus"
         },
+        "nextCampDeadline": {
+            "header": "Deadline to apply for the next frontend & design camp!"
+        }
     },
     "faq": {
         content: [
@@ -584,14 +584,14 @@ const copyEN = {
             {
                 "question": "When does the next camp start?",
                 "answer": [
-                    "The Summer/Fall camp will begin April 21, 2022."
+                    "The Summer/Fall camp will begin May 5, 2022."
                 ],
             },
             {
                 "question": "When do applications open and what is the process?",
                 "answer": [
                     "Devhaus Leipzig accepts applications on a continuous basis. We then set cutoff dates after which applications are rolled over and considered for the proceeding camp.",
-                    "The deadline for being considered for the Winter/Spring camp of 2022 is January 7th.",
+                    "The deadline for being considered for the Summer/Fall camp of 2022 is April 28th.",
                 ],
             },
             {
@@ -618,7 +618,7 @@ const copyEN = {
                 "question": "How can I pay for the course?",
                 "answer": [
                     "For Job Center eligible participants, we will accept a Bildungsgutschein for our courses that will cover the cost of tuition as well as your living expenses.",
-                    "SAB (React EU) offers up to 80% tuition reimbursement for employed individuals making approximately 3.300 euros/month. More information see here: <a style='color: grey;' href='https://tiny.cc/sab-weiterbildung'>SAB Weiterbildung</a>",
+                    // "SAB (React EU) offers up to 80% tuition reimbursement for employed individuals making approximately 3.300 euros/month. More information see here: <a style='color: grey;' href='https://tiny.cc/sab-weiterbildung'>SAB Weiterbildung</a>",
                     "Payment Plans can be created for individuals who are unable to cover the cost of the course on our standard payment schedule. These are offered on a case by case basis. ",
                     "To learn more about what options might be suitable for you, schedule a talk with one of our team members: <a style='color: grey;' href='https://calendly.com/devhaus-leipzig/devhaus-1-on-1'>Devhaus 1-on-1</a>",
                 ],
