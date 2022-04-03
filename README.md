@@ -2,5 +2,6 @@
 
 ## TODO
 
-- [ ] Tuition & Financing Section
-- [ ] Deniz Picture
+- [ ] Fix half-ass modal
+- [ ] Add careers page
+- [ ] Ensure analytics are working correctly
