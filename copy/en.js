@@ -130,7 +130,7 @@ const copyEN = {
             "section7": "To round off the skillset, we'll build and deploy the backend of our web application. This is the most challenging part of the course, as it normally requires a long time to master the complexities of a production level backend, including authentication, database design & continuous deployment. However, with a lot of focus, carefully designed instruction, and a bit of cheating you'll become able to build a full stack web application from start to finish all by yourself.",
             "sectionHeader8": "Professional Frameworks + Specialization",
             "section8": "Our final weeks of formal curriculum walk students through professional development processes and provide basic starting tracks for interested students to dive deeper into specializations like Backend development & DevOps, Data Science, UI/UX Design, and Agile Management. We’ll also dive into our second hackathon to kick off the final project.",
-            "sectionHeader9": "Final Project + 2nd Hackathon",
+            "sectionHeader9": "Final Project + 3rd Hackathon",
             "section9": "After 18 weeks of intense training, you'll have all you need to team up with your fellow campers and start building your own projects. You'll get extra support from mentors in our community who can provide technical support and also help you explore options for life after the course. The final week will consist of a two day career development program and our last hackathon to wrap up final projects.",
             "sectionHeader10": "FINISH",
             "section10": "Graduation"
@@ -145,7 +145,8 @@ const copyEN = {
             "part3": "We provide a range of options to help you finance your education, including payment plans, government programs, loan partners, and scholarships. Make sure to reach out to us so we can evaluate the financing options that fit your specific situation.",
             "part4": `If you are eligible for educational support through the Jobcenter and would like to pursue financing your seat via a Bildungsgutschein, contact us at # with any questions.` /* # is the contact email address */,
             "faqLink": "Read our FAQ",
-            "callLink": "Schedule a call or chat"
+            "callLink": "Schedule a call or chat",
+            "courseReportLink": "Reviews on Course Report"
         },
         "block8": {
             "header": "Application Process",

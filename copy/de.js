@@ -131,7 +131,7 @@ const copyDE = {
             "section7": "Um die Kenntnisse abzurunden, werden wir das Backend unserer Webanwendung erstellen und bereitstellen. Dies ist der anspruchsvollste Teil des Kurses, da es normalerweise viel Zeit braucht, um die Komplexität eines Backends auf Produktionsebene zu meistern, einschließlich Authentifizierung, Datenbankdesign &amp; kontinuierliche Bereitstellung. Aber mit viel Konzentration, sorgfältig ausgearbeiteten Anweisungen und ein bisschen um die Ecke denken, werden Sie in der Lage sein, eine vollständige Webanwendung von Anfang bis Ende selbst zu erstellen.",
             "sectionHeader8": "Professionelles Rahmenwerk mit Spezialisierung",
             "section8": "Unsere letzten Wochen des formalen Lehrplans führen die Studierenden durch professionelle Entwicklungsprozesse und bieten grundlegende Einstiegsmöglichkeiten für interessierte Studierende, um tiefer in Spezialisierungen wie Backend-Entwicklung & DevOps, Data Science, UI/UX-Design und Agile Management einzutauchen. Wir werden auch unseren zweiten Hackathon nutzen, um das Abschlussprojekt zu starten.",
-            "sectionHeader9": "Abschlussprojekt und zweiter Hackathon",
+            "sectionHeader9": "Abschlussprojekt und dritte Hackathon",
             "section9": "Nach 18 Wochen intensiver Schulung hast du alles, was du brauchst, um dich mit Mitcampern zusammenzutun und eure eigenen Projekte zu entwickeln. Zusätzliche Unterstützung erhältst du von Mentoren aus unserer Community, die dich technisch unterstützen und dir auch dabei helfen, Optionen für das Leben nach dem Kurs zu finden. Die letzte Woche besteht aus einem zweitägigen Karriereentwicklungsprogramm und unserem letzten Hackathon, um die letzten Projekte abzuschließen.",
             "sectionHeader10": "ENDE",
             "section10": "Abschluss"
@@ -146,7 +146,8 @@ const copyDE = {
             "part3": "Wir bieten Ihnen eine Reihe von Optionen zur Finanzierung Ihres Studiums, darunter Zahlungspläne, staatliche Programme, Darlehenspartner und Stipendien. Setz dich mit uns in Verbindung, damit wir die für dich passenden Finanzierungsmöglichkeiten prüfen können.",
             "part4": `Wenn Sie Anspruch auf Ausbildungsförderung durch das Jobcenter haben und Ihren Studienplatz über einen Bildungsgutschein finanzieren möchten, wenden Sie sich bei Fragen an #.` /* # is the contact email address */,
             "faqLink": "Lies unsere FAQ",
-            "callLink": "Anruf oder Chat vereinbaren"
+            "callLink": "Anruf oder Chat vereinbaren",
+            "courseReportLink": "Lies über uns auf Course Report"
         },
         "block8": {
             "header": "Bewerbungsprozess",

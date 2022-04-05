@@ -385,21 +385,32 @@ export default function Academy() {
               )
             )}
           </p>
-          <div>
+          <div
+          className="flex flex-col items-start">
             <button
               onClick={() => router.push("/faq")}
-              className="mt-6 border-b-2 border-blue pb-1 uppercase"
+              className="mt-6 border-b-2 border-blue pb-1 uppercase inline-block"
             >
               {t("academy:block7.faqLink")}
             </button>
             <a
+              className="inline-block"
               href="https://calendly.com/devhaus-leipzig/devhaus-1-on-1?month=2021-02"
               target="_blank"
               rel="noreferrer"
-              style={{ display: "block" }}
             >
               <button className="mt-6 border-b-2 border-blue pb-1 uppercase">
                 {t("academy:block7.callLink")}
+              </button>
+            </a>
+            <a
+              className="inline-block"
+              href="https://www.coursereport.com/schools/devhaus-leipzig#reviews"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="mt-6 border-b-2 border-blue pb-1 uppercase">
+                {t("academy:block7.courseReportLink")}
               </button>
             </a>
           </div>
