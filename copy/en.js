@@ -33,7 +33,8 @@ const copyEN = {
             "header": "Devhaus Leipzig",
             "subheader": "A learning community for programmers",
             "part1": "Devhaus Leipzig grew out of the need for a place where developers could learn and contribute to meaningful projects. Our mission is to support the members of our community to reach their creative and professional goals.",
-            "part2": "Aspiring developers can take part in our Academy to learn the fundamentals of software development. Once graduated, they join our community of residents in the Studio, where their personal and professional projects find the support they need to thrive."
+            "part2": "Aspiring developers can take part in our Academy to learn the fundamentals of software development. Once graduated, they join our community of residents in the Studio, where their personal and professional projects find the support they need to thrive.",
+            "part3": "We have courses for learning frontend web development currently running."
         },
         "academy": {
             "header": "Academy",

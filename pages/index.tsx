@@ -48,15 +48,31 @@ export default function Home() {
             <p className="mb-8 text-xl leading-relaxed">
               {t("home:manifesto.part1")}
             </p>
-            <p className="text-xl leading-relaxed">
+            <p className="mb-8 text-xl leading-relaxed">
               {t("home:manifesto.part2")}
             </p>
+            <p className="text-xl leading-relaxed">
+              {t("home:manifesto.part3")}
+            </p>
 
-            <div className="text-center">
+            <div className="flex justify-center mt-12 mb-24">
+              <a
+                href="https://devhausleipzig.typeform.com/to/pZOQK1pV"
+                target="_blank"
+                rel="noreferrer"
+              >
+                  <button className="border-b-2 border-blue pb-1 text-2xl uppercase">
+                    {t("academy:block8.applyLink")}
+                  </button>
+              </a>
+            </div>
+
+            {/* <div className="text-center">
               <div className="mt-6 flex justify-center">
                 <DevhausLine active numSegments={5} width={128} />
               </div>
-            </div>
+            </div> */}
+
           </div>
 
           <div className="mx-auto max-w-6xl space-y-32">

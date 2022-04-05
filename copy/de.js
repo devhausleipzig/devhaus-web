@@ -34,7 +34,8 @@ const copyDE = {
             "header": "Devhaus Leipzig",
             "subheader": "Eine Lernende Gemeinschaft für Programmierer",
             "part1": "Das Devhaus Leipzig ist aus dem Bedürfnis heraus entstanden, einen Ort zu schaffen, an dem Entwickler:Innen lernen und zu sinnvollen Projekten beitragen können. Unser Ziel ist es, die Mitglieder unserer Gemeinschaft dabei zu unterstützen, ihre kreativen und beruflichen Ziele zu erreichen.",
-            "part2": "Angehende Entwickler:Innen können an unserer Akademie teilnehmen, um die Grundlagen der Softwareentwicklung zu erlernen. Nach deinem Abschluss schließt du dich unserer Gemeinschaft von Bewohnern im Studio an, wo deine persönlichen und beruflichen Projekte die Unterstützung finden, die sie brauchen, um erfolgreich zu sein."
+            "part2": "Angehende Entwickler:Innen können an unserer Akademie teilnehmen, um die Grundlagen der Softwareentwicklung zu erlernen. Nach deinem Abschluss schließt du dich unserer Gemeinschaft von Bewohnern im Studio an, wo deine persönlichen und beruflichen Projekte die Unterstützung finden, die sie brauchen, um erfolgreich zu sein.",
+            "part3": "Momentan laufen unsere Kurse zur Frontend-Webentwicklung."
 },
         "academy": {
             "header": "Akademie",
@@ -147,7 +148,7 @@ const copyDE = {
             "part4": `Wenn Sie Anspruch auf Ausbildungsförderung durch das Jobcenter haben und Ihren Studienplatz über einen Bildungsgutschein finanzieren möchten, wenden Sie sich bei Fragen an #.` /* # is the contact email address */,
             "faqLink": "Lies unsere FAQ",
             "callLink": "Anruf oder Chat vereinbaren",
-            "courseReportLink": "Lies über uns auf Course Report"
+            "courseReportLink": "Bewertungen auf Course Report"
         },
         "block8": {
             "header": "Bewerbungsprozess",
