@@ -147,13 +147,23 @@ export default function Work() {
     <Page>
       <Head>
         <title>Studio — Devhaus Leipzig</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
-        <meta name="author" content="Devhaus Leizpig — A learning community for tech professionals"/>
-        <meta name="description"
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width; initial-scale=1; maximum-scale=1"
+        />
+        <meta
+          name="author"
+          content="Devhaus Leizpig — A learning community for tech professionals"
+        />
+        <meta
+          name="description"
           content="Whether it’s a personal or professional project, our residents find support in bringing their goals to fruition. Residents are recruited from alumni of the Academy and members of the local tech community, and are given space and resources to work on interesting projects."
         />
-        <meta name="keywords" content="leipzig community studio projects ongoing support alumni app develop apps development nearshore outsource outsourcing local freelance"/>
+        <meta
+          name="keywords"
+          content="leipzig community studio projects ongoing support alumni app develop apps development nearshore outsource outsourcing local freelance"
+        />
       </Head>
       <PageHeader
         title={t("studio:header")}

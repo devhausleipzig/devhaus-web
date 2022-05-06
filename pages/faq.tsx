@@ -22,25 +22,25 @@ function Question({ question, answer }) {
 }
 
 type Question = {
-  question: string
-  answer: Array<string>
-}
+  question: string;
+  answer: Array<string>;
+};
 
 export default function Questions() {
   const { t } = useTranslation();
 
-  const faqProcessor = function(value, key, options, translator){
+  const faqProcessor = function (value, key, options, translator) {
     return ReactHtmlParser(value);
-  }
+  };
 
-  let questions = t('faq:content', { returnObjects: true }) as Array<Question>
+  let questions = t("faq:content", { returnObjects: true }) as Array<Question>;
 
-  questions.map( (entry) => {
-    entry.answer = entry.answer.map( (fragment) => {
-      return ReactHtmlParser(fragment)
-    })
-    return entry
-  })
+  questions.map((entry) => {
+    entry.answer = entry.answer.map((fragment) => {
+      return ReactHtmlParser(fragment);
+    });
+    return entry;
+  });
 
   const oddHalf = questions.filter((_, i) => i % 2 !== 0);
   const evenHalf = questions.filter((_, i) => i % 2 === 0);
@@ -51,9 +51,15 @@ export default function Questions() {
     <Page>
       <Head>
         <title>FAQ — Devhaus Leipzig</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
-        <meta name="author" content="Devhaus Leizpig — A learning community for tech professionals"/>
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width; initial-scale=1; maximum-scale=1"
+        />
+        <meta
+          name="author"
+          content="Devhaus Leizpig — A learning community for tech professionals"
+        />
       </Head>
       <PageHeader title="FAQ"></PageHeader>
       <div className="gap-12 md:columns-2">

@@ -13,7 +13,6 @@ const studioImage = "../images/home/chat.jpg";
 const eventsImage = "../images/home/ccl-1-kickoff.jpg";
 const storiesImage = "../images/home/fire.jpg";
 
-
 export default function Home() {
   const { t } = useTranslation();
 
@@ -21,13 +20,23 @@ export default function Home() {
     <Page>
       <Head>
         <title>Devhaus Leipzig </title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
-        <meta name="author" content="Devhaus Leizpig — A learning community for tech professionals"/>
-        <meta name="description"
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width; initial-scale=1; maximum-scale=1"
+        />
+        <meta
+          name="author"
+          content="Devhaus Leizpig — A learning community for tech professionals"
+        />
+        <meta
+          name="description"
           content="Devhaus Leipzig grew out of the need for a place where developers could learn and contribute to meaningful projects. Our mission is to support the members of our community to reach their creative and professional goals. Aspiring developers can take part in our Academy to learn the fundamentals of software development. Once graduated, they join our community of residents in the Studio, where their personal and professional projects find the support they need to thrive."
         />
-        <meta name="keywords" content="leipzig learning community programming progammer software development developer studio professional project code coding"/>
+        <meta
+          name="keywords"
+          content="leipzig learning community programming progammer software development developer studio professional project code coding"
+        />
       </Head>
       <header className="">
         <div className="flex h-full w-full items-center justify-center">
@@ -55,15 +64,15 @@ export default function Home() {
               {t("home:manifesto.part3")}
             </p>
 
-            <div className="flex justify-center mt-12 mb-24">
+            <div className="mt-12 mb-24 flex justify-center">
               <a
                 href="https://devhausleipzig.typeform.com/to/pZOQK1pV"
                 target="_blank"
                 rel="noreferrer"
               >
-                  <button className="border-b-2 border-blue pb-1 text-2xl uppercase">
-                    {t("academy:block8.applyLink")}
-                  </button>
+                <button className="border-b-2 border-blue pb-1 text-2xl uppercase">
+                  {t("academy:block8.applyLink")}
+                </button>
               </a>
             </div>
 
@@ -72,7 +81,6 @@ export default function Home() {
                 <DevhausLine active numSegments={5} width={128} />
               </div>
             </div> */}
-
           </div>
 
           <div className="mx-auto max-w-6xl space-y-32">

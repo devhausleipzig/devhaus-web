@@ -12,16 +12,22 @@ export default function Privacy() {
     <Page>
       <Head>
         <title>Privacy — Devhaus Leipzig</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
-        <meta name="author" content="Devhaus Leizpig — A learning community for tech professionals"/>
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width; initial-scale=1; maximum-scale=1"
+        />
+        <meta
+          name="author"
+          content="Devhaus Leizpig — A learning community for tech professionals"
+        />
       </Head>
-      <div className="grid gap-4 grid-cols-3 mb-6">
-        <div className="col-start-1 col-span-1">
-          <h2 className="text-5xl font-serif">{t("privacy:header1")}</h2>
+      <div className="mb-6 grid grid-cols-3 gap-4">
+        <div className="col-span-1 col-start-1">
+          <h2 className="font-serif text-5xl">{t("privacy:header1")}</h2>
         </div>
 
-        <div className="col-start-2 col-span-2">
+        <div className="col-span-2 col-start-2">
           <p>{t("privacy:section1")}</p>
           <h2>{t("privacy:header2")}</h2>
           <p>{t("privacy:section2")}</p>
@@ -109,7 +115,7 @@ export default function Privacy() {
           <h2>{t("privacy:header23")}</h2>
           <p>{t("privacy:section23").replace("#", "info@devhausleipzig.de")}</p>
           <p> {t("privacy:section24").replace("#", "February 10, 2021")}</p>
-          </div>
+        </div>
       </div>
     </Page>
   );

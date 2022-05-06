@@ -146,13 +146,23 @@ export default function Academy() {
     <Page>
       <Head>
         <title>Academy — Devhaus Leipzig</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
-        <meta name="author" content="Devhaus Leizpig — A learning community for tech professionals"/>
-        <meta name="description"
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width; initial-scale=1; maximum-scale=1"
+        />
+        <meta
+          name="author"
+          content="Devhaus Leizpig — A learning community for tech professionals"
+        />
+        <meta
+          name="description"
           content="The Devhaus Academy is more than just a classroom; it’s an ongoing support system, the sole purpose of which is to help you become the best programmer and designer you can be."
         />
-        <meta name="keywords" content="leipzig learning community camp bootcamp learn class classroom code coding programming development software skills digital"/>
+        <meta
+          name="keywords"
+          content="leipzig learning community camp bootcamp learn class classroom code coding programming development software skills digital"
+        />
       </Head>
       <div>
         <PageHeader
@@ -356,7 +366,11 @@ export default function Academy() {
           {logos.map(({ logo, name }) => {
             return (
               <div key={name} className="max-w-[24vmin] p-[5vmin]">
-                <img className="max-h-[10vmin] object-contain" src={logo} alt={name}></img>
+                <img
+                  className="max-h-[10vmin] object-contain"
+                  src={logo}
+                  alt={name}
+                ></img>
               </div>
             );
           })}
@@ -385,11 +399,10 @@ export default function Academy() {
               )
             )}
           </p>
-          <div
-          className="flex flex-col items-start">
+          <div className="flex flex-col items-start">
             <button
               onClick={() => router.push("/faq")}
-              className="mt-6 border-b-2 border-blue pb-1 uppercase inline-block"
+              className="mt-6 inline-block border-b-2 border-blue pb-1 uppercase"
             >
               {t("academy:block7.faqLink")}
             </button>

@@ -82,9 +82,15 @@ export default function Stories() {
     <Page>
       <Head>
         <title>Stories — Devhaus Leipzig</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
-        <meta name="author" content="Devhaus Leizpig — A learning community for tech professionals"/>
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width; initial-scale=1; maximum-scale=1"
+        />
+        <meta
+          name="author"
+          content="Devhaus Leizpig — A learning community for tech professionals"
+        />
       </Head>
       <PageHeader title="Stories" color="red"></PageHeader>
       <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">

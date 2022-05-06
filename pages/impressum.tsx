@@ -74,15 +74,21 @@ export default function Impressum() {
       </p>
     </div>
   );
-  return  (
-      <Page>
-        <Head>
-          <title>FAQ — Devhaus Leipzig</title>
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
-        <meta name="author" content="Devhaus Leizpig — A learning community for tech professionals"/>
-        </Head>
-        <Article title="Impressum" content={content} />
-      </Page>
-  )
+  return (
+    <Page>
+      <Head>
+        <title>FAQ — Devhaus Leipzig</title>
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width; initial-scale=1; maximum-scale=1"
+        />
+        <meta
+          name="author"
+          content="Devhaus Leizpig — A learning community for tech professionals"
+        />
+      </Head>
+      <Article title="Impressum" content={content} />
+    </Page>
+  );
 }
