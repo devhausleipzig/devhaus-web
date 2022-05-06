@@ -60,7 +60,7 @@ function NavLink(link) {
 
 function Navbar({ toggleMobileMenu }) {
   return (
-    <div className="mb-4 flex items-center justify-between xl:mb-8">
+    <div className="fixed inset-x-0 top-0 mx-auto flex w-full max-w-8xl items-center justify-between bg-white py-4 px-8 lg:px-0">
       <div className="w-20">
         <Link href="/">
           <a>
@@ -79,27 +79,28 @@ function Navbar({ toggleMobileMenu }) {
   );
 }
 
-function LanguagePicker({id}) {
-  const router = useRouter()
-  const { pathname, asPath, query } = router
+function LanguagePicker({ id }) {
+  const router = useRouter();
+  const { pathname, asPath, query } = router;
   const { i18n } = useTranslation();
 
-  const selector: RefObject<ReactLanguageSelect> = useRef(null)
+  const selector: RefObject<ReactLanguageSelect> = useRef(null);
 
-  i18n.on('loaded', () => {
-    i18n.on('languageChanged',  (lang) => {
-      console.log('selector', selector)
-      selector.current.updateSelected(lang)
-    })
-  })
+  i18n.on("loaded", () => {
+    i18n.on("languageChanged", (lang) => {
+      console.log("selector", selector);
+      selector.current.updateSelected(lang);
+    });
+  });
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
-    router.push({ pathname, query }, asPath, { locale: lang })
+    router.push({ pathname, query }, asPath, { locale: lang });
   };
 
   return (
-    <div id={id}
+    <div
+      id={id}
       className="absolute top-0 right-[1vw] z-50 rounded-2xl bg-white"
     >
       <ReactLanguageSelect
@@ -118,17 +119,13 @@ function MobileMenu({ toggleMobileMenu, visible }) {
   return (
     <div
       className={
-        "fixed inset-x-0 top-0 bg-white z-40 -translate-y-full transition-transform duration-500 px-8 pt-8 pb-4 overflow-auto " +
-        (visible ? "block opacity-100 transform-none" : "")
+        "fixed inset-x-0 top-0 z-40 -translate-y-full overflow-auto bg-white px-8 pt-8 pb-4 transition-transform duration-500 " +
+        (visible ? "block transform-none opacity-100" : "")
       }
       onClick={toggleMobileMenu}
     >
-      <div className="flex justify-between items-center w-full">
-        <nav className="lg:flex">
-          {NavLinks().map((link) =>
-            NavLink(link)
-          )}
-        </nav>
+      <div className="flex w-full items-center justify-between">
+        <nav className="lg:flex">{NavLinks().map((link) => NavLink(link))}</nav>
       </div>
       <div className="absolute inset-x-0 bottom-0 w-full">
         <DevhausLine active color="devhaus" width={64} />
