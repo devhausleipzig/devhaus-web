@@ -27,6 +27,7 @@ specifiers:
   react-dom: ^17.0.2
   react-html-parser: ^2.0.2
   react-i18next: ^11.15.6
+  react-icons: ^4.3.1
   react-languages-select: ^1.0.20
   react-player: ^2.9.0
   react-transition-group: ^4.4.2
@@ -55,6 +56,7 @@ dependencies:
   react-dom: 17.0.2_react@17.0.2
   react-html-parser: 2.0.2_react@17.0.2
   react-i18next: 11.15.6_7ff6nng5d3ob3bqiv43uxa4l2y
+  react-icons: 4.3.1_react@17.0.2
   react-languages-select: 1.0.20_react@17.0.2
   react-player: 2.9.0_react@17.0.2
   react-transition-group: 4.4.2_sfoxds7t5ydpegc3knd667wn6m
@@ -2384,6 +2386,14 @@ packages:
       i18next: 21.6.14
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /react-icons/4.3.1_react@17.0.2:
+    resolution: {integrity: sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 17.0.2
     dev: false
 
   /react-is/16.13.1:

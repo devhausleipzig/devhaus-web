@@ -280,8 +280,11 @@ export default function NewsletterForm() {
         </div>
       </Dialog> */}
 
-      <button onClick={() => setIsOpen(true)}>
-        {">> Subscribe to our Newsletter! <<"}
+      <button
+        className="rounded bg-blue px-4 py-2 font-semibold text-white shadow-sm transition-shadow hover:shadow-lg"
+        onClick={() => setIsOpen(true)}
+      >
+        {"Subscribe to our Newsletter!"}
       </button>
     </>
   );
