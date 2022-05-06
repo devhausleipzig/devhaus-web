@@ -4,7 +4,7 @@ import ReactHtmlParser from "react-html-parser";
 import PageHeader from "../components/PageHeader";
 import Picture from "../components/Picture";
 import { useRouter } from "next/router";
-import { CenteredHeading } from "../components/Headings";
+import { CenteredHeading, Heading } from "../components/Headings";
 import Page from "../layout/page";
 import Head from "next/head";
 
@@ -168,14 +168,58 @@ export default function Academy() {
         <PageHeader
           title={t("academy:block1.title")}
           description={t("academy:block1.description")}
-          image={titleImage}
+          // image={titleImage}
           width={1536}
           height={1024}
           alt={t("academy:block1.picAltText")}
           color="blue"
         ></PageHeader>
+        <div className="flex flex-col gap-8 lg:flex-row">
+          <img
+            src={titleImage}
+            alt="Title Image"
+            className="max-w-4xl flex-1 object-cover"
+          />
+          <div className="flex flex-1 flex-col justify-between">
+            <div>
+              <Heading
+                heading={t("academy:block2.header3")}
+                subHeading={t("academy:block2.header2")}
+              />
+              <div className="mb-8 flex flex-wrap gap-4 text-lg font-medium uppercase leading-normal">
+                {specs.map((spec, i, arr) => (
+                  <>
+                    <span className="tracking-widest">{spec}</span>
+                    {i <= arr.length - 2 && <div className="w-px bg-blue" />}
+                  </>
+                ))}
+              </div>
+              <div className="text-2 mb-2 text-lg">
+                {ReactHtmlParser(
+                  `${t("academy:block2.courseDates")}`
+                    .replace("#", `<strong>${currentCampStart}</strong>`)
+                    .replace("@", `<strong>${currentCampEnd}</strong>`)
+                )}
+              </div>
+              <span className="flex text-lg" style={{ marginTop: "0.5rem" }}>
+                {t("academy:block2.applicationType")}
+              </span>
+            </div>
+
+            <a
+              href="https://devhausleipzig.typeform.com/to/pZOQK1pV"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="mt-6 rounded bg-green px-8 py-2 text-xl font-semibold uppercase tracking-widest text-white shadow-sm transition hover:shadow-lg">
+                {t("academy:block2.applyLink")}
+              </button>
+            </a>
+          </div>
+        </div>
+        {/* Heading End */}
         <section className="mt-24">
-          <CenteredHeading
+          {/* <CenteredHeading
             heading={t("academy:block2.header3")}
             subHeading={t("academy:block2.header2")}
           />
@@ -209,7 +253,7 @@ export default function Academy() {
                 </button>
               </a>
             </div>
-          </div>
+          </div> */}
           <div className="intro mx-auto mb-12 max-w-3xl space-y-6 text-justify text-lg">
             <p className="leading-relaxed">{t("academy:block2.paragraph1")}</p>
             <p className="leading-relaxed">{t("academy:block2.paragraph2")}</p>
