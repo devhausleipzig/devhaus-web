@@ -2,10 +2,10 @@
 import { useEffect, useRef, useState, forwardRef, Fragment } from "react";
 import { useTranslation } from "react-i18next";
 import { Transition } from "@headlessui/react";
-import { Dialog } from '@headlessui/react'
+import { Dialog } from "@headlessui/react";
 
-function InputField({type, id, name, label, placeholder, color}) {
-  const [value, setValue] = useState("")
+function InputField({ type, id, name, label, placeholder, color }) {
+  const [value, setValue] = useState("");
 
   return (
     <div>
@@ -13,81 +13,77 @@ function InputField({type, id, name, label, placeholder, color}) {
         {label}
       </label>
       <input
-          className="
-          text-gray-600 w-full ring-red/0 border-gray-500 ring-opacity-0 ring-offset-8 transition duration-500 ring-2 border-2 rounded-md
+        className="
+          w-full rounded-md border-2 border-gray-500 text-gray-600 ring-2 ring-blue/0 ring-opacity-0 ring-offset-8 transition duration-500
           
-          focus:border-gray-500/0 focus:ring-red focus:ring-offset-0 focus:ring-opacity-100 focus:ring-2
+          focus:border-gray-500/0 focus:ring-2 focus:ring-blue focus:ring-opacity-100 focus:ring-offset-0
           "
-          type={type}
-          value={value}
-          name={name}
-          id={id}
-          placeholder={placeholder}
-          onChange={(e) => setValue(e.target.value)}
-        />
+        type={type}
+        value={value}
+        name={name}
+        id={id}
+        placeholder={placeholder}
+        onChange={(e) => setValue(e.target.value)}
+      />
     </div>
-  )
+  );
 }
 
-function Checkbox({id, name, label, color}){
-  const [checked, setChecked] = useState(true)
+function Checkbox({ id, name, label, color }) {
+  const [checked, setChecked] = useState(true);
 
   return (
     <div>
-      <div className="text-left flex items-left">
-        <label 
-          className={
-            `block relative cursor-pointer w-6 h-6
+      <div className="items-left flex text-left">
+        <label
+          className={`relative block h-6 w-6 cursor-pointer
             
-            before:absolute before:h-full before:rounded-md before:border-2 before:border-${color} before:opacity-0 before:hidden before:transition before:ease-linear before:duration-500 before:transform before:scale-x-110 before:scale-y-125 before:group-focus:opacity-100 before:group-focus:block before:group-focus:scale-x-100 before:group-focus:scale-y-100`
-          }
+            before:absolute before:h-full before:rounded-md before:border-2 before:border-${color} before:scale-x-110 before:scale-y-125 before:group-focus:scale-x-100 before:group-focus:scale-y-100 before:hidden before:transform before:opacity-0 before:transition before:duration-500 before:ease-linear before:group-focus:block before:group-focus:opacity-100`}
           htmlFor={id}
         >
-          <input 
-            className={
-              `peer rounded-md block absolute opacity-0 w-full h-full`
-            }
+          <input
+            className={`peer absolute block h-full w-full rounded-md opacity-0`}
             type="checkbox"
             id={id}
             name={name} // "gdpr[29201]"
             checked={checked}
             onChange={(e) => setChecked(e.target.checked)}
           />
-          <span 
-            className={
-              `inset-0 border-2 border-gray-500 block absolute w-full h-full bg-white text-gray-600 ring-transparent peer-focus:border-gray-500/0 peer-focus:ring-red ring-opacity-0 ring-offset-10 peer-focus:ring-offset-0 peer-focus:ring-opacity-100 transition duration-500 ring-2 rounded-md
+          <span
+            className={`ring-offset-10 absolute inset-0 block h-full w-full rounded-md border-2 border-gray-500 bg-white text-gray-600 ring-2 ring-transparent ring-opacity-0 transition duration-500 after:absolute after:top-2.5 after:left-2.5 after:h-0
 
-              after:absolute after:bg-transparent after:transition-all after:ease-linear after:duration-200 after:top-2.5 after:left-2.5 after:h-0 after:w-0 after:border-r-4 after:border-b-4 after:transform after:rotate-0 after:opacity-0
+              after:w-0 after:rotate-0 after:transform after:border-r-4 after:border-b-4 after:bg-transparent after:opacity-0 after:transition-all after:duration-200 after:ease-linear peer-checked:after:top-0.5 peer-checked:after:left-1.5 peer-checked:after:h-3 peer-checked:after:w-2
 
-              peer-checked:after:rotate-45 peer-checked:after:top-0.5 peer-checked:after:left-1.5 peer-checked:after:h-3 peer-checked:after:w-2 peer-checked:after:border-b-2 peer-checked:after:border-r-2 peer-checked:after:opacity-100 `
-            }
-          >
-          </span>
+              peer-checked:after:rotate-45 peer-checked:after:border-b-2 peer-checked:after:border-r-2 peer-checked:after:opacity-100 peer-focus:border-gray-500/0 peer-focus:ring-blue peer-focus:ring-opacity-100 peer-focus:ring-offset-0 `}
+          ></span>
         </label>
 
-        <div className="font-bold ml-2">{label}</div>
+        <div className="ml-2 font-bold">{label}</div>
       </div>
     </div>
-  )
+  );
 }
 
-function SubmitButton({id, name, value, color}){
+function SubmitButton({ id, name, value, color }) {
   return (
     <input
-      className="h-12 w-full justify-center text-lg bg-gray-500 text-white rounded-md hover:bg-gray-700 transition ease-linear duration-300"
+      className="h-12 w-full justify-center rounded-md bg-gray-500 text-lg text-white transition duration-300 ease-linear hover:bg-gray-700"
       id={id}
       type="submit"
       value={value}
       name={name}
     />
-  )
+  );
 }
 
 function MailchimpForm() {
   const { t } = useTranslation();
 
   return (
-    <div id="mc_embed_signup" className="max-w-screen-sm flex flex-col justify-between text-sm bg-offWhite m-6">
+    <div
+      id="mc_embed_signup"
+      className="m-6 flex max-w-screen-sm flex-col justify-between bg-offWhite text-sm"
+    >
       <form
         action="https://codecampleipzig.us20.list-manage.com/subscribe/post?u=61cee2c8c87e614439e8d0d6d&amp;id=40833812ed"
         method="post"
@@ -97,15 +93,32 @@ function MailchimpForm() {
         noValidate
         className="space-y-4"
       >
+        <InputField
+          className="pb-2.5"
+          type="email"
+          id="mce-EMAIL"
+          name="EMAIL"
+          label={t("newsletter:signup.email.label")}
+          placeholder={t("newsletter:signup.email.placeholder")}
+        ></InputField>
 
-        <InputField className="pb-2.5"
-        type="email" id="mce-EMAIL" name="EMAIL" label={t("newsletter:signup.email.label")} placeholder={t("newsletter:signup.email.placeholder")}></InputField>
-        
-        <InputField className="pb-2.5"
-        type="text" id="mce-FNAME" name="FNAME" label={t("newsletter:signup.fname.label")} placeholder={t("newsletter:signup.fname.placeholder")}></InputField>
-        
-        <InputField className="pb-2.5"
-        type="text" id="mce-LNAME" name="LNAME" label={t("newsletter:signup.lname.label")} placeholder={t("newsletter:signup.lname.placeholder")}></InputField>
+        <InputField
+          className="pb-2.5"
+          type="text"
+          id="mce-FNAME"
+          name="FNAME"
+          label={t("newsletter:signup.fname.label")}
+          placeholder={t("newsletter:signup.fname.placeholder")}
+        ></InputField>
+
+        <InputField
+          className="pb-2.5"
+          type="text"
+          id="mce-LNAME"
+          name="LNAME"
+          label={t("newsletter:signup.lname.label")}
+          placeholder={t("newsletter:signup.lname.placeholder")}
+        ></InputField>
 
         {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups
         <div
@@ -119,38 +132,66 @@ function MailchimpForm() {
             value=""
           />
         </div> */}
-        
+
         <div className="mx-5">
           <label className="font-bold">Marketing Permissions</label>
-          <p>Please select all the ways you would like to hear from Devhaus Leipzig:</p>
+          <p>
+            Please select all the ways you would like to hear from Devhaus
+            Leipzig:
+          </p>
           <fieldset name="interestgroup_field">
-            <Checkbox className="mb-3 mt-3 mr-3"
-            id="gdpr_29201"  name="gdpr[29201]" label="Newsletter Emails" color="yellow"></Checkbox>
-            
-            <Checkbox className="mb-3 mt-3 mr-3"
-            id="gdpr_29205"  name="gdpr[29205]" label="Direct Emails" color="red"></Checkbox>
+            <Checkbox
+              className="mb-3 mt-3 mr-3"
+              id="gdpr_29201"
+              name="gdpr[29201]"
+              label="Newsletter Emails"
+              color="yellow"
+            ></Checkbox>
+
+            <Checkbox
+              className="mb-3 mt-3 mr-3"
+              id="gdpr_29205"
+              name="gdpr[29205]"
+              label="Direct Emails"
+              color="red"
+            ></Checkbox>
           </fieldset>
         </div>
 
-        <SubmitButton id="mc-embedded-subscribe" name="subscribe" value="Subscribe"></SubmitButton>
+        <SubmitButton
+          id="mc-embedded-subscribe"
+          name="subscribe"
+          value="Subscribe"
+        ></SubmitButton>
 
         <p className="text-xs">
-          We use Mailchimp as our marketing platform. By clicking above to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a className="text-gray-800"target="_blank" rel="noopener noreferrer" href="https://mailchimp.com/legal/">Learn more about Mailchimp's privacy practices here.</a>
+          We use Mailchimp as our marketing platform. By clicking above to
+          subscribe, you acknowledge that your information will be transferred
+          to Mailchimp for processing.{" "}
+          <a
+            className="text-gray-800"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mailchimp.com/legal/"
+          >
+            Learn more about Mailchimp's privacy practices here.
+          </a>
         </p>
         <p className="text-xs">
-          You can unsubscribe at any time by clicking the link in the footer of our emails.
+          You can unsubscribe at any time by clicking the link in the footer of
+          our emails.
         </p>
-    </form>
-  </div>
-  )
+      </form>
+    </div>
+  );
 }
 
 export default function NewsletterForm() {
   const { t } = useTranslation();
-  let [isOpen, setIsOpen] = useState(false)
+  let [isOpen, setIsOpen] = useState(false);
 
-  function closeModal(){
-    setIsOpen(false)
+  function closeModal() {
+    setIsOpen(false);
   }
 
   return (
@@ -173,7 +214,7 @@ export default function NewsletterForm() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0 h-full w-full bg-gray-700/80"/>
+              <Dialog.Overlay className="fixed inset-0 h-full w-full bg-gray-700/80" />
             </Transition.Child>
 
             {/* This element is to trick the browser into centering the modal contents. */}
@@ -192,7 +233,7 @@ export default function NewsletterForm() {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+              <div className="my-8 inline-block w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                 <Dialog.Title
                   as="h3"
                   className="text-lg font-medium leading-6 text-gray-900"
@@ -200,13 +241,13 @@ export default function NewsletterForm() {
                   Stay in touch!
                 </Dialog.Title>
                 <div className="mt-2">
-                  <MailchimpForm/>
+                  <MailchimpForm />
                 </div>
 
                 <div className="mt-4">
                   <button
                     type="button"
-                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    className="text-blue-900 bg-blue-100 hover:bg-blue-200 focus-visible:ring-blue-500 inline-flex justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
                     onClick={closeModal}
                   >
                     Cancel
@@ -217,10 +258,6 @@ export default function NewsletterForm() {
           </div>
         </Dialog>
       </Transition>
-
-
-
-
 
       {/* <Dialog
         open={isOpen}
@@ -243,7 +280,9 @@ export default function NewsletterForm() {
         </div>
       </Dialog> */}
 
-      <button onClick={() => setIsOpen(true)}>{'>> Subscribe to our Newsletter! <<'}</button>
+      <button onClick={() => setIsOpen(true)}>
+        {">> Subscribe to our Newsletter! <<"}
+      </button>
     </>
   );
 }
