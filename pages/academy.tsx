@@ -178,9 +178,9 @@ export default function Academy() {
           <img
             src={titleImage}
             alt="Title Image"
-            className="max-w-4xl flex-1 object-cover"
+            className="order-1 max-w-4xl flex-1 object-cover"
           />
-          <div className="flex flex-1 flex-col justify-between">
+          <div className="flex flex-1 flex-col">
             <div>
               <Heading
                 heading={t("academy:block2.header3")}
@@ -254,18 +254,25 @@ export default function Academy() {
               </a>
             </div>
           </div> */}
-          <div className="intro mx-auto mb-12 max-w-3xl space-y-6 text-justify text-lg">
-            <p className="leading-relaxed">{t("academy:block2.paragraph1")}</p>
-            <p className="leading-relaxed">{t("academy:block2.paragraph2")}</p>
-            <p className="leading-relaxed">{t("academy:block2.paragraph3")}</p>
-          </div>
-          <div className="skills mx-auto max-w-3xl space-y-6">
-            <h2 className="text-lg uppercase tracking-widest">
-              {t("academy:block2.keyFeatures")}
-            </h2>
-            {skills.map((skill, index) => (
-              <h3 className="font-serif text-2xl font-light">{skill}</h3>
-            ))}
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 ">
+            <div className="intro mx-auto mb-12 max-w-3xl space-y-6 text-justify text-lg">
+              <h2 className="text-xl uppercase tracking-widest">
+                About the Camp
+              </h2>
+              <div className="space-y-4 text-xl font-light leading-relaxed">
+                <p>{t("academy:block2.paragraph1")}</p>
+                <p>{t("academy:block2.paragraph2")}</p>
+                <p>{t("academy:block2.paragraph3")}</p>
+              </div>
+            </div>
+            <div className="skills mx-auto space-y-6">
+              <h2 className="text-xl uppercase tracking-widest">
+                {t("academy:block2.keyFeatures")}
+              </h2>
+              {skills.map((skill, index) => (
+                <h3 className="text-xl font-light">{skill}</h3>
+              ))}
+            </div>
           </div>
         </section>
       </div>
