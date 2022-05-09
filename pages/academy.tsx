@@ -528,7 +528,9 @@ function Approach({ heading, body, list }: ApproachProps) {
         <ul className="mt-4 pl-6 text-justify text-lg">
           {list &&
             list.map((item) => (
-              <li className="list-outside list-disc">{item}</li>
+              <li key={item} className="list-outside list-disc">
+                {item}
+              </li>
             ))}
         </ul>
       )}
