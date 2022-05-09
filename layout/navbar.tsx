@@ -14,7 +14,12 @@ function NavLinks() {
     { to: "/academy", title: t("nav:academy"), color: "blue" },
     { to: "/studio", title: t("nav:studio"), color: "green" },
     { to: "/events", title: t("nav:events"), color: "yellow" },
-    { to: "/carrers", title: "Careers", color: "green" },
+    {
+      to: "https://devhausleipzig.typeform.com/to/yyNPut0R",
+      title: t("nav:careers"),
+      color: "green",
+      external: true,
+    },
     {
       to: "/about",
       title: t("nav:about"),
