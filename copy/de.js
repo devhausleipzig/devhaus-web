@@ -544,14 +544,14 @@ const copyDE = {
             {
                 "question": "Wann startet das nächste Camp??",
                 "answer": [
-                    "Das Sommer/Herbst camp beginnt am 5. Mai, 2022. "
+                    "Das Sommer/Herbst camp beginnt am 19. Mai, 2022. "
                 ]
             },
             {
                 "question": "Wann werden die Bewerbungen geöffnet und wie läuft das Verfahren ab?",
                 "answer": [
                     "Devhaus Leipzig nimmt laufend Bewerbungen entgegen. Wir legen dann Stichtage fest, nach denen die Bewerbungen für das nächste Camp berücksichtigt werden.",
-                    "Die Deadline für das Sommer-/Herbstcamp 2022 ist der 28. April."
+                    "Die Deadline für das Sommer-/Herbstcamp 2022 ist der 5. Mai."
                 ]
             },
             {

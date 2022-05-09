@@ -586,14 +586,14 @@ const copyEN = {
             {
                 "question": "When does the next camp start?",
                 "answer": [
-                    "The Summer/Fall camp will begin May 5, 2022."
+                    "The Summer/Fall camp will begin May 19, 2022."
                 ],
             },
             {
                 "question": "When do applications open and what is the process?",
                 "answer": [
                     "Devhaus Leipzig accepts applications on a continuous basis. We then set cutoff dates after which applications are rolled over and considered for the proceeding camp.",
-                    "The deadline for being considered for the Summer/Fall camp of 2022 is April 28th.",
+                    "The deadline for being considered for the Summer/Fall camp of 2022 is May 5th.",
                 ],
             },
             {
