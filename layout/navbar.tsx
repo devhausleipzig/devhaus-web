@@ -14,10 +14,16 @@ function NavLinks() {
     { to: "/academy", title: t("nav:academy"), color: "blue" },
     { to: "/studio", title: t("nav:studio"), color: "green" },
     { to: "/events", title: t("nav:events"), color: "yellow" },
-    { to: "/stories", title: t("nav:stories"), color: "red" },
-    { to: "/faq", title: "FAQ" },
-    { to: "/about", title: t("nav:about") },
-    { to: "/contact", title: t("nav:contact") },
+    { to: "/carrers", title: "Careers", color: "green" },
+    {
+      to: "/about",
+      title: t("nav:about"),
+      subs: [
+        { to: "/stories", title: t("nav:stories"), color: "red" },
+        { to: "/faq", title: "FAQ" },
+        { to: "/contact", title: t("nav:contact") },
+      ],
+    },
   ];
 }
 
@@ -34,6 +40,7 @@ function HamburgerIcon({ onClick }) {
 }
 
 function NavLink(link) {
+  const [open, setOpen] = useState(false);
   const router = useRouter();
   const isActive = router.pathname === link.to;
   const line = (
@@ -45,16 +52,33 @@ function NavLink(link) {
     />
   );
   return (
-    <Link href={link.to} key={link.to}>
-      <a
-        target={link.external ? "_blank" : null}
-        rel={link.external ? "noreferrer" : null}
-        className="text-xl uppercase tracking-wide antialiased"
-      >
-        {link.title}
-        {line}
-      </a>
-    </Link>
+    <div
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <Link href={link.to} key={link.to}>
+        <a
+          target={link.external ? "_blank" : null}
+          rel={link.external ? "noreferrer" : null}
+          className="text-xl uppercase tracking-wide antialiased"
+        >
+          {link.title}
+          {line}
+        </a>
+      </Link>
+      {link.subs && open && (
+        <div className="absolute space-y-4 bg-white py-4 shadow-lg">
+          {link.subs.map((sub) => (
+            <Link href={sub.to}>
+              <a className="inline-block px-8 text-lg hover:underline">
+                {sub.title}
+              </a>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
 
