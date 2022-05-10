@@ -33,8 +33,8 @@ const thinkportLogo = "../images/logos/thinkport.png";
 const wtlLogo = "../images/logos/wtl.png";
 
 // these must be written in a way that is natural language agnostic
-const currentCampStart = "05-05-2022";
-const currentCampEnd = "27-09-2022";
+const currentCampStart = "05-19-2022";
+const currentCampEnd = "11-10-2022";
 const campPrice = "€15.110 + VAT";
 const financialContact = "info@devhausleipzig.de";
 
