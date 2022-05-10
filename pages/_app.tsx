@@ -11,8 +11,17 @@ import "../i18n.js";
 import "../styles/global.css";
 import "react-languages-select/scss/react-languages-select.scss";
 import { AppProps } from "next/app";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  if (router.asPath.includes("/careers/")) {
+    return (
+      <StrictMode>
+        <Component {...pageProps} />
+      </StrictMode>
+    );
+  }
   return (
     <>
       <StrictMode>

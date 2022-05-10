@@ -25,6 +25,7 @@ interface DevhausLineProps {
   color?: string;
   width: number;
   numSegments?: number;
+  className?: string;
 }
 
 const devhausColors = ["blue", "green", "yellow", "red", "violet"];
@@ -34,6 +35,7 @@ export function DevhausLine({
   color,
   width,
   numSegments,
+  className,
 }: DevhausLineProps) {
   const getBackgroundStyles = (index: number) => ({
     backgroundColor: color
@@ -47,7 +49,8 @@ export function DevhausLine({
     <div
       className={clsx(
         "mt-1 flex h-[2px] transition-opacity delay-200",
-        active ? "opacity-100" : "opacity-0"
+        active ? "opacity-100" : "opacity-0",
+        className
       )}
     >
       {new Array(numSegments).fill(0).map((_, index) => {

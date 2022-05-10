@@ -1,0 +1,29 @@
+{
+  "heading": "Lead Developer Instructor",
+  "about": [
+    "The Devhaus Leipzig Academy is more than just a classroom; it’s an ongoing support system, the sole purpose of which is to help students become the best programmers and designers they can be.",
+    "Whether it's in classes and workshops in the Academy, in personal or professional projects in the Studio, or by participating in our events; the members of the Devhaus Leipzig strive to create a vibrant environment in which everyone finds support to grow their technical and creative abilities.",
+    "Our mission is to create better spaces for people to work and learn, and one of those spaces is a 6 month Front-end development course for beginners."
+  ],
+  "jobDescription": "You'll be working as Lead Instructor, guiding and teaching students through a curriculum on a full-time basis (32-40 hours per week) on location in Leipzig.",
+  "requirements": [
+    "4+ years of Front-end development experience",
+    "Patient and enjoys supporting others through the learning process",
+    "Social energy to connect with all the students (group of 10 - 12 students)",
+    "Able to make a safe space for people from different cultures, backgrounds, and learning needs",
+    "Leadership qualities (conflict management, boundary setting, decision making)"
+  ],
+  "specificKnowledge": {
+    "minimum": "TypeScript, Git, Vanilla DOM API, React, Next.js, Express",
+    "niceToHave": "Figma, Storybook, Docker, SQL, JWT / O-Auth"
+  },
+  "whatWeOffer": [
+    "Highly competitive Sr. Developer salary",
+    "30  vacation days",
+    "Flexible and constructive work culture",
+    "Equipment provided",
+    "1 day, for those working 40 hour/week, to do project work",
+    "A network of driven, community oriented, individuals who enjoy building ecosystems"
+  ],
+  "url": "https://devhausleipzig.typeform.com/to/yyNPut0R"
+}
