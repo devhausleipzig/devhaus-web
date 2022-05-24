@@ -33,6 +33,16 @@ const thinkportLogo = "../images/logos/thinkport.png";
 const wtlLogo = "../images/logos/wtl.png";
 
 // these must be written in a way that is natural language agnostic
+const camps = [
+  {
+    start: "07-07-2022",
+    end: "12-06-2022",
+  },
+  {
+    start: "10-20-2022",
+    end: "03-27-2023",
+  },
+];
 const currentCampStart = "05-19-2022";
 const currentCampEnd = "11-10-2022";
 const campPrice = "€15.110 + VAT";
@@ -195,11 +205,19 @@ export default function Academy() {
                 ))}
               </div>
               <div className="text-2 mb-2 text-lg">
-                {ReactHtmlParser(
+                <p>{t("academy:block2.courseDates")}</p>
+                <ul>
+                  {camps.map(({ start, end }) => (
+                    <li>
+                      <strong>{start}</strong> - <strong>{end}</strong>
+                    </li>
+                  ))}
+                </ul>
+                {/* {ReactHtmlParser(
                   `${t("academy:block2.courseDates")}`
                     .replace("#", `<strong>${currentCampStart}</strong>`)
                     .replace("@", `<strong>${currentCampEnd}</strong>`)
-                )}
+                )} */}
               </div>
               <span className="flex text-lg" style={{ marginTop: "0.5rem" }}>
                 {t("academy:block2.applicationType")}

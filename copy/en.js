@@ -79,7 +79,7 @@ const copyEN = {
       classHeadCount: "12 Students",
       classFormat: "Hybrid (remote or in-person)",
       courseDates:
-        "The next camp runs from # until @" /* # is the start date, @ is the end date*/,
+        "The next camps:" /* # is the start date, @ is the end date*/,
       applicationType: "Applications are accepted on a rolling basis",
       applyLink: "Apply now",
       paragraph1:
