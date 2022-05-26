@@ -209,7 +209,7 @@ export default function Academy() {
               <div className="text-2 mb-2 text-lg">
                 <p>{t("academy:block2.courseDates")}</p>
                 <ul>
-                  {camps.map(({ start, end }) => (
+                  {camps.map(({ season, start, end }) => (
                     <li>
                      {season}: <strong>{start}</strong> - <strong>{end}</strong>
                     </li>
