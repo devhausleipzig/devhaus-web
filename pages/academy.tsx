@@ -35,10 +35,12 @@ const wtlLogo = "../images/logos/wtl.png";
 // these must be written in a way that is natural language agnostic
 const camps = [
   {
-    start: "07-07-2022",
-    end: "12-06-2022",
+    season: "Summer/Fall Camp",
+    start: "07-14-2022",
+    end: "12-19-2022",
   },
   {
+    season: "Fall/Winter Camp",
     start: "10-20-2022",
     end: "03-27-2023",
   },
@@ -209,7 +211,7 @@ export default function Academy() {
                 <ul>
                   {camps.map(({ start, end }) => (
                     <li>
-                      <strong>{start}</strong> - <strong>{end}</strong>
+                     {season}: <strong>{start}</strong> - <strong>{end}</strong>
                     </li>
                   ))}
                 </ul>
