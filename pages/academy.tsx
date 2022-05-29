@@ -211,7 +211,7 @@ export default function Academy() {
                 <ul>
                   {camps.map(({ season, start, end }) => (
                     <li>
-                     {season}: <strong>{start}</strong> -> <strong>{end}</strong>
+                     {season}: <strong>{start}</strong> - <strong>{end}</strong>
                     </li>
                   ))}
                 </ul>
