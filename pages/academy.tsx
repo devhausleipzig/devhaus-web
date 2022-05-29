@@ -36,13 +36,13 @@ const wtlLogo = "../images/logos/wtl.png";
 const camps = [
   {
     season: "Summer/Fall Camp",
-    start: "07-14-2022",
-    end: "12-19-2022",
+    start: "14/07/2022",
+    end: "19/12/2022",
   },
   {
     season: "Fall/Winter Camp",
-    start: "10-20-2022",
-    end: "03-27-2023",
+    start: "20/10/2022",
+    end: "27/03/2023",
   },
 ];
 const currentCampStart = "05-19-2022";
