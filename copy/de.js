@@ -80,7 +80,7 @@ const copyDE = {
       classHeadCount: "12 Schüler:Innen",
       classFormat: "Hybrid (online oder in-person)",
       courseDates:
-        "Die nächsten Camps:" /* # is the start date, @ is the end date*/,
+        "Das nächste Camp: # bis @" /* # is the start date, @ is the end date*/,
       applicationType: "Bewerbungen werden fortlaufend angenommen.",
       applyLink: "Jetzt Bewerben",
       paragraph1:

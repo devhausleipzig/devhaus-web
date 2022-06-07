@@ -89,7 +89,7 @@ function NavLink(link) {
 
 function Navbar({ toggleMobileMenu }) {
   return (
-    <div className="fixed inset-x-0 top-0 z-50 mx-auto flex w-full max-w-8xl items-center justify-between bg-white py-4 px-8 lg:px-0">
+    <div className="fixed inset-x-0 top-0 z-50 mx-auto flex w-full max-w-8xl items-center justify-between bg-white py-4 px-8">
       <div className="w-20">
         <Link href="/">
           <a>

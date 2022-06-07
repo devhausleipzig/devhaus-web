@@ -43,8 +43,8 @@ const camps = [
     end: "03-27-2023",
   },
 ];
-const currentCampStart = "05-19-2022";
-const currentCampEnd = "11-10-2022";
+const currentCampStart = "07-07-2022";
+const currentCampEnd = "12-06-2022";
 const campPrice = "€15.110 + VAT";
 const financialContact = "info@devhausleipzig.de";
 
@@ -188,56 +188,12 @@ export default function Academy() {
           <img
             src={titleImage}
             alt="Title Image"
-            className="order-1 max-w-4xl flex-1 object-cover"
+            className="order-1 flex-1 object-cover"
           />
-          <div className="flex flex-1 flex-col">
-            <div>
-              <Heading
-                heading={t("academy:block2.header3")}
-                subHeading={t("academy:block2.header2")}
-              />
-              <div className="mb-8 flex flex-wrap gap-4 text-lg font-medium uppercase leading-normal">
-                {specs.map((spec, i, arr) => (
-                  <>
-                    <span className="tracking-widest">{spec}</span>
-                    {i <= arr.length - 2 && <div className="w-px bg-blue" />}
-                  </>
-                ))}
-              </div>
-              <div className="text-2 mb-2 text-lg">
-                <p>{t("academy:block2.courseDates")}</p>
-                <ul>
-                  {camps.map(({ start, end }) => (
-                    <li>
-                      <strong>{start}</strong> - <strong>{end}</strong>
-                    </li>
-                  ))}
-                </ul>
-                {/* {ReactHtmlParser(
-                  `${t("academy:block2.courseDates")}`
-                    .replace("#", `<strong>${currentCampStart}</strong>`)
-                    .replace("@", `<strong>${currentCampEnd}</strong>`)
-                )} */}
-              </div>
-              <span className="flex text-lg" style={{ marginTop: "0.5rem" }}>
-                {t("academy:block2.applicationType")}
-              </span>
-            </div>
-
-            <a
-              href="https://devhausleipzig.typeform.com/to/pZOQK1pV"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="mt-6 rounded bg-green px-8 py-2 text-xl font-semibold uppercase tracking-widest text-white shadow-sm transition hover:shadow-lg">
-                {t("academy:block2.applyLink")}
-              </button>
-            </a>
-          </div>
         </div>
         {/* Heading End */}
         <section className="mt-24">
-          {/* <CenteredHeading
+          <CenteredHeading
             heading={t("academy:block2.header3")}
             subHeading={t("academy:block2.header2")}
           />
@@ -266,24 +222,43 @@ export default function Academy() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="mt-6 border-b-2 border-blue pb-1 text-xl uppercase tracking-widest">
+                <button className="mt-6 rounded-sm bg-green py-2 px-4 text-xl uppercase tracking-widest text-offWhite">
                   {t("academy:block2.applyLink")}
                 </button>
               </a>
             </div>
-          </div> */}
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 ">
-            <div className="intro mx-auto mb-12 max-w-3xl space-y-6 text-justify text-lg">
-              <h2 className="text-xl uppercase tracking-widest">
-                About the Camp
-              </h2>
-              <div className="space-y-4 text-xl font-light leading-relaxed">
-                <p>{t("academy:block2.paragraph1")}</p>
-                <p>{t("academy:block2.paragraph2")}</p>
-                <p>{t("academy:block2.paragraph3")}</p>
-              </div>
+          </div>
+          {/* <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 "> */}
+          <div className="intro mx-auto mb-28 max-w-3xl space-y-6 text-justify text-lg">
+            <h2 className="text-xl uppercase tracking-widest">
+              About the Camp
+            </h2>
+            <div className="space-y-4 text-xl font-light leading-relaxed">
+              <p>{t("academy:block2.paragraph1")}</p>
+              <p>{t("academy:block2.paragraph2")}</p>
+              <p>{t("academy:block2.paragraph3")}</p>
             </div>
-            <div className="skills mx-auto space-y-6">
+          </div>
+          <section className="outcomes mb-20">
+            <h2 className="mb-6 text-center font-serif text-4xl font-light">
+              {t("academy:block6.header")}
+            </h2>
+            <div className="flex flex-wrap items-center justify-center">
+              {logos.map(({ logo, name }) => {
+                return (
+                  <div key={name} className="max-w-[24vmin] p-[5vmin]">
+                    <img
+                      className="max-h-[10vmin] object-contain"
+                      src={logo}
+                      alt={name}
+                    ></img>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 ">
+            <div className="skills mx-auto max-w-3xl space-y-6">
               <h2 className="text-xl uppercase tracking-widest">
                 {t("academy:block2.keyFeatures")}
               </h2>
@@ -291,10 +266,83 @@ export default function Academy() {
                 <h3 className="text-xl font-light">{skill}</h3>
               ))}
             </div>
+            <div className="skills mx-auto max-w-3xl space-y-6">
+              <h2 className="text-xl uppercase tracking-widest">
+                Tools taught
+              </h2>
+              {/* {skills.map((skill, index) => ( */}
+              {/* <h3 className="text-xl font-light">{skill}</h3>
+              ))} */}
+            </div>
           </div>
         </section>
       </div>
-      <section>
+      <section className="financing mx-auto max-w-5xl font-light">
+        <h2 className="mb-12 font-serif text-4xl">
+          {t("academy:block7.header")}
+        </h2>
+        <div className="space-y-8 text-2xl">
+          <p>{t("academy:block7.part1")}</p>
+          <div className="price">
+            {ReactHtmlParser(
+              `${t("academy:block7.part2")}`.replace(
+                "#",
+                `<strong>${campPrice}</strong>`
+              )
+            )}
+          </div>
+          <p>{t("academy:block7.part3")}</p>
+          <p>
+            {ReactHtmlParser(
+              `${t("academy:block7.part4")}`.replace(
+                "#",
+                `<strong><a href="mailto:${financialContact}">${financialContact}</a></strong>`
+              )
+            )}
+          </p>
+          <div className="flex flex-col items-start">
+            <button
+              onClick={() => router.push("/faq")}
+              className="mt-6 inline-block border-b-2 border-blue pb-1 uppercase"
+            >
+              {t("academy:block7.faqLink")}
+            </button>
+            <a
+              className="inline-block"
+              href="https://calendly.com/devhaus-leipzig/devhaus-1-on-1?month=2021-02"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="mt-6 border-b-2 border-blue pb-1 uppercase">
+                {t("academy:block7.callLink")}
+              </button>
+            </a>
+            <a
+              className="inline-block"
+              href="https://www.coursereport.com/schools/devhaus-leipzig#reviews"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="mt-6 border-b-2 border-blue pb-1 uppercase">
+                {t("academy:block7.courseReportLink")}
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="instructors">
+        <h2 className="mb-12 font-serif text-4xl font-light">
+          {t("academy:block4.header")}
+        </h2>
+        <div className="mb-16 grid grid-cols-2 gap-8 lg:grid-cols-4">
+          <InstructorItem imgSrc={franzImage} name="Franz" />
+          <InstructorItem imgSrc={valImage} name="Valeria" />
+          <InstructorItem imgSrc={danImage} name="Dan" />
+          <InstructorItem imgSrc={svenImage} name="Sven" />
+        </div>
+      </section>
+      {/* Approach Section */}
+      {/* <section>
         <h2 className="mb-12 font-serif text-4xl font-light">
           {t("academy:block3.header")}
         </h2>
@@ -329,44 +377,7 @@ export default function Academy() {
             body={t("academy:block3.section6")}
           />
         </div>
-      </section>
-      <section className="instructors">
-        <h2 className="mb-12 font-serif text-4xl font-light">
-          {t("academy:block4.header")}
-        </h2>
-        <div className="mb-16 grid grid-cols-2 gap-8 lg:grid-cols-4">
-          <InstructorItem imgSrc={franzImage} name="Franz" />
-          <InstructorItem imgSrc={valImage} name="Valeria" />
-          <InstructorItem imgSrc={danImage} name="Dan" />
-          <InstructorItem imgSrc={svenImage} name="Sven" />
-        </div>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <Picture
-            src={pic1}
-            alt={t("academy:block4.picAlt1")}
-            width={752}
-            height={500}
-          ></Picture>
-          <Picture
-            src={pic2}
-            alt={t("academy:block4.picAlt2")}
-            width={752}
-            height={500}
-          ></Picture>
-          <Picture
-            src={pic3}
-            alt={t("academy:block4.picAlt3")}
-            width={752}
-            height={500}
-          ></Picture>
-          <Picture
-            src={pic4}
-            alt={t("academy:block4.picAlt4")}
-            width={752}
-            height={500}
-          ></Picture>
-        </div>
-      </section>
+      </section> */}
       <section className="mx-auto max-w-3xl">
         <h2 className="mb-12 font-serif text-4xl font-light">
           {t("academy:block5.header")}
@@ -427,77 +438,32 @@ export default function Academy() {
           />
         </div>
       </section>
-      <section className="outcomes">
-        <h2 className="mb-12 text-center font-serif text-4xl font-light">
-          {t("academy:block6.header")}
-        </h2>
-        <div className="flex flex-wrap items-center justify-center">
-          {logos.map(({ logo, name }) => {
-            return (
-              <div key={name} className="max-w-[24vmin] p-[5vmin]">
-                <img
-                  className="max-h-[10vmin] object-contain"
-                  src={logo}
-                  alt={name}
-                ></img>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-      <section className="financing mx-auto max-w-3xl font-light">
-        <h2 className="mb-12 font-serif text-4xl">
-          {t("academy:block7.header")}
-        </h2>
-        <div className="space-y-8 text-2xl">
-          <p>{t("academy:block7.part1")}</p>
-          <div className="price">
-            {ReactHtmlParser(
-              `${t("academy:block7.part2")}`.replace(
-                "#",
-                `<strong>${campPrice}</strong>`
-              )
-            )}
-          </div>
-          <p>{t("academy:block7.part3")}</p>
-          <p>
-            {ReactHtmlParser(
-              `${t("academy:block7.part4")}`.replace(
-                "#",
-                `<strong><a href="mailto:${financialContact}">${financialContact}</a></strong>`
-              )
-            )}
-          </p>
-          <div className="flex flex-col items-start">
-            <button
-              onClick={() => router.push("/faq")}
-              className="mt-6 inline-block border-b-2 border-blue pb-1 uppercase"
-            >
-              {t("academy:block7.faqLink")}
-            </button>
-            <a
-              className="inline-block"
-              href="https://calendly.com/devhaus-leipzig/devhaus-1-on-1?month=2021-02"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="mt-6 border-b-2 border-blue pb-1 uppercase">
-                {t("academy:block7.callLink")}
-              </button>
-            </a>
-            <a
-              className="inline-block"
-              href="https://www.coursereport.com/schools/devhaus-leipzig#reviews"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="mt-6 border-b-2 border-blue pb-1 uppercase">
-                {t("academy:block7.courseReportLink")}
-              </button>
-            </a>
-          </div>
-        </div>
-      </section>
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <Picture
+          src={pic1}
+          alt={t("academy:block4.picAlt1")}
+          width={752}
+          height={500}
+        ></Picture>
+        <Picture
+          src={pic2}
+          alt={t("academy:block4.picAlt2")}
+          width={752}
+          height={500}
+        ></Picture>
+        <Picture
+          src={pic3}
+          alt={t("academy:block4.picAlt3")}
+          width={752}
+          height={500}
+        ></Picture>
+        <Picture
+          src={pic4}
+          alt={t("academy:block4.picAlt4")}
+          width={752}
+          height={500}
+        ></Picture>
+      </div>
       <section className="application mx-auto max-w-3xl">
         <h2 className="mb-12 font-serif text-4xl font-light">
           {t("academy:block8.header")}
