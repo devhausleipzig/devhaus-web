@@ -205,51 +205,6 @@ export default function Academy() {
             alt="Title Image"
             className="order-1 flex-1 object-cover"
           />
-          <div className="flex flex-1 flex-col">
-            <div>
-              <Heading
-                heading={t("academy:block2.header3")}
-                subHeading={t("academy:block2.header2")}
-              />
-              <div className="mb-8 flex flex-wrap gap-4 text-lg font-medium uppercase leading-normal">
-                {specs.map((spec, i, arr) => (
-                  <>
-                    <span className="tracking-widest">{spec}</span>
-                    {i <= arr.length - 2 && <div className="w-px bg-blue" />}
-                  </>
-                ))}
-              </div>
-              <div className="text-2 mb-2 text-lg">
-                <p>{t("academy:block2.courseDates")}</p>
-                <ul>
-                  {camps.map(({ season, start, end }) => (
-                    <li>
-                      {season}: <strong>{start}</strong> -{" "}
-                      <strong>{end}</strong>
-                    </li>
-                  ))}
-                </ul>
-                {/* {ReactHtmlParser(
-                  `${t("academy:block2.courseDates")}`
-                    .replace("#", `<strong>${currentCampStart}</strong>`)
-                    .replace("@", `<strong>${currentCampEnd}</strong>`)
-                )} */}
-              </div>
-              <span className="flex text-lg" style={{ marginTop: "0.5rem" }}>
-                {t("academy:block2.applicationType")}
-              </span>
-            </div>
-
-            <a
-              href="https://devhausleipzig.typeform.com/to/pZOQK1pV"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="mt-6 rounded bg-green px-8 py-2 text-xl font-semibold uppercase tracking-widest text-white shadow-sm transition hover:shadow-lg">
-                {t("academy:block2.applyLink")}
-              </button>
-            </a>
-          </div>
         </div>
         {/* Heading End */}
         <section className="mt-24">
@@ -317,7 +272,7 @@ export default function Academy() {
               })}
             </div>
           </section>
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 ">
+          <div className="mx-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div className="skills mx-auto max-w-3xl space-y-6">
               <h2 className="text-xl uppercase tracking-widest">
                 {t("academy:block2.keyFeatures")}
@@ -330,7 +285,7 @@ export default function Academy() {
                 ))}
               </ul>
             </div>
-            <div className="skills mx-auto max-w-3xl space-y-6">
+            <div className="tools mx-auto max-w-3xl space-y-6">
               <h2 className="text-xl uppercase tracking-widest">
                 {t("academy:block2.toolsTaught")}
               </h2>
