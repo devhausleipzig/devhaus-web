@@ -84,7 +84,7 @@ export default function Events() {
 
         <Event
           title={t("events:nextCampDeadline.header")}
-          date="28.04.2022"
+          date="01.07.2022"
           link="https://devhausleipzig.typeform.com/to/pZOQK1pV"
         ></Event>
       </div>

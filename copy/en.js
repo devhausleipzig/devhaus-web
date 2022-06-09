@@ -99,6 +99,17 @@ const copyEN = {
         "2 Professionally Designed Hackathons featuring hiring companies",
       keyFeature7:
         "2 Days of Career Development Workshops with hiring companies",
+      toolsTaught: "Tools Taught",
+      tool1: "ES9 JavaScript",
+      tool2: "TypeScript",
+      tool3: "HTML5",
+      tool4: "CSS3",
+      tool5: "Node.js",
+      tool6: "Vite",
+      tool7: "React.js v17",
+      tool8: "Next.js",
+      tool9: "TailwindCSS",
+      tool10: "Storybook",
     },
     block3: {
       header: "Our Approach",
@@ -172,12 +183,10 @@ const copyEN = {
     block7: {
       header: "Tuition & Financing",
       part1:
-        "Our goal is to make the Code Camp as accessible as possible and we strive to keep student costs minimal.",
-      part2:
         "Tuition for the full-time 23-Week Code Camp program is #" /* # is the camp price */,
-      part3:
-        "We provide a range of options to help you finance your education, including payment plans, government programs, loan partners, and scholarships. Make sure to reach out to us so we can evaluate the financing options that fit your specific situation.",
-      part4: `If you are eligible for educational support through the Jobcenter and would like to pursue financing your seat via a Bildungsgutschein, contact us at # with any questions.` /* # is the contact email address */,
+      part2:
+        "For Jobcenter eligible individuals, a Bildungsgutschein will cover the entire cost of the course.  Find out if you’re eligible: #. If you are eligible for educational support through the Jobcenter and would like to pursue financing your seat via a Bildungsgutschein, contact us at @ with any questions." /* # is the link url and @ is the contact email address */,
+      part3: `For non-Jobcenter eligible individuals, we offer 1 full tuition scholarship + Residency position as well as payment plans. See our scholarship offer here: #` /* # is the link url */,
       faqLink: "Read our FAQ",
       callLink: "Schedule a call or chat",
       courseReportLink: "Reviews on Course Report",

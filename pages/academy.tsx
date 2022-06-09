@@ -35,16 +35,16 @@ const wtlLogo = "../images/logos/wtl.png";
 // these must be written in a way that is natural language agnostic
 const camps = [
   {
-    start: "07-07-2022",
-    end: "12-06-2022",
+    start: "07-14-2022",
+    end: "12-19-2022",
   },
   {
     start: "10-20-2022",
     end: "03-27-2023",
   },
 ];
-const currentCampStart = "07-07-2022";
-const currentCampEnd = "12-06-2022";
+const currentCampStart = "07-14-2022";
+const currentCampEnd = "12-19-2022";
 const campPrice = "€15.110 + VAT";
 const financialContact = "info@devhausleipzig.de";
 
@@ -150,6 +150,19 @@ export default function Academy() {
     t("academy:block2.keyFeature5"),
     t("academy:block2.keyFeature6"),
     t("academy:block2.keyFeature7"),
+  ];
+
+  const tools = [
+    t("academy:block2.tool1"),
+    t("academy:block2.tool2"),
+    t("academy:block2.tool3"),
+    t("academy:block2.tool4"),
+    t("academy:block2.tool5"),
+    t("academy:block2.tool6"),
+    t("academy:block2.tool7"),
+    t("academy:block2.tool8"),
+    t("academy:block2.tool9"),
+    t("academy:block2.tool10"),
   ];
 
   return (
@@ -262,17 +275,25 @@ export default function Academy() {
               <h2 className="text-xl uppercase tracking-widest">
                 {t("academy:block2.keyFeatures")}
               </h2>
-              {skills.map((skill, index) => (
-                <h3 className="text-xl font-light">{skill}</h3>
-              ))}
+              <ul className="list-disc">
+                {skills.map((skill, index) => (
+                  <li>
+                    <h3 className="text-xl font-light">{skill}</h3>
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className="skills mx-auto max-w-3xl space-y-6">
               <h2 className="text-xl uppercase tracking-widest">
-                Tools taught
+                {t("academy:block2.toolsTaught")}
               </h2>
-              {/* {skills.map((skill, index) => ( */}
-              {/* <h3 className="text-xl font-light">{skill}</h3>
-              ))} */}
+              <ul className="list-disc">
+                {tools.map((skill, index) => (
+                  <li>
+                    <h3 className="text-xl font-light">{skill}</h3>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </section>
@@ -282,21 +303,29 @@ export default function Academy() {
           {t("academy:block7.header")}
         </h2>
         <div className="space-y-8 text-2xl">
-          <p>{t("academy:block7.part1")}</p>
           <div className="price">
             {ReactHtmlParser(
-              `${t("academy:block7.part2")}`.replace(
+              `${t("academy:block7.part1")}`.replace(
                 "#",
                 `<strong>${campPrice}</strong>`
               )
             )}
           </div>
-          <p>{t("academy:block7.part3")}</p>
+          <div className="jobcenter">
+            {ReactHtmlParser(
+              `${t("academy:block7.part2")}`
+                .replace(
+                  "#",
+                  `<strong><a href="https://www.zaw-leipzig.de/weiterbildung/foerderung/bildungsgutschein/">Bildungsgutschein</a></strong>`
+                )
+                .replace("@", `<strong>${financialContact}</strong>`)
+            )}
+          </div>
           <p>
             {ReactHtmlParser(
-              `${t("academy:block7.part4")}`.replace(
+              `${t("academy:block7.part3")}`.replace(
                 "#",
-                `<strong><a href="mailto:${financialContact}">${financialContact}</a></strong>`
+                `<strong><a href="https://docs.google.com/document/d/1B9st0ma0hqu7rswsGI8QHE742f3ZV2L9_nL-zlgCv70">Scholarship</a></strong>`
               )
             )}
           </p>
@@ -335,10 +364,26 @@ export default function Academy() {
           {t("academy:block4.header")}
         </h2>
         <div className="mb-16 grid grid-cols-2 gap-8 lg:grid-cols-4">
-          <InstructorItem imgSrc={franzImage} name="Franz" />
-          <InstructorItem imgSrc={valImage} name="Valeria" />
-          <InstructorItem imgSrc={danImage} name="Dan" />
-          <InstructorItem imgSrc={svenImage} name="Sven" />
+          <InstructorItem
+            imgSrc={franzImage}
+            name="Franz"
+            description="JavaScript & Python Backend Dev"
+          />
+          <InstructorItem
+            imgSrc={valImage}
+            name="Valeria"
+            description="Frontend Dev"
+          />
+          <InstructorItem
+            imgSrc={danImage}
+            name="Dan"
+            description="Senior Frontend Dev"
+          />
+          <InstructorItem
+            imgSrc={svenImage}
+            name="Sven"
+            description="Senior Backend Dev & DevOps Engineer"
+          />
         </div>
       </section>
       {/* Approach Section */}
@@ -525,15 +570,17 @@ function Approach({ heading, body, list }: ApproachProps) {
 type InstructorItemProps = {
   imgSrc: string;
   name: string;
+  description: string;
 };
 
-function InstructorItem({ imgSrc, name }: InstructorItemProps) {
+function InstructorItem({ imgSrc, name, description }: InstructorItemProps) {
   return (
     <div className="text-center">
       <div className="mb-4">
         <Picture src={imgSrc} alt={name} width={348} height={348}></Picture>
       </div>
       <h3 className="font-serif text-2xl font-light">{name}</h3>
+      <p>{description}</p>
     </div>
   );
 }
