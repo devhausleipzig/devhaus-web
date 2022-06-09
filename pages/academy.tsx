@@ -582,7 +582,7 @@ function InstructorItem({ imgSrc, name, description }: InstructorItemProps) {
         <Picture src={imgSrc} alt={name} width={348} height={348}></Picture>
       </div>
       <h3 className="font-serif text-2xl font-light">{name}</h3>
-      <p>{description}</p>
+      <p className="font-light">{description}</p>
     </div>
   );
 }
