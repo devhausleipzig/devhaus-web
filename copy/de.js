@@ -80,7 +80,7 @@ const copyDE = {
       classHeadCount: "12 Schüler:Innen",
       classFormat: "Hybrid (online oder in-person)",
       courseDates:
-        "Die nächsten Camps:" /* # is the start date, @ is the end date*/,
+        "Das nächste Camp: # bis @" /* # is the start date, @ is the end date*/,
       applicationType: "Bewerbungen werden fortlaufend angenommen.",
       applyLink: "Jetzt Bewerben",
       paragraph1:
@@ -101,6 +101,17 @@ const copyDE = {
         "2 Professionell konzipierte Hackathons mit einstellenden Unternehmen",
       keyFeature7:
         "2 Tage Workshops zur beruflichen Entwicklung mit einstellenden Unternehmen",
+      toolsTaught: "Tools",
+      tool1: "ES9 JavaScript",
+      tool2: "TypeScript",
+      tool3: "HTML5",
+      tool4: "CSS3",
+      tool5: "Node.js",
+      tool6: "Vite",
+      tool7: "React.js v17",
+      tool8: "Next.js",
+      tool9: "TailwindCSS",
+      tool10: "Storybook",
     },
     block3: {
       header: "Unser Ansatz",
@@ -174,15 +185,14 @@ const copyDE = {
     block7: {
       header: "Studiengebühren & Finanzierung",
       part1:
-        "Unser Ziel ist es, das Code Camp so zugänglich wie möglich für qualifizierte Kandidaten zu machen.",
+        "Tuition for the full-time 23-Week Code Camp program is #" /* # is the camp price */,
       part2:
-        "Die Teilnahmegebühr für das 23-wöchige Vollzeitprogramm Code Camp beträgt #." /* # is the camp price */,
-      part3:
-        "Wir bieten Ihnen eine Reihe von Optionen zur Finanzierung Ihres Studiums, darunter Zahlungspläne, staatliche Programme, Darlehenspartner und Stipendien. Setz dich mit uns in Verbindung, damit wir die für dich passenden Finanzierungsmöglichkeiten prüfen können.",
-      part4: `Wenn Sie Anspruch auf Ausbildungsförderung durch das Jobcenter haben und Ihren Studienplatz über einen Bildungsgutschein finanzieren möchten, wenden Sie sich bei Fragen an #.` /* # is the contact email address */,
+        "Für Jobcenter-berechtigte Personen deckt ein Bildungsgutschein die gesamten Kosten des Kurses ab. Finden Sie heraus, ob Sie förderfähig sind: #. Wenn Sie Anspruch auf Bildungsförderung durch das Jobcenter haben und Ihren Platz über einen Bildungsgutschein finanzieren möchten, wenden Sie sich bei Fragen an @." /* # is the link url and @ is the contact email address */,
+      part3: `Für Personen, die nicht vom Jobcenter gefördert werden, bieten wir 1 Vollstipendium + Residency sowie Zahlungspläne an. Siehe unser Stipendiumsangebot hier: #` /* # is the link url */,
       faqLink: "Lies unsere FAQ",
       callLink: "Anruf oder Chat vereinbaren",
       courseReportLink: "Bewertungen auf Course Report",
+      scholarshipLink: "Stipendiumsangebot",
     },
     block8: {
       header: "Bewerbungsprozess",
