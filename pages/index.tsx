@@ -66,7 +66,7 @@ export default function Home() {
 
             <div className="mt-12 mb-24 flex justify-center">
               <a
-                href="https://devhausleipzig.typeform.com/to/pZOQK1pV"
+                href="https://devhausleipzig.typeform.com/to/TBS6UFiq"
                 target="_blank"
                 rel="noreferrer"
               >

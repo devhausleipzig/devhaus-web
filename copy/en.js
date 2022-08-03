@@ -195,14 +195,11 @@ const copyEN = {
       header: "Application Process",
       sectionHeader1: "Step 1",
       section1:
-        "Complete an online form for us to get a detailed idea of who you are, how you’ve spent your time until now, and your motivation for joining Devhaus.",
+        "Complete a quick online form to give us your contact details and a brief statement on why you'd like to join one of our programs.",
       sectionHeader2: "Step 2",
-      section2:
-        "Complete a follow-up online form to round off the information for our profile of you. When you complete this step, you automatically receive a copy of the profile we generate based on your answers to the online forms.",
-      sectionHeader3: "Step 3",
-      section3Part1:
-        "Interview with two members of the Devhaus team to discuss your career path and how Devhaus might play a role in your journey.",
-      section3Part2:
+      section2Part1:
+        "Schedule a short interview for us to get an idea of who you are and answer any questions you might have.",
+      section2Part2:
         "Our team makes decisions on applications as they are received. Meaning applicants can expect to get a decision on their application within 30 days, regardless of when they apply.",
       applyLink: "Apply now",
     },

@@ -182,7 +182,7 @@ export default function Academy() {
         />
         <meta
           name="description"
-          content="The Devhaus Academy is more than just a classroom; it’s an ongoing support system, the sole purpose of which is to help you become the best programmer and designer you can be."
+          content="The Devhaus Academy is more than just a classroom; it's an ongoing support system, the sole purpose of which is to help you become the best programmer and designer you can be."
         />
         <meta
           name="keywords"
@@ -233,7 +233,7 @@ export default function Academy() {
                 {t("academy:block2.applicationType")}
               </span>
               <a
-                href="https://devhausleipzig.typeform.com/to/pZOQK1pV"
+                href="https://devhausleipzig.typeform.com/to/TBS6UFiq"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -522,14 +522,10 @@ export default function Academy() {
         <h3 className="track-wider text-2 mb-2 text-2xl uppercase">
           {t("academy:block8.sectionHeader2")}
         </h3>
-        <p className="mb-8 text-xl">{t("academy:block8.section2")}</p>
-        <h3 className="track-wider text-2 mb-2 text-2xl uppercase">
-          {t("academy:block8.sectionHeader3")}
-        </h3>
-        <p className="mb-8 text-xl">{t("academy:block8.section3Part1")}</p>
-        <p className="mb-8 text-xl">{t("academy:block8.section3Part2")}</p>
+        <p className="mb-8 text-xl">{t("academy:block8.section2Part1")}</p>
+        <p className="mb-8 text-xl">{t("academy:block8.section2Part2")}</p>
         <a
-          href="https://devhausleipzig.typeform.com/to/pZOQK1pV"
+          href="https://devhausleipzig.typeform.com/to/TBS6UFiq"
           target="_blank"
           rel="noreferrer"
         >
